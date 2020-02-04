@@ -1,0 +1,88 @@
+/* Pelenalako Kamala */
+body {
+    background-color: #262626;
+}
+
+h1 {
+    font-family: Arial;
+    text-align: center;
+    background-image: linear-gradient(to right, white 0%, white 50%, orange 50%, orange 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+label {
+    font-family: verdana;
+    color: orange;
+}
+
+h3 {
+    font-family: Arial;
+    color: white;
+    background-color: #303030;
+}
+
+td {
+    color: white;
+}
+
+form {
+    background-color: #303030;
+    color: white;
+}
+
+li {
+    font-family: verdana;
+    color: orange;
+}
+
+.dropbtn {
+    background-color: #303030;
+    color: orange;
+    font-family: Arial;
+    font-size: 18px;
+    padding: 2px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: #303030;
+    min-width: 0px;
+    font-family: verdana;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: black;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 2px;
+    font-family: verdana;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    border: black;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}

@@ -1,0 +1,71 @@
+<!-- Pelenalako Kamala -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kamala21_HW3</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <style>
+        th, td {
+            padding: 10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascripts/functions.js"></script>
+</head>
+<body>
+
+<h1>Cheesecake Order Form</h1>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Wikimedia Cheesecake" width="150" height="150"><br>
+
+<form id="form">
+    <label>Quantity Topping</label>
+
+    <table>
+    <tr>
+        <th><select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select></th>
+
+        <td><input type="radio" name="topping" value="Plain" checked> Plain<br>
+        <input type="radio" name="topping" value="Cherry"> Cherry<br>
+        <input type="radio" name="topping" value="Chocolate"> Chocolate<br></td>
+    </tr>
+    </table>
+
+    <label>Notes:</label><br>
+    <textarea rows="4" cols="50" placeholder="Enter any special instructions here." id="notes" onkeyup="showMsg()"></textarea>
+
+    <br>
+    <button onclick="placeOrder()">Order</button>
+</form>
+
+<h3>Total Orders of
+    <div class="dropdown">
+        <button class="dropbtn" id="dropbtn">Jan</button>
+        <div class="dropdown-content">
+            <a onclick="updateMonth('Jan')">Jan</a>
+            <a onclick="updateMonth('Feb')">Feb</a>
+            <a onclick="updateMonth('Mar')">Mar</a>
+            <a onclick="updateMonth('Apr')">Apr</a>
+            <a onclick="updateMonth('May')">May</a>
+            <a onclick="updateMonth('Jun')">Jun</a>
+            <a onclick="updateMonth('Jul')">Jul</a>
+            <a onclick="updateMonth('Aug')">Aug</a>
+            <a onclick="updateMonth('Sep')">Sep</a>
+            <a onclick="updateMonth('Oct')">Oct</a>
+            <a onclick="updateMonth('Nov')">Nov</a>
+            <a onclick="updateMonth('Dec')">Dec</a>
+        </div>
+    </div>
+</h3>
+<ul>
+    <li>11 cherry</li>
+    <li>17 chocolate</li>
+    <li>31 plain</li>
+</ul>
+
+</body>
+</html>

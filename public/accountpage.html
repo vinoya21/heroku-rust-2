@@ -5,32 +5,18 @@
 
 <head>
     <title>Makaleha Home Page</title>
-    <!--
-    <link rel="stylesheet" href="stylesheets/style.css">
-    -->
-    <style>
-        button {
-                position: absolute;
-            }
-
-            .right {
-                position: absolute;
-                right: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-
-            .left {
-                position: absolute;
-                left: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-    </style>
+     <link rel="stylesheet" type="text/css" href="stylesheets/account.css"/>
     <!-- comment out sources for later use
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="javascripts/functions.js"></script> -->
 </head>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+</script>
+
+<script src="javascripts/account.js"> </script>
+
 <body>
 
 <div class="left">
@@ -48,13 +34,44 @@
     <img src="images/Makaleha_transparent.png" alt="Makaleha Logo" width="213" height="129"><br>
     <h1>To look about in wonder or admiration</h1>
 </center>
-<div class="btn-setting">
-  <button type="button" id="profile">Profile</button><br>
-  <button type="button" id="favorite">Favorites</button><br>
-  <button type="button" id="password">Password</button><br>
-  <button type="button" id="email">Email/Notifications</button><br>
-  <button type="button" id="privacy">Privacy Settings</button> 
-    </div
-<!-- need images to use for homepage -->
+ <ul class="top">
+      <li><a href="#Event">Events</a></li>
+      <li><a href="#Art">Artwork</a></li>
+      <li><a href="#Rec">Outdoor Activities</a></li>
+      <li><a href="#Service">Community Service</a></li>
+ </ul>
+ <table>
+   <tr>
+     <th>
+       <ul class="acc_menu">
+	 <li><a class="acc_item" href="#Profile">Profile</a></li>
+	 <li><a class="acc_item" href="Favorites">Favorites</a></li>
+	 <li><a class="acc_item" href="#Password">Password</a></li>
+	 <li><a class="acc_item" href="#Notif">Email/Notifications</a></li>
+	 <li><a class="acc_item" href="#Setting">Privacy Settings</a</li>	
+     </ul>
+     </th>
+     <th>
+       <h2 class="header-title"> Profile </h2>
+       <div id="name-div">
+	 <h3 id="name"> Kama Simon </h3>
+       </div>
+       <div id="bio-div">
+       <h3> Bio </h3>
+       <p> I love going to art museums! </p>
+       </div>
+     </th>
+     <th>
+       <button id="edit-btn" onclick="editMode()" type="button"> Edit Profile </button>
+     </th>
+   </tr>
+ </table>
+ 
+ <script>
+   
+ </script>
+ 
+   
+       <!-- need images to use for homepage -->
 </body>
 </html>

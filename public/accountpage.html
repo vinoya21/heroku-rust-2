@@ -40,38 +40,31 @@
       <li><a href="#Rec">Outdoor Activities</a></li>
       <li><a href="#Service">Community Service</a></li>
  </ul>
- <table>
-   <tr>
-     <th>
-       <ul class="acc_menu">
-	 <li><a class="acc_item" href="#Profile">Profile</a></li>
-	 <li><a class="acc_item" href="Favorites">Favorites</a></li>
-	 <li><a class="acc_item" href="#Password">Password</a></li>
-	 <li><a class="acc_item" href="#Notif">Email/Notifications</a></li>
-	 <li><a class="acc_item" href="#Setting">Privacy Settings</a</li>	
-     </ul>
-     </th>
-     <th>
-       <h2 class="header-title"> Profile </h2>
+
+       <div class="tab">
+	 <button class="tablinks" onclick="openAccTab(event,'Profile')"
+	 id="default">Profile</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Favorites')">
+	   Favorites</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Password')">
+	   Password</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Email/Notifications')">
+	   Email/Notifications</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Privacy Settings')">
+	   Privacy Settings</button>
+       </div>
+       
+
+<div id="Profile" class="tabcontent">
+   <h2 class="header-title"> Profile </h2>
        <div id="name-div">
 	 <h3 id="name"> Kama Simon </h3>
        </div>
        <div id="bio-div">
        <h3> Bio </h3>
        <p id="bio"> I love going to art museums! </p>
+        <button id="edit-btn" onclick="editMode()" type="button"> Edit Profile </button>
        </div>
-     </th>
-     <th>
-       <button id="edit-btn" onclick="editMode()" type="button"> Edit Profile </button>
-     </th>
-   </tr>
- </table>
- 
- <script>
-   
- </script>
- 
-   
        <!-- need images to use for homepage -->
 </body>
 </html>

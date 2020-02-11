@@ -4,12 +4,14 @@
 
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Makaleha Home Page</title>
     <!--
     <link rel="stylesheet" href="stylesheets/style.css">
     -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
-
+  
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css"/>
+    <script src="javascripts/functions.js"></script>
 
     <!-- comment out sources for later use
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -22,11 +24,38 @@
     </div>
 
     <div class="right">
-        <button type="button" id="login" onclick="window.location.href = 'loginpage.html';">
-            Log in
-        </button><br>
-        <button type="button" id="signup" onclick="window.location.href = 'signuppage.html';">Sign up</button>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto" id="login">Log in</button>
+        <button type="button" id="signup">Sign up</button>
     </div>
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+    </div>
+
     <center>
         <!-- TODO: Resize image in CSS to fit the page more -->
         <img src="images/Makaleha_transparent.png" alt="Makaleha Logo" width="213" height="129"><br>

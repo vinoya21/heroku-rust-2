@@ -1,18 +1,56 @@
+/* team rust css file */
+
+/* general button design*/
 button {
     position: absolute;
-    color: green;
+    color: white;
+    background: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+/* specific button modifications */
+#login:hover {
+    background-color: white;
+    font-style: italic;
+    color: black;
+}
+#signup:hover {
+    background-color: white;
+    font-style: italic;
+    color: black;
+}
+#review:hover {
+    background-color: white;
+    font-style: italic;
+    color: black;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+body {
+    /*background-color: #add8e6;*/
+    background: #add8e6;
+    background: linear-gradient(90deg, rgba(153,255,255,1) 0%, rgba(153,255,153,1) 35%, rgba(0,212,255,1) 100%);
+    border-style: double solid;
+    border-radius: all;
 }
 
 .right {
     position: absolute;
-    right: 0px;
+    right: 25px;
     width: 100px;
     padding: 10px;
 }
 
 .left {
     position: absolute;
-    left: 0px;
+    left: 25px;
     width: 100px;
     padding: 10px;
 }

@@ -4,29 +4,33 @@
 
 
 <head>
-    <title>Makaleha Home Page</title>
+    <title>Makaleha Art Page</title>
     <!--
     <link rel="stylesheet" href="stylesheets/style.css">
     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/css/ol.css" type="text/css">
     <style>
-        button {
-                position: absolute;
-            }
+        
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 100px;
+            padding: 10px;
+        }
+        .left {
+            position: absolute;
+            left: 0px;
+            width: 100px;
+            padding: 10px;
+        }
+        .map {
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+        }
 
-            .right {
-                position: absolute;
-                right: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-
-            .left {
-                position: absolute;
-                left: 0px;
-                width: 100px;
-                padding: 10px;
-            }
     </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/build/ol.js"></script>
     <!-- comment out sources for later use
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="javascripts/functions.js"></script> -->
@@ -43,18 +47,36 @@
 </div>
 
 <center>
-    
     <!-- TODO: Resize image in CSS to fit the page more -->
     <img src="images/Makaleha_transparent.png" alt="Makaleha Logo" width="213" height="129"><br>
     <h1>To look about in wonder or admiration</h1>
 </center>
+
 <div class="btn-setting">
-  <button type="button" id="profile">Profile</button><br>
-  <button type="button" id="favorite">Favorites</button><br>
-  <button type="button" id="password">Password</button><br>
-  <button type="button" id="email">Email/Notifications</button><br>
-  <button type="button" id="privacy">Privacy Settings</button> 
-    </div
+  <button type="button" id="profile">Profile</button>
+  <button type="button" id="favorite">Favorites</button>
+  <button type="button" id="password">Password</button>
+  <button type="button" id="email">Email/Notifications</button>
+  <button type="button" id="privacy">Privacy Settings</button><br>
+</div>
+
+<div id="map" class="map"></div>
+<script type="text/javascript">
+    var map = new ol.Map({
+        target: 'map',
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM()
+            })
+        ],
+        view: new ol.View({
+            center: ol.proj.fromLonLat([-158.0001, 21.4389]),
+            zoom: 10.0
+        })
+    });
+</script>
+
+
 <!-- need images to use for homepage -->
 </body>
 </html>

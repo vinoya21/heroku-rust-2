@@ -22,10 +22,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+//redirect 404 error to the 404.html page
+//source: https://www.semicolonworld.com/question/44879/how-to-redirect-404-errors-to-a-page-in-expressjs
+app.get('*', function(req, res){
+  if (req.accepts('html')) {
+     res.send('404', '<script>location.href = "/404.html";</script>');
+     return;
+  }
 });
+
+// catch 404 and forward to error handler
+//app.use(function(req, res, next) {
+  //next(createError(404));
+//});
 
 // error handler
 app.use(function(err, req, res, next) {

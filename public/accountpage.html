@@ -1,0 +1,72 @@
+<!-- Team Rust Account Page -->
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Makaleha Home Page</title>
+     <link rel="stylesheet" type="text/css" href="stylesheets/account.css"/>
+    <!-- comment out sources for later use
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascripts/functions.js"></script> -->
+</head>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+</script>
+
+<script src="javascripts/account.js"> </script>
+
+<body>
+
+<div class="left">
+    <button type="button" id="review">Make a review</button>
+</div>
+
+<div class="right">
+    <button type="button" id="account">Account</button><br>
+    <button type="button" id="logout">Log out</button>
+</div>
+
+<center>
+    
+    <!-- TODO: Resize image in CSS to fit the page more -->
+    <img src="images/Makaleha_transparent.png" alt="Makaleha Logo" width="213" height="129"><br>
+    <h1>To look about in wonder or admiration</h1>
+</center>
+ <ul class="top">
+      <li><a href="#Event">Events</a></li>
+      <li><a href="#Art">Artwork</a></li>
+      <li><a href="#Rec">Outdoor Activities</a></li>
+      <li><a href="#Service">Community Service</a></li>
+ </ul>
+
+       <div class="tab">
+	 <button class="tablinks" onclick="openAccTab(event,'Profile')"
+	 id="default">Profile</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Favorites')">
+	   Favorites</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Password')">
+	   Password</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Email/Notifications')">
+	   Email/Notifications</button>
+	 <button class="tablinks" onclick="openAccTab(event,'Privacy Settings')">
+	   Privacy Settings</button>
+       </div>
+       
+
+<div id="Profile" class="tabcontent">
+   <h2 class="header-title"> Profile </h2>
+       <div id="name-div">
+	 <h3 id="name"> Kama Simon </h3>
+       </div>
+       <div id="bio-div">
+       <h3> Bio </h3>
+       <p id="bio"> I love going to art museums! </p>
+       </div>
+       <button id="edit-btn" onclick="editMode()" type="button"> Edit Profile </button>
+</div>
+
+       <!-- need images to use for homepage -->
+</body>
+</html>

@@ -1,13 +1,55 @@
+/* team rust index.css file */
+
+/* general button design*/
+button {
+    position: absolute;
+    color: white;
+    background: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+/* specific button modifications */
+#login:hover {
+    background-color: white;
+    font-style: italic;
+    color: black;
+}
+#signup:hover {
+    background-color: white;
+    font-style: italic;
+    color: black;
+}
+#review:hover {
+    background-color: white;
+    font-style: italic;
+    color: black;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+body {
+    background: #add8e6;
+    background: linear-gradient(90deg, rgba(153,255,255,1) 0%, rgba(153,255,153,1) 35%, rgba(0,212,255,1) 100%);
+    border-style: dashed;
+    border-radius: all;
+}
+
 .right {
     position: absolute;
-    right: 0px;
+    right: 25px;
     width: 100px;
     padding: 10px;
 }
 
 .left {
     position: absolute;
-    left: 0px;
+    left: 25px;
     width: 100px;
     padding: 10px;
 }
@@ -36,7 +78,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 li {
@@ -56,24 +98,14 @@ li a:hover {
 }
 
 /* Full-width input fields */
+/* this is conflicting with the search bar */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
 }
 
 button:hover {
@@ -173,3 +205,164 @@ span.psw {
      width: 100%;
   }
 }
+
+/*https://codepen.io/himalayasingh/pen/dqjLgO
+search bar */
+{
+    outline: none;
+}
+
+.tb
+{
+    display: table;
+    width: 100%;
+}
+
+.td
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input, #searchSubmit
+{
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#cover
+{
+    position: absolute;
+    top: 50%;
+    left: -250px;
+    right: 0;
+    width: 2000px;
+    padding: 15px;
+    margin: -30px auto 0 auto;
+    /* color of search bar */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px #87ceeb;
+    transform: scale(0.5);
+}
+
+form
+{
+    height: 96px;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 96px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+input[type="text"]::placeholder
+{
+    color: black;
+}
+
+#s-cover
+{
+    width: 1px;
+    padding-left: 35px;
+}
+/*
+#searchSubmit
+{
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+}
+
+#s-circle
+{
+    position: relative;
+    top: -8px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    /* outer circle 
+    border: 15px solid #b3b3b3;
+    /* inner circle
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+
+#searchSubmit span
+{
+    position: absolute;
+    top: 68px;
+    left: 43px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+}
+
+#searchSubmit span:before, #searchSubmit span:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    /* color of stem of search button 
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle
+{
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #b3b3b3;
+    border-radius: 20px;
+}
+
+#s-cover:hover span
+{
+    top: 50%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+}
+/*
+#s-cover:hover #searchSubmit span:before
+{
+    bottom: 11px;
+    transform: rotateZ(52deg);
+}
+
+#s-cover:hover #searchSubmit span:after
+{
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+}
+#s-cover:hover #searchSubmit span:before, #s-cover:hover #searchSubmit span:after
+{
+    right: -6px;
+    width: 40px;
+    background-color: #b3b3b3;
+}
+/* end of css for search bar ^ */

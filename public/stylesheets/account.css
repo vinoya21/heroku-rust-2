@@ -118,4 +118,57 @@ li a.acc_item:hover {
   height: 300px;
 }
 
+/* general button design*/
 
+
+/* specific button modifications */
+#login:hover {
+  background-color: white;
+  font-style: italic;
+  color: black;
+}
+#signup:hover {
+  background-color: white;
+  font-style: italic;
+  color: black;
+}
+#review:hover {
+  background-color: white;
+  font-style: italic;
+  color: black;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+body {
+  background: #add8e6;
+  background: linear-gradient(90deg, rgba(153,255,255,1) 0%, rgba(153,255,153,1) 35%, rgba(0,212,255,1) 100%);
+  border-style: dashed;
+  border-radius: all;
+}
+
+.rightt {
+  position: absolute;
+  right: 25px;
+  width: 100px;
+  padding: 10px;
+}
+
+.leftt {
+  position: absolute;
+  left: 25px;
+  width: 100px;
+  padding: 10px;
+}
+.top-btn {
+  position: absolute;
+  color: white;
+  background: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+}

@@ -103,7 +103,7 @@ button:hover {
 }
 
 .avatar {
-  width: 20%;
+  width: 225px;
   border-radius: 80%;
 }
 
@@ -184,10 +184,10 @@ span.psw {
 }
 
 /*https://codepen.io/himalayasingh/pen/dqjLgO
-search bar */
+search bar
 {
     outline: none;
-}
+}*/
 
 .tb
 {

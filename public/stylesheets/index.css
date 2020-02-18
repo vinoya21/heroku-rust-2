@@ -225,6 +225,8 @@ input, #submitSearch
     box-shadow: 0 10px 20px #87ceeb;
     transform: scale(0.5);
     opacity: 75%;
+    /* change max width to format well on Grants computer */
+    max-width: 135%;
 }
 
 form

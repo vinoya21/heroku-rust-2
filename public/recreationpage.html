@@ -1,57 +1,74 @@
-<!-- Team Rust Recreation Page -->
+<!-- Team Rust Home Page -->
 <!DOCTYPE html>
 <html>
 
 
 <head>
-    <title>Makaleha Recreation Page</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <style>
-        button {
-                position: absolute;
-            }
-
-            .right {
-                position: absolute;
-                right: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-
-            .left {
-                position: absolute;
-                left: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-    </style>
-    <!-- comment out sources for later use
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="javascripts/functions.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Makaleha Recreation Page</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
+  <!-- comment out sources for later use
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </head>
+
 <body>
 
-<div class="left">
-    <button type="button" id="review">Make a review</button>
-</div>
+  <!-- top buttons: "write a review", log in, and sign up -->
+  <div class="left">
+    <button type="button" style="width:100px" id="review" onclick="window.location.href = 'reviewpage.html';">Write a
+      review</button>
+  </div>
 
-<div class="right">
-    <button type="button" id="account">Account</button><br>
-    <button type="button" id="logout">Log out</button>
-</div>
+  <div class="right">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:100px" id="login">Log
+      in</button><br><br><br>
+    <button type="button" style="width:100px" id="signup">Sign up</button>
+  </div>
 
-<center>
-    
-    <!-- TODO: Resize image in CSS to fit the page more -->
+  <!-- log in pop up -->
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <center>
+    <!-- logo -->
     <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png" alt="Makaleha Logo" width="300"
       height="140" />
-</center>
-<ul>
-    <li><a href="eventpage.html">Events</a></li>
-    <li><a href="artpage.html">Artwork</a></li>
-    <li><a href="recreationpage.html">Outdoor Activities</a></li>
-    <li><a href="servicepage.html">Community Service</a></li>
-</ul>
-<!-- need images to use for homepage -->
+  </center>
+  <!-- navigation bar i.e. page menu -->
+  <div class="navbar">
+    <a href="eventpage.html">Events</a>
+    <a href="artpage.html">Artwork</a>
+    <a href="recreationpage.html">Outdoor Activities</a>
+    <a href="servicepage.html">Community Service</a>
+  </div>
+  
 </body>
+
 </html>

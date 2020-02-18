@@ -73,30 +73,6 @@ body {
     width: 100%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
 /* Full-width input fields */
 /* this is conflicting with the search bar */
 input[type=text], input[type=password] {
@@ -208,10 +184,10 @@ span.psw {
 
 /*https://codepen.io/himalayasingh/pen/dqjLgO
 search bar */
-{
+/*{
     outline: none;
 }
-
+*/
 .tb
 {
     display: table;
@@ -366,3 +342,32 @@ input[type="text"]::placeholder
     background-color: #b3b3b3;
 }
 /* end of css for search bar ^ */
+
+.navbar {
+  width: 100%;
+  background-color: rgb(34, 32, 32);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 23.4%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

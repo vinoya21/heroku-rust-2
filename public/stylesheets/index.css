@@ -185,10 +185,10 @@ span.psw {
 
 /*https://codepen.io/himalayasingh/pen/dqjLgO
 search bar */
-/*{
+{
     outline: none;
 }
-*/
+
 .tb
 {
     display: table;
@@ -202,9 +202,9 @@ search bar */
     width: 100%;
 }
 
-input, #searchSubmit
+input, #submitSearch
 {
-    color: #fff;
+    color: #b3b3b3;
     font-family: Nunito;
     padding: 0;
     margin: 0;
@@ -226,6 +226,7 @@ input, #searchSubmit
     border-radius: 20px;
     box-shadow: 0 10px 20px #87ceeb;
     transform: scale(0.5);
+    opacity: 75%;
 }
 
 form
@@ -252,8 +253,8 @@ input[type="text"]::placeholder
     width: 1px;
     padding-left: 35px;
 }
-/*
-#searchSubmit
+
+#submitSearch
 {
     position: relative;
     display: block;
@@ -271,15 +272,15 @@ input[type="text"]::placeholder
     height: 43px;
     margin-top: 0;
     border-width: 15px;
-    /* outer circle 
+    /* outer circle */
     border: 15px solid #b3b3b3;
-    /* inner circle
+    /* inner circle */
     background-color: white;
     border-radius: 50%;
     transition: 0.5s ease all;
 }
 
-#searchSubmit span
+#submitSearch span
 {
     position: absolute;
     top: 68px;
@@ -293,7 +294,7 @@ input[type="text"]::placeholder
     transition: 0.5s ease all;
 }
 
-#searchSubmit span:before, #searchSubmit span:after
+#submitSearch span:before, #submitSearch span:after
 {
     content: '';
     position: absolute;
@@ -301,7 +302,7 @@ input[type="text"]::placeholder
     right: 0;
     width: 45px;
     height: 15px;
-    /* color of stem of search button 
+    /* color of stem of search button */
     background-color: #b3b3b3;
     border-radius: 10px;
     transform: rotateZ(0);
@@ -326,19 +327,19 @@ input[type="text"]::placeholder
     margin-top: -9px;
     transform: rotateZ(0);
 }
-/*
-#s-cover:hover #searchSubmit span:before
+
+#s-cover:hover #submitSearch span:before
 {
     bottom: 11px;
     transform: rotateZ(52deg);
 }
 
-#s-cover:hover #searchSubmit span:after
+#s-cover:hover #submitSearch span:after
 {
     bottom: -11px;
     transform: rotateZ(-52deg);
 }
-#s-cover:hover #searchSubmit span:before, #s-cover:hover #searchSubmit span:after
+#s-cover:hover #submitSearch span:before, #s-cover:hover #submitSearch span:after
 {
     right: -6px;
     width: 40px;

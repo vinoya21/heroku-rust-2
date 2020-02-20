@@ -102,9 +102,9 @@ button:hover {
   position: relative;
 }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
+.avatar {
+  width: 225px;
+  border-radius: 80%;
 }
 
 .container {
@@ -134,9 +134,10 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  height: 80%
 }
 
 /* The Close Button (x) */
@@ -183,10 +184,10 @@ span.psw {
 }
 
 /*https://codepen.io/himalayasingh/pen/dqjLgO
-search bar */
+search bar
 {
     outline: none;
-}
+}*/
 
 .tb
 {
@@ -198,6 +199,7 @@ search bar */
 {
     display: table-cell;
     vertical-align: middle;
+    width: 100%;
 }
 
 input, #submitSearch
@@ -234,12 +236,13 @@ form
     height: 96px;
 }
 
-input[type="text"]
+.searchBar
 {
     width: 100%;
     height: 96px;
     font-size: 60px;
     line-height: 1;
+    color: black;
 }
 
 input[type="text"]::placeholder
@@ -373,4 +376,11 @@ input[type="text"]::placeholder
     width: 100%;
     text-align: left;
   }
+}
+
+.inputText {
+  font-family: Arial;
+  font-size: 16px;
+  text-align: left;
+  color: black;
 }

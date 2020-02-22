@@ -12,10 +12,10 @@ exports.version = '0.0.1';
 var mysql = require('mysql'),
     async = require('async');
 
-var host = "35.233.199.97";    //from GCloud instance (change to match your db)
-var database = "CHEESECAKE";  //database name
-var user = "simonk21";         //username (change to match your db)
-var password = "7935";  //password (change to match your db, yes this is very poor practice)
+var host = "34.83.63.220";    //from GCloud instance (change to match your db)
+var database = "RUST";  //database name
+var user = "root";         //username (change to match your db)
+var password = "rust1234";  //password (change to match your db, yes this is very poor practice)
 
 /**
  * dbquery

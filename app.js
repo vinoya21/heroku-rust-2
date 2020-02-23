@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var acc_updateRouter = require('./routes/updateaccount');
 var initacctRouter = require('./routes/initacct');
+var passwordRouter = require('./routes/changePassword');
 var app = express();
 
 // view engine setup
@@ -24,6 +25,7 @@ app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/updateaccount', acc_updateRouter);
 app.use('/initacct', initacctRouter);
+app.use('/changePassword', passwordRouter);
 
 //redirect 404 error to the 404.html page
 //source: https://www.semicolonworld.com/question/44879/how-to-redirect-404-errors-to-a-page-in-expressjs

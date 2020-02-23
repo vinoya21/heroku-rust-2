@@ -72,13 +72,6 @@ function openAccTab(event, tab) {
 document.getElementById("default").click();
 
 function init(){
-	refresh()
-	var int = self.setInterval(function () {
-		refresh()
-	  }, 10000); 
-}
-
-function refresh(){
 	var queryString = decodeURIComponent(window.location.search);
 	queryString = queryString.substring(1);
 	var queries = queryString.split("=");
@@ -87,5 +80,23 @@ function refresh(){
 	function (user) {
 		document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
 		document.getElementById('bio').innerHTML = user[0].BIO;
+	});
+}
+
+function changePassword(){
+	var oldpw = document.getElementById('old-pw').value; 
+	var newpw = document.getElementById('new-pw').value;
+	var queryString = decodeURIComponent(window.location.search);
+	queryString = queryString.substring(1);
+	var queries = queryString.split("=");
+	var username = queries[1];
+	$.post("/changePassword?username=" + username + "&old=" + oldpw + "&new=" + newpw, 
+	function(user){
+		if(user[0] != null){
+			alert("Maika'i! You've successfully changed password.");
+		}
+		else{
+			alert("Incorrect password. Hana hou!");
+		}
 	});
 }

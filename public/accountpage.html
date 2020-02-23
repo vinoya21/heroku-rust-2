@@ -19,12 +19,12 @@
 <body onload="init()">
 
   <div class="leftt">
-    <button class="top-btn" type="button" id="review">Make a review</button>
+    <button class="top-btn" type="button" id="review" onclick="window.location.href = 'reviewpage.html';">Make a review</button>
   </div>
 
   <div class="rightt">
     <button class="top-btn" type="button" id="account">Account</button><br><br><br>
-    <button class="top-btn" type="button" id="logout">Log out</button>
+    <button onclick="window.location.href = 'index.html';" class="top-btn" type="button" id="logout">Log out</button>
   </div>
 
   <center>
@@ -74,8 +74,9 @@
       <h3> New Password: </h3>
       <textarea id="new-pw"></textarea>
     </div>
-    <button id="edit-btn" onclick="changePassword()" type="button"> Submit </button>
+    <button id="pw-btn" onclick="changePassword()" type="button"> Submit </button>
   </div>
+
 </body>
 
 </html>

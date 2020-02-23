@@ -69,7 +69,6 @@ function openAccTab(event, tab) {
 	document.getElementById(tab).style.display = "block";
 	evt.currentTarget.className += " active";
 }
-document.getElementById("default").click();
 
 function init(){
 	var queryString = decodeURIComponent(window.location.search);
@@ -81,6 +80,7 @@ function init(){
 		document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
 		document.getElementById('bio').innerHTML = user[0].BIO;
 	});
+	document.getElementById("default").click();
 }
 
 function changePassword(){
@@ -94,6 +94,8 @@ function changePassword(){
 	function(user){
 		if(user[0] != null){
 			alert("Maika'i! You've successfully changed password.");
+			document.getElementById('old-pw').value = '';
+			document.getElementById('new-pw').value = '';
 		}
 		else{
 			alert("Incorrect password. Hana hou!");

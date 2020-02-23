@@ -6,15 +6,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Makaleha Home Page</title>
-  <!--
-    <link rel="stylesheet" href="stylesheets/style.css">
-    -->
-
-  <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
-  <script src="javascripts/functions.js"></script>
-
-  <!-- comment out sources for later use
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <script src="javascripts/login.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +28,7 @@
   <!-- log in pop up -->
   <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="modal-content animate">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
           title="Close Modal">&times;</span>
@@ -42,22 +36,23 @@
       </div>
 
       <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" class="inputText" placeholder="Enter Username" name="uname" required>
+        <label ><b>Username</b></label>
+        <input type="text" class="inputText" placeholder="Enter Username" id="loginUsername">
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" class="inputText" placeholder="Enter Password" name="psw" required>
+        <label ><b>Password</b></label>
+        <input type="password" class="inputText" placeholder="Enter Password" id="loginPassword">
 
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+        <span class="psw" color="red" id="invalidLogin"></span>
       </div>
 
       <div class="container">
-        <button type="submit">Login</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <button onclick="login()">Login</button>
+        <span class="psw"><a href="#">Forgot password?</a></span>
       </div>
-    </form>
+    </div>
   </div>
 
   <!-- search bar -->

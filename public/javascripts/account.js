@@ -18,7 +18,6 @@ function editMode() {
 		$.post("/updateaccount?username=" + username + "&fname=" + first + "&lname=" + last + "&bio=" + bio,
 			function (user) {
 				// changing name, removing textarea
-				alert(user[0].FIRSTNAME);
 				document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
 				nameDiv.removeChild(fTextArea);
 				nameDiv.removeChild(lTextArea);

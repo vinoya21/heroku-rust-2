@@ -4,19 +4,15 @@
 
 
 <head>
-  <title>Makaleha Home Page</title>
+  <title>Makaleha Account Page</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/account.css" />
-  <!-- comment out sources for later use
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="javascripts/functions.js"></script> -->
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" />
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="javascripts/account.js"> </script>
 
-<body onload="init()">
+<body onload="init()"> <!-- retrieve user info in USERS database on load -->
 
   <div class="leftt">
     <button class="top-btn" type="button" id="review" onclick="window.location.href = 'reviewpage.html';">Make a review</button>
@@ -25,7 +21,7 @@
   <div class="rightt">
     <button class="top-btn" type="button" id="account">Account</button><br><br><br>
     <button onclick="window.location.href = 'index.html';" class="top-btn" type="button" id="logout">Log out</button>
-  </div>
+  </div> <!-- set log out to go back to index.html -->
 
   <center>
 
@@ -80,3 +76,13 @@
 </body>
 
 </html>
+
+<!-- 
+  version: 23 FEB 2020
+  TODO:
+  - Favorites functionality
+  - Email/Notification functionality
+  - Privacy Settings functionality
+  - Password *** instead of '123' for user privacy 
+  - center nav page menu bar
+-->

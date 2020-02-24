@@ -101,3 +101,11 @@ function changePassword(){
 		}
 	});
 }
+
+/*
+	version: 23 FEB 2020
+	TODO:
+	- function for email/notif
+	- function for privacy
+	- function for favorites
+*/

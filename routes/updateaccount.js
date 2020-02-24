@@ -29,10 +29,16 @@ router.post('/', function (req, res, next) {
                         return;
                     }
                     userInfo = result;
-                    res.json(userInfo);
+                    res.json(userInfo); // returns user info
                 });
             });
     });
 
 });
 module.exports = router;
+
+/* 
+    version: 23 FEB 2020
+    TODO:
+    none
+*/

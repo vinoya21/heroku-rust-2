@@ -7,7 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var acc_updateRouter = require('./routes/updateaccount');
-
+var initacctRouter = require('./routes/initacct');
+var passwordRouter = require('./routes/changePassword');
+var artRouter = require('./routes/retrieveart');
+var artInfoRouter = require('./routes/retrieveArtInfo');
 var app = express();
 
 // view engine setup
@@ -23,6 +26,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/updateaccount', acc_updateRouter);
+app.use('/initacct', initacctRouter);
+app.use('/changePassword', passwordRouter);
+app.use('/retrieveart', artRouter);
+app.use('/retrieveArtInfo', artInfoRouter);
 
 //redirect 404 error to the 404.html page
 //source: https://www.semicolonworld.com/question/44879/how-to-redirect-404-errors-to-a-page-in-expressjs

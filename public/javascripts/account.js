@@ -7,12 +7,15 @@ function editMode() {
 		var fTextArea = document.getElementById('first-text');
 		var lTextArea = document.getElementById('last-text');
 		var bTextArea = document.getElementById('bio-text');
-		var accId = document.getElementById('accid').value;
+		var queryString = decodeURIComponent(window.location.search);
+		queryString = queryString.substring(1);
+		var queries = queryString.split("=");
+		var username = queries[1];
 		var first = fTextArea.value;
 		var last = lTextArea.value;
 		var bio = bTextArea.value;
 		btn.innerHTML = "Edit Profile"; // changing button
-		$.post("/updateaccount?fname=" + first + "&lname=" + last + "&bio=" + bio + "&accId=" + accId,
+		$.post("/updateaccount?username=" + username + "&fname=" + first + "&lname=" + last + "&bio=" + bio,
 			function (user) {
 				// changing name, removing textarea
 				document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
@@ -65,5 +68,44 @@ function openAccTab(event, tab) {
 	document.getElementById(tab).style.display = "block";
 	evt.currentTarget.className += " active";
 }
-document.getElementById("default").click();
 
+function init(){
+	var queryString = decodeURIComponent(window.location.search);
+	queryString = queryString.substring(1);
+	var queries = queryString.split("=");
+	var username = queries[1];
+	$.post("/initacct?username=" + username,
+	function (user) {
+		document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
+		document.getElementById('bio').innerHTML = user[0].BIO;
+	});
+	document.getElementById("default").click();
+}
+
+function changePassword(){
+	var oldpw = document.getElementById('old-pw').value; 
+	var newpw = document.getElementById('new-pw').value;
+	var queryString = decodeURIComponent(window.location.search);
+	queryString = queryString.substring(1);
+	var queries = queryString.split("=");
+	var username = queries[1];
+	$.post("/changePassword?username=" + username + "&old=" + oldpw + "&new=" + newpw, 
+	function(user){
+		if(user[0] != null){
+			alert("Maika'i! You've successfully changed password.");
+			document.getElementById('old-pw').value = '';
+			document.getElementById('new-pw').value = '';
+		}
+		else{
+			alert("Incorrect password. Hana hou!");
+		}
+	});
+}
+
+/*
+	version: 23 FEB 2020
+	TODO:
+	- function for email/notif
+	- function for privacy
+	- function for favorites
+*/

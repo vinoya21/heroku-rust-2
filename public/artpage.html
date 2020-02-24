@@ -9,11 +9,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
-  <!-- comment out sources for later use
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-
-<body>
+<script src="javascripts/art.js"> </script>
+<body onload="init()">
 
   <!-- top buttons: "write a review", log in, and sign up -->
   <div class="left">
@@ -70,7 +69,15 @@
     <a href="recreationpage.html">Outdoor Activities</a>
     <a href="servicepage.html">Community Service</a>
   </div>
-  
+  <div style="height: 500px; overflow-y:auto; display:flex" id="artdisplay"></div>
 </body>
 
 </html>
+
+<!-- 
+  version: 23 FEB 2020
+  TODO:
+  - link user log in to this page
+  - add search bar to look up specific art
+  - add search bar search for discipline i.e. mural, sculpture
+-->

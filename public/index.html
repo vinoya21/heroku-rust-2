@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <script src="javascripts/searchbar.js"></script>
 </head>
 
 <body>
@@ -61,9 +62,10 @@
   <div id="cover">
     <form method="get" action="">
       <div class="tb">
-        <div class="td"><input class="searchBar" type="text" placeholder="Search" required></div>
+
+        <div class="td"><input id="searchbar_input" type="text" placeholder="Search" required></div>
         <div class="td" id="s-cover">
-          <button type="submit" id="submitSearch">
+          <button type="submit" id="submitSearch" onclick="search()">
           <div id="s-circle"></div>
           <span></span>
           </button>

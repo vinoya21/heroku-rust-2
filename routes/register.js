@@ -16,7 +16,7 @@ router.post('/', function (req, res) {
                 console.log("ERROR: " + error);
                 return;
             }
-            if(result != NULL){
+            if(result != null){
                 usernameFound = true;
                 validRegistration = false;
             }
@@ -27,7 +27,7 @@ router.post('/', function (req, res) {
                 console.log("ERROR: " + error);
                 return;
             }
-            if(result != NULL){
+            if(result != null){
                 emailFound = true;
                 validRegistration = false;
             }

@@ -21,7 +21,7 @@ function register(){
         validLogin = false;
     }
     if(validLogin){
-        $.post("/login?username=" +username +'&password=' +password +'&firstName=' +firstName +'&lastName=' +lastName +'&email=' +email, function(data){
+        $.post("/register?username=" +username +'&password=' +password +'&firstName=' +firstName +'&lastName=' +lastName +'&email=' +email, function(data){
             alert(data);
         });
     }

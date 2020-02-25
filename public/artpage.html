@@ -6,10 +6,20 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Makaleha Art Page</title>
+  
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/login.css" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/css/ol.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/build/ol.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style> 
+    .map {
+      height: 500px;
+      width: 100%;
+      padding: 0px;
+    }
+  </style>
 </head>
 <script src="javascripts/art.js"> </script>
 <body onload="init()">
@@ -69,7 +79,24 @@
     <a href="recreationpage.html">Outdoor Activities</a>
     <a href="servicepage.html">Community Service</a>
   </div>
-  <div style="height: 500px; overflow-y:auto; display:flex" id="artdisplay"></div>
+  
+  <div style="height: 0px; overflow-y:auto; display:flex" id="artdisplay"></div>
+  <div id="map" class="map"></div>
+  <script type="text/javascript">
+    var map = new ol.Map({
+        target: 'map',
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM()
+            })
+        ],
+        view: new ol.View({
+            center: ol.proj.fromLonLat([-158.0001, 21.4389]),
+            zoom: 10.0
+        })
+    });
+  </script>
+  
 </body>
 
 </html>

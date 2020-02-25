@@ -114,3 +114,8 @@ span.registrationButton {
   float: right;
   padding-right: 115px;
 }
+
+span.su {
+  float: left;
+  padding-left: 2%;
+}

@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
+var registerRouter = require('./routes/register');
 var acc_updateRouter = require('./routes/updateaccount');
 var initacctRouter = require('./routes/initacct');
 var passwordRouter = require('./routes/changePassword');
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
+app.use('/register', registerRouter);
 app.use('/updateaccount', acc_updateRouter);
 app.use('/initacct', initacctRouter);
 app.use('/changePassword', passwordRouter);

@@ -83,6 +83,8 @@ function displayInfo(title) { // display art info
     });
 }
 
+
+
 /*
     version: 23 FEB 2020
     TODO: have list scrollable, while info display is fixed on page

@@ -1,60 +1,30 @@
-<!-- Team Rust Recreation Page -->
+<!-- Team Rust Home Page -->
 <!DOCTYPE html>
 <html>
 
 
 <head>
-    <title>Makaleha Home Page</title>
-    <!--
-    <link rel="stylesheet" href="stylesheets/style.css">
-    -->
-    <style>
-        button {
-                position: absolute;
-            }
-
-            .right {
-                position: absolute;
-                right: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-
-            .left {
-                position: absolute;
-                left: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makaleha Event Page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/404.css" />
+    <script src="javascripts/404.js"></script>
     <!-- comment out sources for later use
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="javascripts/functions.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </head>
+
 <body>
+    <center>
+        <!-- logo -->
+        <input onclick="window.location.href='index.html'" type="image" id="makalehalogo"
+            src="images/makaleha_logo__v2.png" alt="Makaleha Logo" width="375" height="175" /><br/>
 
-<div class="left">
-    <button type="button" id="review">Make a review</button>
-</div>
 
-<div class="right">
-    <button type="button" id="account">Account</button><br>
-    <button type="button" id="logout">Log out</button>
-</div>
+        <h1>SORRY<br/> Page not found</h1><br/>
 
-<center>
-    
-    <!-- TODO: Resize image in CSS to fit the page more -->
-    <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png" alt="Makaleha Logo" width="300"
-      height="140" />
-</center>
-<div class="btn-setting">
-  <button type="button" id="profile">Profile</button><br>
-  <button type="button" id="favorite">Favorites</button><br>
-  <button type="button" id="password">Password</button><br>
-  <button type="button" id="email">Email/Notifications</button><br>
-  <button type="button" id="privacy">Privacy Settings</button> 
-    </div
-<!-- need images to use for homepage -->
+        <!--https://www.w3schools.com/jsref/met_his_back.asp-->
+        <button onclick="goBack()">Go Back</button>
+    </center>
+
 </body>
+
 </html>

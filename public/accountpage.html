@@ -4,69 +4,85 @@
 
 
 <head>
-    <title>Makaleha Home Page</title>
-     <link rel="stylesheet" type="text/css" href="stylesheets/account.css"/>
-    <!-- comment out sources for later use
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="javascripts/functions.js"></script> -->
+  <title>Makaleha Account Page</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/account.css" />
 </head>
 
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="javascripts/account.js"> </script>
 
-<body>
+<body onload="init()"> <!-- retrieve user info in USERS database on load -->
 
-<div class="leftt">
-    <button class="top-btn" type="button" id="review">Make a review</button>
-</div>
+  <div class="leftt">
+    <button class="top-btn" type="button" id="review" onclick="window.location.href = 'reviewpage.html';">Make a review</button>
+  </div>
 
-<div class="rightt">
+  <div class="rightt">
     <button class="top-btn" type="button" id="account">Account</button><br><br><br>
-    <button class="top-btn" type="button" id="logout">Log out</button>
-</div>
+    <button onclick="window.location.href = 'index.html';" class="top-btn" type="button" id="logout">Log out</button>
+  </div> <!-- set log out to go back to index.html -->
 
-<center>
-    
+  <center>
+
     <!-- TODO: Resize image in CSS to fit the page more -->
-    <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png" alt="Makaleha Logo" width="300"
-      height="140" />
-</center>
- <ul class="top">
-      <li><a href="#Event">Events</a></li>
-      <li><a href="#Art">Artwork</a></li>
-      <li><a href="#Rec">Outdoor Activities</a></li>
-      <li><a href="#Service">Community Service</a></li>
- </ul>
+    <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png"
+      alt="Makaleha Logo" width="300" height="140" />
+  </center>
+  <ul class="top">
+    <li><a href="#Event">Events</a></li>
+    <li><a href="#Art">Artwork</a></li>
+    <li><a href="#Rec">Outdoor Activities</a></li>
+    <li><a href="#Service">Community Service</a></li>
+  </ul>
 
-       <div class="tab">
-	 <button class="tablinks" onclick="openAccTab(event,'Profile')"
-	 id="default">Profile</button>
-	 <button class="tablinks" onclick="openAccTab(event,'Favorites')">
-	   Favorites</button>
-	 <button class="tablinks" onclick="openAccTab(event,'Password')">
-	   Password</button>
-	 <button class="tablinks" onclick="openAccTab(event,'Email/Notifications')">
-	   Email/Notifications</button>
-	 <button class="tablinks" onclick="openAccTab(event,'Privacy Settings')">
-	   Privacy Settings</button>
-       </div>
-       
+  <div class="tab">
+    <button class="tablinks" onclick="openAccTab(event,'Profile')" id="default">Profile</button>
+    <button class="tablinks" onclick="openAccTab(event,'Favorites')">
+      Favorites</button>
+    <button class="tablinks" onclick="openAccTab(event,'Password')">
+      Password</button>
+    <button class="tablinks" onclick="openAccTab(event,'Email/Notifications')">
+      Email/Notifications</button>
+    <button class="tablinks" onclick="openAccTab(event,'Privacy Settings')">
+      Privacy Settings</button>
+  </div>
 
-<div id="Profile" class="tabcontent">
-   <h2 class="header-title"> Profile </h2>
-       <div id="name-div">
-	 <h3 id="name"> Kama Simon </h3>
-       </div>
-       <div id="bio-div">
-       <h3> Bio </h3>
-       <p id="bio"> I love going to art museums! </p>
-       </div>
-       <button id="edit-btn" onclick="editMode()" type="button"> Edit Profile </button>
-</div>
+  <div id="Profile" class="tabcontent">
+    <h2 class="header-title"> Profile </h2>
+    <div id="name-div">
+      <h3 id="name"> </h3>
+    </div>
+    <div id="bio-div">
+      <h3> Bio </h3>
+      <p id="bio"></p>
+    </div>
+    <button id="edit-btn" onclick="editMode()" type="button"> Edit Profile </button>
+  </div>
 
-       <!-- need images to use for homepage -->
+  <div id="Password" class="tabcontent">
+    <h2 class="header-title"> Change Password </h2>
+    <div>
+      <h3> Current Password: </h3>
+      <textarea id="old-pw"></textarea>
+    </div>
+    <div>
+      <h3> New Password: </h3>
+      <textarea id="new-pw"></textarea>
+    </div>
+    <button id="pw-btn" onclick="changePassword()" type="button"> Submit </button>
+  </div>
+
 </body>
+
 </html>
+
+<!-- 
+  version: 23 FEB 2020
+  TODO:
+  - Favorites functionality
+  - Email/Notification functionality
+  - Privacy Settings functionality
+  - Password *** instead of '123' for user privacy 
+  - center nav page menu bar
+-->

@@ -110,8 +110,7 @@ span.psw {
   }
 }
 
-/*https://codepen.io/himalayasingh/pen/dqjLgO
-search bar
-{
-    outline: none;
-}*/
+span.registrationButton {
+  float: right;
+  padding-right: 115px;
+}

@@ -54,7 +54,7 @@ form
     color: black;
 }
 
-input[type="text"]::placeholder
+.searchBar::placeholder
 {
     color: black;
 }

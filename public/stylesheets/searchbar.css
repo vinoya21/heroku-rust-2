@@ -23,13 +23,13 @@ input, #submitSearch
 }
 
 #cover_art {
-    position: absolute;
+    position: relative;
     top: 30%;
-    /* left: -1200px; */
-    left: -75%;
+    /*left: -400px;*/
+    left: -30%;
     right: 0;
-    width: 500px;
-    padding: 15px;
+    width: 1000px;
+    padding: 5px;
     margin: -30px auto 0 auto;
     /* color of search bar */
     background-color: white;
@@ -42,13 +42,13 @@ input, #submitSearch
 }
 
 #cover_rec {
-    position: absolute;
+    position: relative;
     top: 30%;
-    /* left: -1200px; */
-    left: -75%;
+    /*left: -400px;*/
+    left: -30%;
     right: 0;
-    width: 500px;
-    padding: 15px;
+    width: 1000px;
+    padding: 5px;
     margin: -30px auto 0 auto;
     /* color of search bar */
     background-color: white;

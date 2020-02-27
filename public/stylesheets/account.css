@@ -172,3 +172,31 @@ body {
   width: 100px;
   height: 50px;
 }
+.navbar {
+  width: 100%;
+  background-color: rgb(34, 32, 32);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 23.4%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

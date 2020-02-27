@@ -69,39 +69,57 @@ function openAccTab(event, tab) {
 	evt.currentTarget.className += " active";
 }
 
-function init(){
+function init() {
 	var queryString = decodeURIComponent(window.location.search);
 	queryString = queryString.substring(1);
 	var queries = queryString.split("=");
 	var username = queries[1];
 	$.post("/initacct?username=" + username,
-	function (user) {
-		document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
-		document.getElementById('bio').innerHTML = user[0].BIO;
-	});
+		function (user) {
+			document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
+			document.getElementById('bio').innerHTML = user[0].BIO;
+		});
 	document.getElementById("default").click();
 }
 
-function changePassword(){
-	var oldpw = document.getElementById('old-pw').value; 
+function changePassword() {
+	var oldpw = document.getElementById('old-pw').value;
 	var newpw = document.getElementById('new-pw').value;
 	var queryString = decodeURIComponent(window.location.search);
 	queryString = queryString.substring(1);
 	var queries = queryString.split("=");
 	var username = queries[1];
-	$.post("/changePassword?username=" + username + "&old=" + oldpw + "&new=" + newpw, 
-	function(user){
-		if(user[0] != null){
-			alert("Maika'i! You've successfully changed password.");
-			document.getElementById('old-pw').value = '';
-			document.getElementById('new-pw').value = '';
-		}
-		else{
-			alert("Incorrect password. Hana hou!");
-		}
-	});
+	$.post("/changePassword?username=" + username + "&old=" + oldpw + "&new=" + newpw,
+		function (user) {
+			if (user[0] != null) {
+				alert("Maika'i! You've successfully changed password.");
+				document.getElementById('old-pw').value = '';
+				document.getElementById('new-pw').value = '';
+			}
+			else {
+				alert("Incorrect password. Hana hou!");
+			}
+		});
 }
 
+function isLoggedIn(menu_type) {
+	var queryString = decodeURIComponent(window.location.search);
+	queryString = queryString.substring(1);
+	var queries = queryString.split("=");
+	var username = queries[1];
+	if (menu_type == "eventpage") {
+		window.location.href = "eventpage.html?username=" + username;
+	}
+	else if(menu_type == 'artpage'){
+		window.location.href = "artpage.html?username=" + username;
+	}
+	else if(menu_type == 'servicepage'){
+		window.location.href = "servicepage.html?username=" + username;
+	}
+	else if(menu_type == 'recreationpage'){
+		window.location.href = "recreationpage.html?username=" + username;
+	}
+}
 /*
 	version: 23 FEB 2020
 	TODO:

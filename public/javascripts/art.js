@@ -59,6 +59,10 @@ function init() {
 function displayInfo(title) { // display art info
     $.post('/retrieveArtInfo?title=' + title, function(info){
         if(info[0] != null){
+            // FAVORITES BUTTON FUNCTIONALITY TO BE ADDED LATER
+            //var saved_btn = document.createElement("BUTTON");
+            //saved_btn.innerHTML = "FAVORITE";
+            //$.post('/account')
             var description = "<p>" + info[0].DESCRIPTION + "</p>";
             var date = info[0].DATE;
             var creator = info[0].CREATOR;

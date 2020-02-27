@@ -11,7 +11,7 @@ function login(){
             window.location.href = "accountpage.html" + queryString; // automatically go to account page
             // TODO: need to create a log out button as well
         } else{
-            document.getElementById('invalidLogin').innerHTML = "Invalid Username or Password";
+            document.getElementById('invalidLogin').innerHTML = "Invalid Username or Password!";
         }
     });
 }

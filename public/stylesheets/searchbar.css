@@ -19,6 +19,45 @@ input, #submitSearch
     margin: 0;
     border: 0;
     background-color: transparent;
+    font-size: 3em;
+}
+
+#cover_art {
+    position: absolute;
+    top: 30%;
+    /* left: -1200px; */
+    left: -75%;
+    right: 0;
+    width: 500px;
+    padding: 15px;
+    margin: -30px auto 0 auto;
+    /* color of search bar */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px #87ceeb;
+    transform: scale(0.5);
+    opacity: 75%;
+    /* change max width to format well on Grants computer */
+    max-width: 75%;
+}
+
+#cover_rec {
+    position: absolute;
+    top: 30%;
+    /* left: -1200px; */
+    left: -75%;
+    right: 0;
+    width: 500px;
+    padding: 15px;
+    margin: -30px auto 0 auto;
+    /* color of search bar */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px #87ceeb;
+    transform: scale(0.5);
+    opacity: 75%;
+    /* change max width to format well on Grants computer */
+    max-width: 75%;
 }
 
 #cover
@@ -54,7 +93,7 @@ form
     color: black;
 }
 
-input[type="text"]::placeholder
+.searchBar::placeholder
 {
     color: black;
 }

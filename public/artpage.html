@@ -1,4 +1,4 @@
-<!-- Team Rust Home Page -->
+<!-- Team Rust Art Page -->
 <!DOCTYPE html>
 <html>
 
@@ -10,12 +10,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+
     <link rel="stylesheet" type="text/css" href="stylesheets/arttable.css" />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/css/ol.css" type="text/css"/>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/build/ol.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="javascripts/searchbar_art.js"></script>
+    <script src="javascripts/art.js"></script>
+    <script src="javascripts/searchbar_artpage.js"></script>
+
     <style>
         .map {
             height: 500px;
@@ -24,7 +28,9 @@
         }
     </style>
 </head>
+
 <script src="javascripts/art.js"> </script>
+
 
 <body onload="init()">
 
@@ -90,12 +96,12 @@
     </div>
 
     <!-- search bar artpage -->
-    <div id="cover">
+    <div id="cover_art">
         <form method="get" action="">
             <div class="tb">
                 <div class="td"><input id="searchbar_input_art" type="text" placeholder="Search" required></div>
                 <div class="td" id="s-cover">
-                    <button type="submit" id="submitSearch" onclick="searchArt()">
+                    <button type="submit" id="submitSearch" onclick="searchArtPage()">
                         <div id="s-circle"></div>
                         <span></span>
                     </button>

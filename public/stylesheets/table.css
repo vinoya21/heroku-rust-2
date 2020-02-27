@@ -1,10 +1,10 @@
-.displaytable {
+#arttable {
     border: 1px solid black;
     width: 25%;
     overflow-y: auto;
 }
 
-.displaytext {
+#displaytext {
     border: 1px solid black;
     width: 75%;
 }

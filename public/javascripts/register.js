@@ -22,23 +22,50 @@ function register(){
     }
     if(validLogin){
         $.post("/register?username=" +username +'&password=' +password +'&firstName=' +firstName +'&lastName=' +lastName +'&email=' +email, function(data){
-            alert(data);
+            alert("Your Makaleha account has been created.")
         });
+    }
+    else{
+        alert("You have invalid entries.")
     }
 }
 
 function validUsername(a){
+    if(a == ''){
+        return false;
+    }
     return true;
 }
 function validFirstName(a){
+    var num = /^\d+$/;
+    if(a == ''){ // empty 
+        return false;
+    }
+    else if(num.test(a)){ // contains digit
+        return false;
+    }
     return true;
 }
 function validLastName(a){
+    var num = /^\d+$/;
+    if(a == ''){
+        return false;
+    }
+    else if(num.test(a)){
+        return false;
+    }
     return true;
 }
 function validEmail(a){
-    return true;
+    var email = /[A-Za-z0-9]+@[A-Za-z]+.(edu|com)/
+    if(email.test(a)){
+        return true;
+    }
+    return false;
 }
 function validPassword(a){
+    if(a == ''){
+        return false;
+    }
     return true;
 }

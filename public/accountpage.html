@@ -29,12 +29,12 @@
     <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png"
       alt="Makaleha Logo" width="300" height="140" />
   </center>
-  <ul class="top">
-    <li><a href="#Event">Events</a></li>
-    <li><a href="#Art">Artwork</a></li>
-    <li><a href="#Rec">Outdoor Activities</a></li>
-    <li><a href="#Service">Community Service</a></li>
-  </ul>
+  <div class="navbar">
+    <a onclick="isLoggedIn('eventpage')"> Events</a>
+    <a onclick="isLoggedIn('artpage')">Artwork</a>
+    <a onclick="isLoggedIn('recreationpage')">Outdoor Activities</a>
+    <a onclick="isLoggedIn('servicepage')">Community Service</a>
+</div>
 
   <div class="tab">
     <button class="tablinks" onclick="openAccTab(event,'Profile')" id="default">Profile</button>
@@ -84,5 +84,5 @@
   - Email/Notification functionality
   - Privacy Settings functionality
   - Password *** instead of '123' for user privacy 
-  - center nav page menu bar
+  - center nav page menu bar (completed)
 -->

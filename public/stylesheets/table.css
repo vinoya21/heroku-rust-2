@@ -1,0 +1,11 @@
+#arttable {
+    border: 1px solid black;
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#displaytext {
+    border: 1px solid black;
+    width: 75%;
+}

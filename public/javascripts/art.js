@@ -1,15 +1,15 @@
 function init() {
     $.post('/retrieveart', function (art) { // POST for art info
         // set table attributes for all art in db
-        var table = document.createElement('TABLE');
-        table.setAttribute("border", "1");
-        table.setAttribute("frame", "void");
-        table.setAttribute("rules", "rows");
-        table.setAttribute("width", "600");
-        table.setAttribute("id", "arttable");
+        //var table = document.createElement('TABLE');
+        //table.setAttribute("border", "1"); //did this
+        //table.setAttribute("frame", "void"); //did this
+        //table.setAttribute("rules", "rows"); //did this
+        //table.setAttribute("width", "600"); //did this
+        //table.setAttribute("id", "arttable"); //did this
 
         // adds table to designated div
-        document.getElementById('artdisplay').appendChild(table);
+        //document.getElementById('artdisplay').appendChild(table);
         // loop through all art objects 
         for (var i = 1; i < art.length; i++) {
             if (art[i].TITLE != '') { // don't want art with no title
@@ -42,9 +42,9 @@ function init() {
         */
        // add table to display art info
        var infoTable = document.createElement("TABLE");
-       infoTable.setAttribute("width", "600");
+       infoTable.setAttribute("width", "700");
        infoTable.setAttribute("id", "infotable");
-       document.getElementById('artdisplay').appendChild(infoTable);
+       document.getElementById('displaytext').appendChild(infoTable);
        var x = document.createElement("TR");
        x.setAttribute("id","row");
        document.getElementById("infotable").appendChild(x);

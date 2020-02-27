@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Makaleha Home Page</title>
   <script src="javascripts/login.js"></script>
+  <script src="javascripts/register.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
@@ -48,7 +49,7 @@
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
-        <span class="psw" color="red" id="invalidLogin"></span>
+        <span class="psw"><font color="red" id="invalidLogin"></font></span>
       </div>
 
       <div class="container">
@@ -86,7 +87,8 @@
       </div>
 
       <div class="container">
-        <span class="registrationButton"><button onclick="login()">Complete Registration</button></span>
+        <span class="su"><font color="red" id="invalidSignUp"></font></span>
+        <span class="registrationButton"><button onclick="register()">Complete Registration</button></span>
       </div>
     </div>
   </div>

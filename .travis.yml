@@ -3,5 +3,6 @@ node_js:
   - 12
 install:
   - npm install -g codecov
+  - npm install -g jest
 script:
   - npm test

@@ -69,7 +69,11 @@ function openAccTab(event, tab) {
 	evt.currentTarget.className += " active";
 }
 
-function init() {
+function initUser() {
+	if(localStorage.getItem('username') != null){
+		
+	} //retrieve info needed
+	/*
 	var queryString = decodeURIComponent(window.location.search);
 	queryString = queryString.substring(1);
 	var queries = queryString.split("=");
@@ -79,7 +83,18 @@ function init() {
 			document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
 			document.getElementById('bio').innerHTML = user[0].BIO;
 		});
-	document.getElementById("default").click();
+	document.getElementById("default").click();*/
+}
+
+function init(){
+	if(localStorage.getItem('username') != null){
+		var currentPage = window.location.href;
+		console.log(currentPage);
+		if(currentPage == "http://localhost:3000/"){
+			window.location = currentPage +"indexUser.html";
+		}
+		window.location = currentPage.replace(".html", "User.html");
+	} //redirect to logged in page if logged in
 }
 
 function changePassword() {

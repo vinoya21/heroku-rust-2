@@ -12,15 +12,16 @@
 
 <script src="javascripts/account.js"> </script>
 
-<body onload="init()"> <!-- retrieve user info in USERS database on load -->
+<script src="javascripts/logout.js"> </script>
+
+<body onload="initUser()"> <!-- retrieve user info in USERS database on load -->
 
   <div class="leftt">
     <button class="top-btn" type="button" id="review" onclick="window.location.href = 'reviewpage.html';">Make a review</button>
   </div>
 
   <div class="rightt">
-    <button class="top-btn" type="button" id="account">Account</button><br><br><br>
-    <button onclick="window.location.href = 'index.html';" class="top-btn" type="button" id="logout">Log out</button>
+    <button onclick="logout()" class="top-btn" type="button" id="logout">Log out</button>
   </div> <!-- set log out to go back to index.html -->
 
   <center>

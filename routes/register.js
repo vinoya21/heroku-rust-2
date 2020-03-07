@@ -1,5 +1,6 @@
 //Pelenalako Kamala
 var express = require('express');
+var bcrypt = require('bcryptjs');
 var router = express.Router();
 //connecting to database to insert data
 var dbms = require('./dbms.js');
@@ -32,7 +33,8 @@ router.post('/', function (req, res) {
                     }
                     //if no matching username or email, adds info to users table, and returns success
                     if (validRegistration == true) {
-                        dbms.dbquery("INSERT INTO USERS (USERNAME, FIRSTNAME, LASTNAME, EMAIL, PASSWORD) VALUES ('" + req.query.username + "','" + req.query.firstName + "','" + req.query.lastName + "','" + req.query.email + "','" + req.query.password + "')",
+                        hashedPassword = bcrypt.hash(req.query.password, 10);
+                        dbms.dbquery("INSERT INTO USERS (USERNAME, FIRSTNAME, LASTNAME, EMAIL, PASSWORD) VALUES ('" + req.query.username + "','" + req.query.firstName + "','" + req.query.lastName + "','" + req.query.email + "','" + hashedPassword + "')",
                             function (error, result) {
                                 if (error) {
                                     console.log("ERROR: " + error);

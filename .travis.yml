@@ -4,5 +4,6 @@ node_js:
 install:
   - npm install -g codecov
   - npm install -g jest
+  - npm install -g jquery
 script:
   - npm test

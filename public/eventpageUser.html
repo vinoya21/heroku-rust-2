@@ -5,15 +5,25 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Makaleha Review Page</title>
+  <title>Makaleha Event Page</title> 
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/login.css" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/css/ol.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.0/build/ol.js"></script>
+  <script src="javascripts/logout.js"></script>
   <!-- comment out sources for later use
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <style>
+    .map {
+      height: 500px;
+      width: 100%;
+      padding: 0px;
+    }
+  </style>
 </head>
 
-<body onload="init()">
+<body>
 
   <!-- top buttons: "write a review", log in, and sign up -->
   <div class="left">
@@ -22,10 +32,9 @@
   </div>
 
   <div class="right">
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:100px" id="login">Log
-      in</button><br><br><br>
-    <button type="button" style="width:100px" id="signup">Sign up</button>
-  </div>
+    <button onclick="window.location.href = 'accountpage.html';" class="top-btn" type="button" id="account">Account</button><br><br><br>
+    <button onclick="logout()" class="top-btn" type="button" id="logout">Log out</button>
+  </div> <!-- set log out to go back to index.html -->
 
   <!-- log in pop up -->
   <div id="id01" class="modal">
@@ -70,7 +79,21 @@
     <a href="recreationpage.html">Outdoor Activities</a>
     <a href="servicepage.html">Community Service</a>
   </div>
-  
+  <div id="map" class="map"></div>
+  <script type="text/javascript">
+    var map = new ol.Map({
+      target: 'map',
+      layers: [
+          new ol.layer.Tile({
+              source: new ol.source.OSM()
+          })
+      ],
+      view: new ol.View({
+        center: ol.proj.fromLonLat([-158.0001, 21.4389]),
+        zoom: 10.0
+      })
+    });
+  </script>
 </body>
 
 </html>

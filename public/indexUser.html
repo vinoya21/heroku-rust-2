@@ -13,10 +13,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
   <script src="javascripts/searchbar.js"></script>
-  <script src="javascripts/account.js"></script>
+  <script src="javascripts/logout.js"></script>
 </head>
 
-<body onload="init()">
+<body>
 
   <!-- top buttons: "write a review", log in, and sign up -->
   <div class="left">
@@ -24,11 +24,10 @@
       review</button>
   </div>
 
-  <div id="loginbtns" class="right">
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:100px" id="login">Log
-      in</button><br><br><br>
-    <button onclick="document.getElementById('id02').style.display='block'" type="button" style="width:100px" id="signup">Register</button>
-  </div>
+  <div class="right">
+    <button onclick="window.location.href = 'accountpage.html';" class="top-btn" type="button" id="account">Account</button><br><br><br>
+    <button onclick="logout()" class="top-btn" type="button" id="logout">Log out</button>
+  </div> <!-- set log out to go back to index.html -->
 
   <!-- log in pop up -->
   <div id="id01" class="modal">

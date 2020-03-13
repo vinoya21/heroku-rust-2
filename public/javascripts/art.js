@@ -21,9 +21,14 @@ function init() {
 
                 // add to table
                 document.getElementById("arttable").appendChild(x);
+            
 
                 // create column w/ info
                 var y = document.createElement("TD");
+
+                // put newly created element in the art class
+                y.className = "artclass";
+
                 var t = document.createTextNode(title);
                 y.appendChild(t);
                 document.getElementById("'entry" + i + "'").appendChild(y);
@@ -86,6 +91,21 @@ function displayInfo(title) { // display art info
         }
     });
 }
+
+function search_art() {
+    let input = document.getElementById('searchbar_input_art').value 
+    input=input.toLowerCase(); 
+    let x = document.getElementsByClassName('artclass'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+            x[i].style.display="table-cell";                  
+        } 
+    } 
+} 
 
 
 

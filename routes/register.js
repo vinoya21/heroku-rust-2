@@ -33,7 +33,7 @@ router.post('/', function (req, res) {
                     }
                     //if no matching username or email, adds info to users table, and returns success
                     if (validRegistration == true) {
-                        hashedPassword = bcrypt.hash(req.query.password, 10);
+                        const hashedPassword = bcrypt.hashSync(req.query.password, 10);
                         dbms.dbquery("INSERT INTO USERS (USERNAME, FIRSTNAME, LASTNAME, EMAIL, PASSWORD) VALUES ('" + req.query.username + "','" + req.query.firstName + "','" + req.query.lastName + "','" + req.query.email + "','" + hashedPassword + "')",
                             function (error, result) {
                                 if (error) {

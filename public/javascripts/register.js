@@ -27,11 +27,11 @@ function register(){
                 localStorage.setItem('username', username);
                 window.location.href = "indexUser.html";
             }else if(data == "usernameFound=trueemailFound=false"){
-                
+                alert("username already exists");
             }else if(data == "usernameFound=falseemailFound=true"){
-
+                alert("email already exists");
             }else{
-
+                alert("username and email already exist");
             }
             
         }); //creates user in database logs them in and brings them to homepage
@@ -41,7 +41,8 @@ function register(){
 }
 
 function validUsername(a){
-    if(a == ''){
+    if(a.length < 4){
+        alert("minimum username length of 4");
         return false;
     }
     return true;
@@ -74,7 +75,8 @@ function validEmail(a){
     return false;
 }
 function validPassword(a){
-    if(a == ''){
+    if(a.length < 8){
+        alert("minimum password length of 8");
         return false;
     }
     return true;

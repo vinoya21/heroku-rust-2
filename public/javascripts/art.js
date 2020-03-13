@@ -105,6 +105,8 @@ function search_art() {
             x[i].style.display="table-cell";                  
         } 
     } 
+
+    
 } 
 
 

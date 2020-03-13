@@ -2,7 +2,10 @@ function login(){
     var username = document.getElementById('loginUsername').value;
     var password = document.getElementById('loginPassword').value;
     $.post("/login?username=" +username +'&password=' +password, function(data){
-        if(data[0] != null){
+        if(data == null){
+            document.getElementById('loginPassword').value = '';
+            document.getElementById('invalidLogin').innerHTML = "Invalid Username or Password!";
+        } else{
             document.getElementById('id01').style.display='none';
             localStorage.setItem('username', username);
             window.location.href = "indexUser.html";
@@ -15,8 +18,6 @@ function login(){
             window.location.href = "accountpage.html" + queryString; // automatically go to account page
             // TODO: need to create a log out button as well
             */
-        } else{
-            document.getElementById('invalidLogin').innerHTML = "Invalid Username or Password!";
         }
     });
 }

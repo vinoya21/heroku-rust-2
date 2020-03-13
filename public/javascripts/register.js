@@ -22,16 +22,27 @@ function register(){
     }
     if(validLogin){
         $.post("/register?username=" +username +'&password=' +password +'&firstName=' +firstName +'&lastName=' +lastName +'&email=' +email, function(data){
-            alert("Your Makaleha account has been created.")
-        });
-    }
-    else{
-        alert("You have invalid entries.")
-    }
+            if(data == "success"){
+                document.getElementById('id02').style.display='none';
+                localStorage.setItem('username', username);
+                window.location.href = "indexUser.html";
+            }else if(data == "usernameFound=trueemailFound=false"){
+                alert("username already exists");
+            }else if(data == "usernameFound=falseemailFound=true"){
+                alert("email already exists");
+            }else{
+                alert("username and email already exist");
+            }
+            
+        }); //creates user in database logs them in and brings them to homepage
+    } else{
+        
+    } //do nothing
 }
 
 function validUsername(a){
-    if(a == ''){
+    if(a.length < 4){
+        alert("minimum username length of 4");
         return false;
     }
     return true;
@@ -64,7 +75,8 @@ function validEmail(a){
     return false;
 }
 function validPassword(a){
-    if(a == ''){
+    if(a.length < 8){
+        alert("minimum password length of 8");
         return false;
     }
     return true;

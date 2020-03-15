@@ -89,38 +89,34 @@ function displayInfo(title) { // display art info
             }
             var location = info[0].LOCATIONNAME;
             var discipline = info[0].DISCIPLINE;
-            document.getElementById('textinfo').innerHTML += "<h2>" + title + "</h2>" + creatorInfo
+            document.getElementById('textinfo').innerHTML = "<h2>" + title + "</h2>" + creatorInfo
                 + location + description;
         }
     });
 }
 
-function checkFavorites(user, title) { // error starts here
+function checkFavorites(user, title) { 
     $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
-        // unable to return true or false? weird!!
-        alert(result[0].FAVORITES);
-        var foundTitle = false; 
-        if(result[0].FAVORITES != null){
+        var foundTitle = false;
+        if (result[0].FAVORITES != null) {
             favoriteList = (result[0].FAVORITES).split(",");
-            for(var i = 0; i < favoriteList.length; i++){
-                if(favoriteList[i] == title){
-                    foundTitle = true; 
+            for (var i = 0; i < favoriteList.length; i++) {
+                if (favoriteList[i] == title) {
+                    foundTitle = true;
                 }
             }
         }
         if (foundTitle) {
-            alert("saved button");
-            document.getElementById('textinfo').innerHTML = "<button id='fav' class='saved-btn'> FAVORITE </button><br><br>";
-            document.getElementById("fav").addEventListener('click', removeItem, false); 
-            document.getElementById("fav").username = user; 
-            document.getElementById("fav").title = title; 
+            document.getElementById('textinfo').innerHTML += "<button id='fav' class='saved-btn'> FAVORITE </button><br><br>";
+            document.getElementById("fav").addEventListener('click', removeItem, false);
+            document.getElementById("fav").username = user;
+            document.getElementById("fav").title = title;
         }
         else {
-            alert("unsaved button");
-            document.getElementById('textinfo').innerHTML = "<button id='fav' class='unsaved-btn'> FAVORITE </button><br><br>";
-            document.getElementById("fav").addEventListener('click', addItem, false); 
-            document.getElementById("fav").username = user; 
-            document.getElementById("fav").title = title; 
+            document.getElementById('textinfo').innerHTML += "<button id='fav' class='unsaved-btn'> FAVORITE </button><br><br>";
+            document.getElementById("fav").addEventListener('click', addItem, false);
+            document.getElementById("fav").username = user;
+            document.getElementById("fav").title = title;
         }
     });
 }
@@ -129,21 +125,19 @@ FIXED ISSUE WITH NOT GOING IN ADDITEM AND REMOVEITEM FUNCTION
 https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlistener-listener-function.
 */
 function addItem(evt) {
-    alert("attempting to add"); // IT'S NOT EVEN GOING IN HERE
-    var user = evt.currentTarget.username; 
-    var title = evt.currentTarget.title;  
-    alert(user);
+    var user = evt.currentTarget.username;
+    var title = evt.currentTarget.title;
     $.post("/changeFavorites?type=add&user=" + user + "&title=" + title, function (result) {
     });
+    displayInfo(title); 
 }
 
 function removeItem(evt) {
-    alert("attempting to remove");
-    var user = evt.currentTarget.username; 
-    var title = evt.currentTarget.title;  
+    var user = evt.currentTarget.username;
+    var title = evt.currentTarget.title;
     $.post("/changeFavorites?type=remove&user=" + user + "&title=" + title, function (result) {
-
     });
+    displayInfo(title); 
 }
 
 function search_art() {

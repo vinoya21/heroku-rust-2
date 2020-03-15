@@ -35,8 +35,22 @@ router.post('/', function (req, res, next) {
                 });
             }
         }
-        else if (type == "remove") {
-
+        else if (type == "remove") { // need to do removal !!
+            var favoriteList = (result[0].FAVORITES).split(",");
+            var removeList = '';
+            for(var i = 0; i < favoriteList.length; i++){
+                if(favoriteList[i] != title){
+                    if(removeList == ''){
+                        removeList += favoriteList[i];
+                    }
+                    else{
+                        removeList += "," + favoriteList[i]; 
+                    }
+                }
+            }
+            db.dbquery("UPDATE USERS SET FAVORITES='" + removeList + "' WHERE USERNAME='" + user + "'", function (err, result) {
+                console.log("Successfully removed new favorite: " + title);
+            });
         }
     });
 });

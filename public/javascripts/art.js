@@ -44,12 +44,6 @@ function init() {
         y.appendChild(t);
         document.getElementById("row").appendChild(y);
     });
-    if (localStorage.getItem('username') != null) {
-        setLoggedIn();
-    }
-    else {
-        setLoggedOut();
-    }
 }
 
 function displayInfo(title) { // display art info
@@ -75,18 +69,7 @@ function displayInfo(title) { // display art info
             // FAVORITES BUTTON FUNCTIONALITY TO BE ADDED LATER
             var user = localStorage.getItem('username');
             if (user != null) {
-                if (checkFavorites(user, newtitle)) {
-                    document.getElementById('textinfo').innerHTML = "<button id='fav' class='saved-btn'> FAVORITE </button><br><br>";
-                    document.getElementById("fav").addEventListener('click', function () {
-                        removeItem(user, newtitle);
-                    });
-                }
-                else {
-                    document.getElementById('textinfo').innerHTML = "<button id='fav' class='unsaved-btn'> FAVORITE </button><br><br>";
-                    document.getElementById("fav").addEventListener('click', function () {
-                        addItem(user, newtitle);
-                    });
-                }
+                checkFavorites(user, newtitle);
             }
             var description = "<p>" + info[0].DESCRIPTION + "</p>";
             var date = info[0].DATE;
@@ -112,25 +95,53 @@ function displayInfo(title) { // display art info
     });
 }
 
-function checkFavorites(user, title){
-    $.post("/retrieveFavorite?user=" + user + "&title=" + title, function(result){
-        if(result[0] != ''){
-            return true; 
+function checkFavorites(user, title) { // error starts here
+    $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
+        // unable to return true or false? weird!!
+        alert(result[0].FAVORITES);
+        var foundTitle = false; 
+        if(result[0].FAVORITES != null){
+            favoriteList = (result[0].FAVORITES).split(",");
+            for(var i = 0; i < favoriteList.length; i++){
+                if(favoriteList[i] == title){
+                    foundTitle = true; 
+                }
+            }
         }
-    }); 
-    return false; 
+        if (foundTitle) {
+            alert("saved button");
+            document.getElementById('textinfo').innerHTML = "<button id='fav' class='saved-btn'> FAVORITE </button><br><br>";
+            document.getElementById("fav").addEventListener('click', removeItem, false); 
+            document.getElementById("fav").username = user; 
+            document.getElementById("fav").title = title; 
+        }
+        else {
+            alert("unsaved button");
+            document.getElementById('textinfo').innerHTML = "<button id='fav' class='unsaved-btn'> FAVORITE </button><br><br>";
+            document.getElementById("fav").addEventListener('click', addItem, false); 
+            document.getElementById("fav").username = user; 
+            document.getElementById("fav").title = title; 
+        }
+    });
 }
-
-function addItem(user, title){
+/*
+FIXED ISSUE WITH NOT GOING IN ADDITEM AND REMOVEITEM FUNCTION
+https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlistener-listener-function.
+*/
+function addItem(evt) {
     alert("attempting to add"); // IT'S NOT EVEN GOING IN HERE
-    $.post("/changeFavorites?type=add&user=" + user + "&title=" + title, function(result){
-
+    var user = evt.currentTarget.username; 
+    var title = evt.currentTarget.title;  
+    alert(user);
+    $.post("/changeFavorites?type=add&user=" + user + "&title=" + title, function (result) {
     });
 }
 
-function removeItem(user, title){
+function removeItem(evt) {
     alert("attempting to remove");
-    $.post("/changeFavorites?type=remove&user=" + user + "&title=" + title, function(result){
+    var user = evt.currentTarget.username; 
+    var title = evt.currentTarget.title;  
+    $.post("/changeFavorites?type=remove&user=" + user + "&title=" + title, function (result) {
 
     });
 }

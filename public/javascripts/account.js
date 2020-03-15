@@ -67,8 +67,10 @@ function openAccTab(event, tab) {
 }
 
 function initUser() {
-	if(localStorage.getItem('username') != null){
-		$.post("/initacct", function (user) {
+	username = localStorage.getItem('username');
+	if(username != null){
+		alert(username);
+		$.post("/initacct?username=" + username, function (user) {
 			document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
 			document.getElementById('bio').innerHTML = user[0].BIO;
 		});

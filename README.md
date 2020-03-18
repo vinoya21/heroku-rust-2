@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/upcs/sprint-0-sq19-kamala21.svg?branch=master)](https://travis-ci.org/upcs/sprint-0-sq19-kamala21) [![codecov](https://codecov.io/gh/upcs/cs341-project-ss2020-rust/branch/master/graph/badge.svg)](https://codecov.io/gh/upcs/cs341-project-ss2020-rust)
+
 Software Requirements Specification
 for
 Makaleha

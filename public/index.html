@@ -6,18 +6,17 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Makaleha Home Page</title>
-  <!--
-    <link rel="stylesheet" href="stylesheets/style.css">
-    -->
-
-  <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
-  <script src="javascripts/functions.js"></script>
-
-  <!-- comment out sources for later use
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="javascripts/login.js"></script>
+  <script src="javascripts/register.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <script src="javascripts/searchbar.js"></script>
+  <script src="javascripts/account.js"></script>
 </head>
 
-<body>
+<body onload="init()">
 
   <!-- top buttons: "write a review", log in, and sign up -->
   <div class="left">
@@ -25,16 +24,16 @@
       review</button>
   </div>
 
-  <div class="right">
+  <div id="loginbtns" class="right">
     <button onclick="document.getElementById('id01').style.display='block'" style="width:100px" id="login">Log
       in</button><br><br><br>
-    <button type="button" style="width:100px" id="signup">Sign up</button>
+    <button onclick="document.getElementById('id02').style.display='block'" type="button" style="width:100px" id="signup">Register</button>
   </div>
 
   <!-- log in pop up -->
   <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="modal-content animate">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
           title="Close Modal">&times;</span>
@@ -42,34 +41,67 @@
       </div>
 
       <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label ><b>Username</b></label>
+        <input type="text" class="inputText" placeholder="Enter Username" id="loginUsername">
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label ><b>Password</b></label>
+        <input type="password" class="inputText" placeholder="Enter Password" id="loginPassword">
 
-
-        <button type="submit">Login</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+        <span class="psw"><font color="red" id="invalidLogin"></font></span>
       </div>
 
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'"
-          class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+      <div class="container">
+        <button onclick="login()">Login</button>
+        <span class="psw"><a href="#">Forgot password?</a></span>
       </div>
-    </form>
+    </div>
+  </div>
+
+  <!-- sign up pop up -->
+  <div id="id02" class="modal">
+
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <h><b>Create Your Makaleha Account</b></h>
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+      </div>
+
+      <div class="container">
+        <label ><b>Username</b></label>
+        <input type="text" class="inputText" placeholder="Enter Username" id="signupUsername">
+
+        <label ><b>First Name</b></label>
+        <input type="text" class="inputText" placeholder="Enter First Name" id="signupFirstName">
+
+        <label ><b>Last Name</b></label>
+        <input type="text" class="inputText" placeholder="Enter Last Name" id="signupLastName">
+
+        <label ><b>Email</b></label>
+        <input type="text" class="inputText" placeholder="Enter Email" id="signupEmail">
+
+        <label ><b>Password</b></label>
+        <input type="password" class="inputText" placeholder="Enter Password" id="signupPassword">
+      </div>
+
+      <div class="container">
+        <span class="su"><font color="red" id="invalidSignUp"></font></span>
+        <span class="registrationButton"><button onclick="register()">Complete Registration</button></span>
+      </div>
+    </div>
   </div>
 
   <!-- search bar -->
   <div id="cover">
     <form method="get" action="">
       <div class="tb">
-        <div class="td"><input type="text" placeholder="Search" required></div>
+
+        <div class="td"><input id="searchbar_input" type="text" placeholder="Search" required></div>
         <div class="td" id="s-cover">
-          <!-- <button type="submit" id="searchSubmit"> -->
+          <button type="submit" id="submitSearch" onclick="search()">
           <div id="s-circle"></div>
           <span></span>
           </button>

@@ -1,57 +1,114 @@
-<!-- Team Rust Review Page -->
+<!-- Team Rust Home Page -->
 <!DOCTYPE html>
 <html>
 
 
 <head>
-    <title>Makaleha Review Page</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <style>
-        button {
-                position: absolute;
-            }
-
-            .right {
-                position: absolute;
-                right: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-
-            .left {
-                position: absolute;
-                left: 0px;
-                width: 100px;
-                padding: 10px;
-            }
-    </style>
-    <!-- comment out sources for later use
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Makaleha Review Page</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <script src="javascripts/login.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="javascripts/functions.js"></script> -->
 </head>
-<body>
 
-<div class="left">
-    <button type="button" id="review">Make a review</button>
-</div>
+<body onload="init()">
 
-<div class="right">
-    <button type="button" id="account">Account</button><br>
-    <button type="button" id="logout">Log out</button>
-</div>
+  <!-- top buttons: "write a review", log in, and sign up -->
+  <div class="left">
+    <button type="button" style="width:100px" id="review" onclick="window.location.href = 'reviewpage.html';">Write a
+      review</button>
+  </div>
 
-<center>
-    
-    <!-- TODO: Resize image in CSS to fit the page more -->
-    <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png" alt="Makaleha Logo" width="300"
-      height="140" />
-</center>
-<ul>
-    <li><a href="eventpage.html">Events</a></li>
-    <li><a href="artpage.html">Artwork</a></li>
-    <li><a href="recreationpage.html">Outdoor Activities</a></li>
-    <li><a href="servicepage.html">Community Service</a></li>
-</ul>
-<!-- need images to use for homepage -->
+  <div id="loginbtns" class="right">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:100px" id="login">Log
+      in</button><br><br><br>
+    <button onclick="document.getElementById('id02').style.display='block'" type="button" style="width:100px"
+      id="signup">Register</button>
+  </div>
+
+  <!-- log in pop up -->
+  <div id="id01" class="modal">
+
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" class="inputText" placeholder="Enter Username" id="loginUsername">
+
+        <label><b>Password</b></label>
+        <input type="password" class="inputText" placeholder="Enter Password" id="loginPassword">
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw">
+          <font color="red" id="invalidLogin"></font>
+        </span>
+      </div>
+
+      <div class="container">
+        <button onclick="login()">Login</button>
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- sign up pop up -->
+  <div id="id02" class="modal">
+
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <h><b>Create Your Makaleha Account</b></h>
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+      </div>
+
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" class="inputText" placeholder="Enter Username" id="signupUsername">
+
+        <label><b>First Name</b></label>
+        <input type="text" class="inputText" placeholder="Enter First Name" id="signupFirstName">
+
+        <label><b>Last Name</b></label>
+        <input type="text" class="inputText" placeholder="Enter Last Name" id="signupLastName">
+
+        <label><b>Email</b></label>
+        <input type="text" class="inputText" placeholder="Enter Email" id="signupEmail">
+
+        <label><b>Password</b></label>
+        <input type="password" class="inputText" placeholder="Enter Password" id="signupPassword">
+      </div>
+
+      <div class="container">
+        <span class="su">
+          <font color="red" id="invalidSignUp"></font>
+        </span>
+        <span class="registrationButton"><button onclick="register()">Complete Registration</button></span>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <!-- logo -->
+    <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png"
+      alt="Makaleha Logo" width="300" height="140" />
+  </center>
+  <!-- navigation bar i.e. page menu -->
+  <div class="navbar">
+    <a href="eventpage.html">Events</a>
+    <a href="artpage.html">Artwork</a>
+    <a href="recreationpage.html">Outdoor Activities</a>
+    <a href="servicepage.html">Community Service</a>
+  </div>
+
 </body>
+
 </html>

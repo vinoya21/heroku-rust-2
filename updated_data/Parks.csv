@@ -1,0 +1,433 @@
+﻿OBJECTID,PARK_TYPE,PARK_NAME,LEGAL_ACRES,ShapeSTArea,ShapeSTLength
+1,Neighborhood Park,Kapolei Green Neighborhood Park,5.62,244702.4057,1981.050582
+2,Community Park,Kamokila Community Park,5.88999987,260209.2167,2242.215542
+3,Botanical Garden,Wahiawa Botanical Garden,26.52000046,1155332.167,9161.595864
+4,District Park,George Fred Wright Wahiawa District Park,10.01000023,392086.2688,3775.887329
+5,Neighborhood Park,Kaala Neighborhood Park,2.16000009,95197.18636,1247.7382
+6,Beach ROW,Makau Street B,0.02,951.0705872,361.4675976
+7,Beach Park,Waiahole Beach Park (undeveloped),14.86999989,877596.4873,8432.993753
+8,Nature Park/Reserve,Waihee Valley Nature Park (undeveloped),149.5500031,6494333.918,13924.94895
+9,Neighborhood Park,Kahua O Waikalua NP (future),15.64999962,681741.7328,3384.046369
+10,Beach ROW,Kaluanui on Kam Hwy A,0.20999999,20396.34857,1464.009532
+11,Beach ROW,Kaluanui on Kam Hwy B,0.13,5895.767593,458.0190262
+12,Beach ROW,Kaalaea (undeveloped),0.44,19118.41399,829.3748018
+13,Beach ROW,Makau Street A,0.02,1139.508133,372.776802
+14,Beach ROW,Upena Street,0.01,1006.038849,348.4654379
+15,Beach ROW,Moua Street,0.02,1132.715149,384.620087
+16,Neighborhood Park,Melemanu Neighborhood Park,4.03999996,178297.7716,1675.046465
+17,Neighborhood Park,Kaomaaiku Neighborhood Park,12.38000011,534797.3866,3138.119493
+18,Golf Course,Pali Golf Course,215.8800049,9404354.954,16079.93811
+19,Beach ROW,Alaihi St,0.005,1930.681015,329.3204322
+20,Beach ROW,Puuone St,0.005,1448.438141,321.7934709
+21,Beach ROW,Wailea St,0.005,1359.693459,320.5053027
+22,Mini Park,Ieie Mini Park,0.11,5009.78643,349.7210951
+23,Neighborhood Park,Maunawili Neighborhood Park,4.21000004,178122.7363,1924.719499
+24,Neighborhood Park,Keolu Hills Neighborhood Park,6.34000015,278665.8295,2681.533981
+25,Beach Park,Sunset Point Beach Park (undeveloped),0.93000001,41986.22888,984.4098156
+26,Community Park,Manana Community Park and Youth Facility,8,611243.5059,3069.334796
+27,Golf Course,Ala Wai Golf Course Driving Range,7,305144.9876,2290.268515
+28,Golf Course,Ala Wai Golf Course Club House,0.89999998,39639.22192,1040.269152
+29,Neighborhood Park,Mililani Neighborhood Park,5,220967.6618,1990.208197
+30,Mini Park,Kamalii Mini Park,0.68000001,31242.56173,963.4171604
+31,Mini Park,Fort Street Mall Mini Park,0.16,6759.454323,361.5285065
+32,Mall,Union Street Mall,0.36000001,16410.37794,914.6153535
+33,Beach ROW,Oneula Place,0.03,1442.555748,494.8235396
+34,Mini Park,Archie Baker Mini Park,1.25999999,92266.31432,1637.21406
+35,Community Park,Dole Community Park,4.57999992,201441.1702,1832.649286
+36,Mini Park,Robert W. Wilcox Mini Park,0.31999999,13979.55082,515.3779764
+37,Mini Park,Makiki Street Mini Park,0.15000001,8151.51915,371.9915064
+38,Neighborhood Park,Hahaione Valley Neighborhood Park,6.15999985,271335.2284,2263.057824
+39,Mini Park,Piikoi Street Mini Park,0.11,5144.557175,306.5503801
+40,UrbanPark,Punahou Square,0.52999997,29668.1827,693.0344144
+41,District Park,Makiki District Park,8.69999981,379368.7301,3019.220621
+42,Neighborhood Park,Cartwright Neighborhood Park,2.36999989,102357.4582,1280.509152
+43,Community Park,Kalama Valley Community Park,6,263020.422,2122.102126
+44,Neighborhood Park,Kaupuni Neighborhood Park,7.51000023,327884.0316,2529.594531
+45,Community Park,Makaunulau Community Park,16.09000015,711188.5471,4147.666048
+46,Beach ROW,Mokulua Drive A,0.08,3677.52404,545.219682
+47,Neighborhood Park,Honowai Neighborhood Park,6.30999994,275456.1336,2219.736011
+48,Mini Park,Pohakupu Mini Park,3.53999996,154063.7166,1686.188991
+49,Mini Park,Pupuole Street Mini Park,7.92999983,321636.4015,3326.545461
+50,Beach ROW,Au Street A,0.04,1552.286987,282.8210995
+51,Beach Park,Aweoweo Beach Park,1.42999995,60659.12022,1134.768983
+52,Miscellaneous,Hawaii Kai Dog Park,1.833703,79834.70089,1270.551626
+53,Beach Park,Nanakuli Beach Park,39.63000107,1581036.186,17985.08282
+54,Beach Park,Makaleha Beach Park (undeveloped),27.71999931,1204944.204,5702.627849
+55,Neighborhood Park,Noholoa Neighborhood Park,7.26000023,316119.4664,2458.29132
+56,Community Park,Kaneohe Community Park,5.51000023,240317.0316,1962.271159
+57,Beach ROW,Kaneohe Bay Drive A,0.02,1005.165192,136.8070396
+58,District Park,Palolo Valley District Park,11.39000034,503054.1446,3528.206485
+59,Mini Park,Wilder Avenue Mini Park,0.04,2017.182831,173.0410145
+60,Miscellaneous,Pointer Fields,5,225586.5193,2165.083502
+61,Beach Park,Kahuku Point Beach Park (future),37,64067.76983,1020.341954
+62,UrbanPark,Old Stadium Park,9.17000008,319457.21,2984.031506
+63,Community Garden,Isenberg Street Community Garden,0.28,12242.06471,671.7716172
+64,Community Park,Asing Community Park,23.55999947,1026348.795,5442.605447
+65,Community Park,Fern Community Park,2.1400001,93495.05394,1290.137651
+66,Mini Park,Na Pueo Mini Park,3.13000011,74881.58821,1849.128576
+67,Beach ROW,Hoomana Place ,0.03,1394.854858,288.7354964
+68,Beach ROW,Alii Landing Shoreline Access,0.005,1269.928955,274.9063293
+69,Beach ROW,Oopuola Street,0.09,3435.559021,411.2236095
+70,Beach ROW,Kahauola Street,0.01,679.8964844,106.8511687
+71,Beach ROW,Huelo Street,0.03,1830.640747,223.2888887
+72,Neighborhood Park,Holanialii Neighborhood Park,4,174403.0017,1669.358892
+73,Neighborhood Park,Kealohi Neighborhood Park,4.01999998,177545.3779,1726.500387
+74,Beach Park,Lualualei Beach Park,17.75,452938.661,10440.35018
+75,Community Park,Aikahi Community Park,4.01999998,175217.1017,1982.901878
+76,Community Park,Pacific Palisades Community Park,8.42000008,402133.7514,4354.271771
+77,Community Park,Maili Community Park,3.68000007,159782.7181,1641.906273
+78,Neighborhood Park,Waipio Neighborhood Park,12.30000019,535069.6165,3352.93607
+79,Neighborhood Park,Keaalau Neighborhood Park,3.74000001,156192.0975,2097.208758
+80,Neighborhood Park,Hahaione Neighborhood Park,4.09000015,214919.4525,2260.709463
+81,Neighborhood Park,Kalaepohaku Neighborhood Park,1.33000004,60167.85751,1087.852485
+82,Community Park,Kamilo Iki Community Park,18.46999931,804168.2808,3878.343091
+83,Community Park,Maunalani Community Park,3.5999999,91505.53465,1339.189643
+84,Neighborhood Park,Kuliouou Neighborhood Park,4.40999985,190856.3182,2754.46093
+85,Neighborhood Park,Wailupe Valley Neighborhood Park,2.50999999,107199.4167,1344.444624
+86,Neighborhood Park,Michael S. Nakamura Neighborhood Park,7.78999996,336926.0979,2553.23675
+87,Neighborhood Park,Hokuahiahi Neighborhood Park,4.01000023,175083.5188,1758.739231
+88,Neighborhood Park,Kamaio Neighborhood Park,4.01000023,175742.588,1684.48761
+89,District Park,Mililani District Park,21.22999954,924638.9854,5161.443175
+90,District Park,Kalihi Valley District Park,11.85000038,484642.4831,3451.84614
+91,Neighborhood Park,Kalihi Waena Neighborhood Park,1.24000001,54950.81861,1169.236815
+92,Beach Park,Waialae Beach Park,4.38000011,182795.7659,1717.885728
+93,Community Park,Kamehameha Community Park,8.60000038,368591.2971,2817.265678
+94,Mini Park,Kanoa Street Mini Park,0.38,17263.37978,611.5733527
+95,Neighborhood Park,Auwaiolimu Neighborhood Park,1.83000004,79617.95766,1490.587452
+96,Mini Park,Fort Ruger Mini Park,3.24000001,141249.2156,1694.450141
+97,Neighborhood Park,DeCorte Neighborhood Park,4.01999998,185793.5017,2095.767294
+98,Beach ROW,Kamehameha Highway,0.04,2365.530304,726.4099973
+99,Beach Park,Waimea Bay Beach Park,22.15999985,1223472.875,6329.749187
+100,Mini Park,Frank C. Judd Mini Park,0.37,15898.41958,543.1890105
+101,Neighborhood Park,Area 19,9.18000031,49205.98058,887.5769003
+102,Beach ROW,Kaomi Loop,0.475,20714.45,954.3650684
+103,Beach ROW,Kaalaea (undeveloped),0.44,19118.41399,829.3748018
+104,District Park,Kahuku District Park,15.85999966,690998.3862,4035.317274
+105,Beach Park,Sunset Beach Support Park,2.05999994,89487.09546,1194.738345
+106,Beach ROW,Ke Nui Road A,0.12,5876.766968,568.8007167
+107,Beach ROW,Ke Nui Road B,0.14,7168.276825,690.8643337
+108,Beach ROW,Ke Nui Road C,0.11,5958.154755,531.6536038
+109,Beach ROW,Ke Nui Road D,0.04,2306.097809,254.4468155
+110,Beach ROW,Ke Nui Road E,0.05,2627.964447,284.5207876
+111,Beach Park,Ehukai Beach Park,1.21000004,52862.42435,942.6205627
+112,Beach ROW,Ke Nui Road G,0.03,1596.296417,192.5159797
+113,Beach ROW,Ke Waena Road,0.06,3169.866058,326.9967206
+114,Beach ROW,Ke Iki Road C,0.08,4548.863159,470.5031569
+115,Beach Park,Kaiaka Bay Beach Park,52.83000183,2294818.727,7668.744265
+116,Neighborhood Park,Hoa Aloha Neighborhood Park,3.99000001,168428.7159,1852.496823
+117,Mini Park,Likini Street Mini Park,1.28999996,55824.65126,2458.200883
+118,Neighborhood Park,Makakilo Neighborhood Park,4.01000023,173228.3193,1832.911298
+119,Land Slippage Area,Aina Haina Slide Area,4.55000019,115942.8173,3170.468904
+120,Mini Park,Kaaha Street Mini Park,0.16,7068.757401,367.9700932
+121,Mini Park,Date Street Mini Park,0.34,14300.33386,480.0658706
+122,Beach Park,Kuliouou Beach Park,3.23000002,138441.099,1702.663267
+123,Land Slippage Area,Laukahi Slopes,3.33999991,146020.9731,1525.71697
+124,UrbanPark,King Kalakaua Park,0.56999999,25506.2597,726.3083479
+125,Beach Park,Maunalua Bay Beach Park,5.38999987,130347.6465,3945.687521
+126,Community Park,Kaimuki Community Park,2.75,111711.3777,1358.435116
+127,Community Park,Wilson Community Park,4.0999999,178376.0111,1704.193321
+128,Neighborhood Park,Nehu Neighborhood Park,1.32000005,57758.70722,1195.617708
+129,Neighborhood Park,Aina Koa Neighborhood Park,2.41000009,104666.038,1303.028601
+130,UrbanPark,Don Ho Memorial Park,0.15000001,6903.666245,501.7856329
+131,Beach Park,Kahawai Beach Support Park (undeveloped),2.6,114550.4627,1344.850219
+132,Beach Park,Makaua Beach Park,0.141,6077.205414,488.6689891
+133,Mall,Kekaulike Street Mall,0.263,11467.99826,561.5705239
+134,Neighborhood Park,Sunset Beach Neighborhood Park,6,263632.8291,2352.702591
+135,Neighborhood Park,Puohala Neighborhood Park,3.93000007,171888.2578,1782.036414
+136,Neighborhood Park,Waialae Iki Neighborhood Park,9.85000038,428048.3109,3028.715641
+137,Neighborhood Park,Iroquois Point NP (future),12.05000019,522169.6864,2833.728203
+138,Mini Park,Mokauea Street Mini Park,0.31999999,13916.03873,504.418184
+139,Neighborhood Park,Alewa Neighborhood Park,2.03999996,86849.77945,1174.5238
+140,Mini Park,Loi Kalo Mini Park,2.30999994,101442.0353,2107.37241
+141,Community Park,Crestview Community Park,8.14000034,347275.5804,2420.763743
+142,Neighborhood Park,Kalaheo Neighborhood Park,1.42999995,62327.87488,1203.932338
+143,Neighborhood Park,Manana Neighborhood Park,4.01999998,176333.2255,2128.090046
+144,Neighborhood Park,Kapunahala Neighborhood Park,3.86999989,166963.0567,1761.844246
+145,Neighborhood Park,Nahele Neighborhood Park,4,171760.4188,1649.796797
+146,Beach Park,Kalama Beach Park,4.28000021,182415.4056,1904.170442
+147,Neighborhood Park,Kaluapuhi Neighborhood Park,5.78999996,251113.9172,2390.460569
+148,District Park,Pearl City District Park,9.94999981,431544.4821,2704.806943
+149,Neighborhood Park,Manana Kai Neighborhood Park,4.3499999,188736.2575,1798.571104
+150,Neighborhood Park,Waiau Neighborhood Park,4.57000017,201836.1951,1818.118665
+151,Beach ROW,Kalanianaole Highway,0.09,5049.795387,620.3064094
+152,Community Park,Aina Haina Community Park,6.19999981,272690.7484,3375.47857
+153,Beach Park,Kawaikui Beach Park,4.0999999,140593.0164,1629.539413
+154,Beach ROW,Kalia Road,0.1,4937.818096,919.2175557
+155,Mini Park,Puu O Kaimuki Mini Park,2.30999994,100894.445,1660.44456
+156,Beach Park,Kawailoa Beach Park (undeveloped),0.38999999,46643.97049,944.1885978
+157,Regional Park,Kapolei Regional Park,69.38999939,3076576.881,8343.106846
+158,UrbanPark,Nuuanu Valley Park,6.19999981,262153.0556,2348.578571
+159,Community Park,Puunui Community Park,1.62,70680.1802,1121.74142
+160,Community Park,Geiger Community Park,10,429945.4014,2644.829867
+161,Beach Park,Haleiwa Beach Park,15.67000008,627399.2485,6625.945882
+162,Beach ROW,Kaluanui Road,0.05,1971.587021,240.2675483
+163,Beach Park,Kaneohe Beach Park,1.04999995,38907.80179,929.1410852
+164,Neighborhood Park,Kaneohe Civic Center Neigh. Park,4.17999983,232796.1061,2698.274452
+165,District Park,Waialua District Park,12.81999969,438667.9151,2705.124059
+166,Neighborhood Park,Kamananui Neighborhood Park,0.63999999,28444.29248,976.4706475
+167,Beach Park,Swanzy Beach Park,4.82000017,200421.0628,2188.326536
+168,Beach Park,Kaaawa Beach Park,2.02999997,76882.3571,3782.060874
+169,Beach Park,Kalaeoio Beach Park,0.81,35391.04951,756.0969704
+170,Community Park,Whitmore Community Park,0.92000002,40580.64882,827.1208811
+171,Neighborhood Park,Whitmore Neighborhood Park,2.28999996,100128.4555,1313.363552
+172,District Park,Koko Head District Park,40,3391171.967,8569.439929
+173,Beach ROW,North Kalaheo Ave at Ainoni Street,0.20999999,7780.178085,1199.194474
+174,Beach ROW,North Kalaheo Ave at Dune Street,0.12,6113.685013,1098.989923
+175,Neighborhood Park,Maunawili Valley Neighborhood Park,8.13000011,350518.5159,3003.771102
+176,Miscellaneous,Makua Alii Senior Citizens Center,0.005,16415.13422,871.7895917
+177,Beach ROW,Parish Drive,0.005,601.6688232,418.3859188
+178,Community Park,Kaneohe Community and Senior Center,2,84481.17766,1764.962729
+179,Beach Park,Laie Beach Park,7.30000019,319861.8788,3544.978618
+180,Mini Park,Kuhio Mini Park #1,0.1,2484.279942,247.7875735
+181,Beach ROW,Au Street B,0.03,8659.040497,409.7186428
+182,Beach ROW,Ehukai St,0.005,1476.711678,322.306791
+183,Beach ROW,Hihimanu St,0.005,1469.228691,321.4367584
+184,Beach ROW,Hinalea St,0.005,1513.568764,320.8536252
+185,Beach ROW,Kaula St,0.005,1440.102119,317.7963428
+186,Beach ROW,Hilu St,0.005,1312.752052,318.7376894
+187,Beach ROW,Manana St,0.005,1591.875061,322.7701768
+188,Community Park,Petrie Community Park,4.82000017,179651.9794,1797.861226
+189,Neighborhood Park,Koko Head Neighborhood Park,6.78000021,294221.1815,2119.143037
+190,Community Park,Kahala Community Park,8.81000042,382501.4044,2586.659319
+191,Beach ROW,Kahala Avenue at Koloa Street C,0.15000001,7375.087341,1008.48349
+192,Beach ROW,Kahala Avenue at Koloa Street A,0.15000001,7047.41069,966.3309202
+193,Beach ROW,Kahala Avenue at Koloa Street B,0.14,6309.85413,894.8642895
+194,Beach ROW,Kahala Avenue at Hunakai Street,0.08,3909.850906,786.5748607
+195,Beach ROW,Kahala Avenue at Kala Place,0.07,3312.303394,659.1252826
+196,Beach ROW,Kahala Avenue at Elepaio Street,0.07,3115.266903,642.3685131
+197,Beach Park,Kaupo Beach Park,8.18000031,242465.5003,5514.239996
+198,Neighborhood Park,Moiliili Neighborhood Park,3.44000006,149678.2043,1557.741281
+199,Community Park,Crane Community Park,4.96000004,216907.1565,2244.993861
+200,Neighborhood Park,Puuloa Neighborhood Park,4.34000015,186897.7286,1925.753794
+201,District Park,Booth District Park,4.55999994,198214.1503,1767.056479
+202,Community Park,Kauluwela Community Park,2.44000006,109595.8801,2051.996922
+203,Neighborhood Park,Kawananakoa Neighborhood Park,2.38000011,104343.6262,1377.143048
+204,Mall,Kauluwela Mall,0.40000001,27949.50916,2000.998329
+205,Botanical Garden,Foster Botanical Garden,13.55000019,590059.337,3321.104043
+206,Neighborhood Park,Iliahi Neighborhood Park,3.11999989,135967.1654,1570.724675
+207,UrbanPark,Alahula Square,0.28,12062.94485,491.9929262
+208,Nature Park/Reserve,Hanauma Bay Nature Preserve,50,19844874.52,28223.55022
+209,Neighborhood Park,Kupuohi Neighborhood Park,9.05000019,397012.4425,2789.062369
+210,Neighborhood Park,Napuanani Neighborhood Park,4.42999983,194208.1655,1760.781393
+211,Beach ROW,South Kalaheo at Kuuniu Street,0.19,8306.804474,1061.51037
+212,Mall,River Street/Sun Yet Sen Mall,1.20000005,61876.46665,2542.343268
+213,Beach Park,Kailua Beach Park,35.20000076,1654443.393,14090.35296
+214,Beach Park,Makalei Beach Park,0.70999998,31753.7592,836.9933479
+215,Beach Park,Leahi Beach Park,1.27999997,56033.78302,967.7296945
+216,Beach Park,Diamond Head Beach Park,1.16999996,45454.00069,1233.430525
+217,Beach Park,Kuilei Cliffs Beach Park,10.60999966,439282.9077,4950.401846
+218,Beach ROW,Kaikoo Place,0.03,1393.01915,297.3785762
+219,Neighborhood Park,Kunia Neighborhood Park,5.53000021,243061.3277,2092.446896
+220,Neighborhood Park,Kaonohi Neighborhood Park,4.30000019,185876.8082,2020.224825
+221,Mini Park,Waiau Gardens Mini Park,2.3499999,102287.8074,1205.13591
+222,District Park,Kalakaua District Park,7.76999998,338662.402,2851.380225
+223,District Park,Lanakila District Park,5.53999996,241321.5288,2883.834039
+224,Beach Park,Kaiona Beach Park,4.32999992,187570.8684,3148.942863
+225,Neighborhood Park,Kunawai Neighborhood Park,0.95999998,32236.56129,736.632854
+226,Mall,Kila Kalikimaka Mall,0.16,6520.436218,710.1847615
+227,Community Park,Ewa Beach Community Park,13.25,577834.0778,3253.048794
+228,UrbanPark,Aala Park,6.69000006,288154.8,2351.945861
+229,Neighborhood Park,Kamamalu Neighborhood Park,5.26999998,198886.1517,2493.292803
+230,Community Park,Pauahi Recreation Center,0.07,2981.644981,238.2499254
+231,Community Park,Kahaluu Community Park,5.63000011,245095.939,2503.125904
+232,Beach Park,Ulehawa Beach Park,57.65000153,2489211.359,31865.83203
+233,Neighborhood Park,Waipahu Uka Neighborhood Park,4,174491.6139,1699.589821
+234,Beach ROW,Mokulua Drive C,0.07,3027.711258,479.6642761
+235,Community Park,Hoaeae Community Park,10.10000038,437260.7878,2860.731723
+236,Neighborhood Park,Hans Lorange Neighborhood Park,6.92999983,300930.794,2322.604322
+237,Community Park,Pearl Ridge Community Park,9.11999989,395886.6002,2533.524433
+238,Beach ROW,Mokulua Drive B,0.08,3807.051239,554.3407063
+239,District Park,Waianae District Park,23.9,1039955.457,6457.242962
+240,Community Park,Beretania Community Park,5.36000013,231718.8169,1981.886876
+241,Beach Park,Neal S Blaisdell Park,25.88999939,1123045.889,7221.426675
+242,Community Park,Enchanted Lake Community Park,5.78000021,254274.7656,2547.077197
+243,District Park,Aiea District Park,8.81999969,403626.6549,3807.640201
+244,Beach ROW,Ke Nui Road F,0.06,2980.255402,324.0414887
+245,Neighborhood Park,Palailai Neighborhood Park,5,235428.5916,2111.649048
+246,District Park,Mililani Mauka District Park,21.22999954,700244.4333,3894.31211
+247,Beach Park,Tracks Beach Park,14.30000019,867705.3631,9570.905247
+248,Golf Course,West Loch Golf Course,187,8359563.842,29429.88765
+249,Beach Park,Keaau Beach Park,38.04999924,2141076.612,18133.71426
+250,Beach ROW,Kaiholo St,6.92999983,301890.937,4586.905945
+251,Beach ROW,Milokai Place,0.03,1306.545868,264.5583433
+252,Beach ROW,Kaimalino Street,0.05,2134.064911,411.6503645
+253,Beach ROW,Banzai Rock,0.30000001,13329.78848,804.4151148
+254,Beach Park,Uppers Surfing Support Park (undevel),0.69999999,30719.24194,1274.059747
+255,Beach ROW,Lumahai Street,0.07,2871.913681,499.5575214
+256,Beach Park,Duke Paoa Kahanamoku Beach Park,0.43000001,9569.892403,454.0113259
+257,Beach Park,Mokuleia Beach Park,38.49000168,1729066.645,9201.530914
+258,UrbanPark,Thomas Square,6.42000008,265779.3722,2061.234693
+259,Beach Park,Middle Loch Park (future),18.942,821076.1564,6716.230358
+260,UrbanPark,Dr. Sun Yat-Sen Memorial Park,0.40000001,17130.1671,536.8909651
+261,Golf Course,Ted Makalena Golf Course,150.7599945,6485806.659,11679.16019
+262,Regional Park,Waipio Peninsula Soccer Park,233.8399963,10178917.06,14810.7565
+263,Miscellaneous,Barbers Point Campgrounds,57.84999847,2520026.831,7245.765088
+264,Neighborhood Park,Waimalu Neighborhood Park,2.1400001,144188.952,1593.781771
+265,Beach ROW,North Kalaheo Ave at Kawainui Canal,0.28999999,13207.73232,1865.679303
+266,Mini Park,Kawaiahao Mini Park,0.2,8908.931267,371.5785072
+267,Beach Park,Makapuu Beach Park,46.88000107,1818235.296,14478.82593
+268,Mall,Banyan Court Mall,0.27000001,11534.91488,576.3675944
+269,Community Park,Stevenson Recreation Center,0.5,331256.3276,2748.651696
+270,Beach Park,Waimanalo Beach Park,37.56000137,1611379.252,16678.0105
+271,Community Park,Hauula Community Park,10.39000034,415097.1343,4045.259112
+272,Golf Course,Ala Wai Golf Course,145.6199951,6348399.758,11554.91207
+273,Nature Park/Reserve,Waikane Valley Nature Park (undeveloped),503,25949959.4,41710.73219
+274,UrbanPark,Kamanele Square,2.04999995,89134.13739,1250.74648
+275,Community Park,Ala Wai Community Park,13.97999954,653559.0487,3736.802519
+276,District Park,Ewa Mahiko District Park,27.05999947,1178981.923,5234.645523
+277,Land Slippage Area,Kupehau Slopes,6.86000013,296728.067,3215.017488
+278,Regional Park,Haleiwa Regional Park,3.4000001,148505.2119,2390.876488
+279,Beach Park,Oneula Beach Expansion (future),10.43999958,454785.8929,3801.228786
+280,Beach ROW,Pupu Place,0.005,497.645401,113.2406517
+281,Beach ROW,Pupu St,0.0313,1435.048317,291.1452125
+282,Beach Park,Bellows Field Beach Park,54.200001,2419855.073,11782.95705
+283,Community Park,Kanewai Community Park,9.34000015,408409.4461,2824.620555
+284,Nature Park/Reserve,Heeia Kea Valley Nature Park (undevel),219.0099945,9540084.115,13843.26037
+285,Nature Park/Reserve,Heeia Kea Valley Nature Park (undevel),219.0099945,9540084.115,13843.26037
+286,District Park,Waimanalo District Park,25.30999947,1102438.909,4165.513642
+287,Beach Park,Hauula Beach Remnant,0.01,574.8920593,123.2978765
+288,Mini Park,Pukele Avenue Mini Park,0.60000002,25374.6729,731.0786854
+289,Beach ROW,Ke Iki Road A,0.1,3885.22348,400.4524826
+290,Beach Park,Waialee Beach Park (undeveloped),25.64999962,1350596.568,15097.96849
+291,Community Park,Paki Community Park,2.20000005,163527.4415,2032.865151
+292,Mini Park,Peter Buck Mini Park,1.23000002,54730.94305,1216.258716
+293,Community Park,Mililani Mauka Community Park,12.84000015,559328.0392,3043.319393
+294,UrbanPark,Ala Wai Promenade,4.42999983,178453.9616,5312.066486
+295,Beach ROW,Ewa Beach Road J,0.03,1635.326424,482.7740953
+296,Beach ROW,Ewa Beach Road L,0.03,1527.155396,509.0536967
+297,Beach ROW,Ewa Beach Road H,0.03,1426.844566,515.0575258
+298,Community Park,Kalihi Uka Community Park,1.02999997,52527.46523,905.4484442
+299,Zoo,Honolulu Zoo,41.95999908,1922281.888,6082.835152
+300,Beach ROW,Ewa Beach Road F,0.03,1183.144447,528.4605968
+301,Beach ROW,Ewa Beach Road G,0.03,1479.555962,505.8365723
+302,Beach Park,Wailupe Beach Park,1.19000006,47375.13319,969.5459646
+303,Beach ROW,Ewa Beach Road K,0.03,1714.609146,514.3569496
+304,Beach ROW,Ewa Beach Road D,0.03,1598.056358,544.5396733
+305,Beach ROW,Ewa Beach Road I,0.03,1731.511635,510.738464
+306,Beach ROW,Ewa Beach Road E,0.03,1427.033539,505.8639138
+307,Beach ROW,Ewa Beach Road C,0.03,1296.730789,506.6102856
+308,Beach ROW,Ewa Beach Road A,0.03,1413.110306,510.2978173
+309,Beach Park,Ewa Beach Park,4.88000011,211349.1807,1845.557084
+310,District Park,Ocean Pointe District Park,18.51000023,871363.9292,3822.098969
+311,Neighborhood Park,Kahiwelo at Kapolei,3.56999993,89833.26793,1199.830133
+312,Mall,Fort Street Mall,0.87,75835.99028,3599.229455
+313,UrbanPark,Smith-Beretania Urban Park,1.34000003,58263.00157,1199.650165
+314,Nature Park/Reserve,Mauumae Nature Park,28.88999939,1202692.45,9221.404102
+315,Beach Park,Pokai Bay Beach Park,15.48999977,703307.1193,8718.22539
+316,Neighborhood Park,Mililani Waena Neighborhood Park,7,306566.6669,3220.296894
+317,Miscellaneous,Pride Fields,10,437591.054,2592.21996
+318,Mini Park,Ceasar and Eleanor Gomes Mini Park,0.13,5613.845398,350.8339889
+319,Neighborhood Park,Kipapa Neighborhood Park,5,432173.8982,3543.798354
+320,Beach Park,Kawela Bay Beach Park (future),4.80000019,209343.0542,2018.563528
+321,Beach Park,Ko Olina Beach Park (future),10.25,399681.1237,3790.179589
+322,Botanical Garden,Liliuokalani Botanical Garden,7.59000015,335130.4988,3406.032051
+323,Neighborhood Park,Kaahele Neighborhood Park,4.15999985,181490.2927,1819.161029
+324,District Park,Kailua District Park,18.64999962,807297.664,4542.170109
+325,Beach Park,Banzai Rock Beach Support Park (undevel),2.30999994,100611.9629,1263.066441
+326,UrbanPark,Kunawai Springs,0.58999997,25737.27825,624.1314441
+327,Beach ROW,Hanapepe Loop,0.03,1748.938931,393.3636221
+328,Neighborhood Park,Kahi Kani Neighborhood Park,2.6400001,117537.3767,1370.693665
+329,Neighborhood Park,"Mitsuo ""Mits"" Shito Waikele Neighborhood Park",5,218093.9276,1819.48491
+330,Beach ROW,Papailoa Road,0.05,2809.427536,534.7018884
+331,Community Park,Kapolei Community Park,12,522889.3638,3017.527336
+332,Beach Park,Kaneohe Bay Beach Remnant,0.13,2414.769302,379.3269269
+333,Neighborhood Park,Laenani Neighborhood Park,1.37,57936.42604,1019.175115
+334,Miscellaneous,Mauna Lahilahi Cultural Garden,14.30000019,299379.7824,3269.441445
+335,Beach Park,Kahe Point Beach Park,4.46999979,203434.5014,3867.772844
+336,Community Park,Makaha Community Park,4.32000017,176553.456,1831.334119
+337,Beach Park,Makaha Beach Park,20.62000084,887738.7213,7752.492155
+338,Mall,College Walk Mall,1.58000004,59070.56639,2540.589149
+339,UrbanPark,Princess Kaiulani Triangle,0.12,11920.17943,483.6141275
+340,Mini Park,Kuhio Mini Park #2,0.12,4830.241978,291.8649181
+341,Beach Park,Kuhio Beach Park,3.4000001,290739.5171,5470.832086
+342,Mini Park,Kuhio Mini Park #3,0.1,3747.284412,276.4426938
+343,Beach Park,Makaiwa Beach Park (future),47.29999924,816169.8142,8876.601025
+344,Neighborhood Park,Kahiwelo Neighborhood Park,3.085,130585.5821,1441.168545
+345,District Park,Kilauea District Park,6.57999992,290366.0111,2555.551275
+346,Community Park,Puu O Hulu Community Park,11,479735.6473,2776.92956
+347,Botanical Garden,Koko Crater Botanical Garden,200,7927370.951,11779.78507
+348,Community Park,Makakilo Community Park,8.5,369582.8248,2812.268717
+349,Neighborhood Park,Newtown Neighborhood Park,8.07999992,354241.9437,3717.719878
+350,Beach Park,Sandy Beach Park,32.81999969,1211325.172,8538.863808
+351,Regional Park,Koko Head Regional Park,951.3599854,21897386.2,51483.63914
+352,Neighborhood Park,Ala Wai Neighborhood Park,15.69999981,636763.929,8064.150306
+353,Community Park,Herbert K Pililaau Community Park,10.43999958,459638.7128,3033.271563
+354,District Park,Halawa District Park,20.17000008,874530.1264,4396.369723
+355,Beach Park,Sunset Beach Park,17.72999954,1924746.713,26867.10224
+356,Community Park,Lehua Community Park,6.67000008,490609.5177,3079.252723
+357,Neighborhood Park,Aliamanu Neighborhood Park,4.59000015,193205.8483,2791.286626
+358,Beach Park,Maili Beach Park,39.56000137,1399272.294,10345.13503
+359,Beach Park,Haleiwa Alii Beach Park,19.25,841632.4807,5138.398076
+360,Regional Park,Waipahu Cultural Garden Park,48.88000107,1945046.06,13587.08673
+361,Beach Park,Kokololio Beach Park,15.51000023,611158.2838,4123.671641
+362,Beach ROW,Crozier Drive Brow Parking,0.23999999,10619.62515,644.4764046
+363,Beach ROW,Crozier Drive,0.09,4100.532104,703.799098
+364,Beach Park,Kapapapuhi Point Park,6.36000013,1769276.361,16574.34169
+365,Community Park,Moanalua Community Park,7.59000015,621140.3079,5052.096551
+366,Neighborhood Park,Niu Valley Neighborhood Park,2.05999994,89860.20238,1242.606074
+367,Community Park,Waikele Community Park,12.84000015,558683.2461,3323.147213
+368,Regional Park,Patsy T. Mink Central Oahu Regional Park,267.354,11514210.38,20527.71137
+369,Community Park,Sheridan Community Park,1.73000002,75080.05479,1103.711742
+370,District Park,Waiau District Park,31.43000031,1365333.202,4982.91575
+371,Regional Park,Kalaeloa Regional Park (future),484,12179108.49,41094.63247
+372,Neighborhood Park,Pacheco Neighborhood Park,4.59000015,200623.2902,1803.865334
+373,Neighborhood Park,Keaunui NP (future),5.9000001,256490.5471,2041.689268
+374,Regional Park,Kualoa Regional Park,153.4100037,6942982.759,15114.03429
+375,Land Slippage Area,Waiomao Slide Area,2.42000008,106675.3868,2336.714738
+376,Community Garden,Ala Puumalu Community Park,62.38,2767993.609,11380.06822
+377,District Park,Salt Lake District Park,84.298,3684771.393,13904.08989
+378,Community Park,Laulani Community Park (future),15.60000038,636955.1684,3225.293058
+379,Beach Park,Kapiolani Beach Park,7.05200005,468026.3366,4142.177856
+380,Beach Park,Kapiolani Park Beach Center,2.59,113129.1004,1361.835234
+381,Beach ROW,Koko Kai,0.60000002,29308.6921,773.7042155
+382,Regional Park,Ala Moana Regional Park,119.1800003,4928096.949,18216.20398
+383,Neighborhood Park,Kawai Nui Neighborhood Park,4.84000015,212331.1197,2714.481832
+384,Beach Park,Mauna Lahilahi Beach Park,8.73999977,511238.9777,6436.686649
+385,Regional Park,Kahaluu Regional Park,34.61000061,1802166.007,10546.64423
+386,Neighborhood Park,Moanalua Valley Neighborhood Park,2.8499999,125206.0159,1825.141453
+387,Neighborhood Park,Mother Waldron Neighborhood Park,1.75999999,64642.2925,1172.767258
+388,Mini Park,Kaelepulu Mini Park,1.63999999,70314.36255,1158.807511
+389,Beach Park,Barbers Point Beach Park,7.38999987,325211.8695,2717.635905
+390,Miscellaneous,Pupukea-Paumalu Park,25.88,1127335.377,4274.687073
+391,Community Park,Kapaolono Community Park,5.5,239860.0744,1999.334523
+392,Miscellaneous,Nuuanu Nursery,57.93999863,2545475.323,7137.032193
+393,Neighborhood Park,Kamilo Iki Neighborhood Park,7.19000006,313957.3817,2231.803127
+394,Miscellaneous,Ka Iwi (Hawaii Kai) Park (future),29.65999985,1292161.363,8266.249895
+395,Neighborhood Park,Makalapa Neighborhood Park,5.96999979,259637.5612,2463.014036
+396,Golf Course,Kahuku Golf Course,68,3771600.827,9382.160321
+397,Regional Park,Kapiolani Regional Park,154.7299957,5331034.252,19323.61427
+398,Beach Park,Laniakea Beach Support Park (undevel),1.88999999,82492.65778,1518.191505
+399,Beach Park,Chuns Reef Beach Support Park (undevel),3,84388.84267,1458.080246
+400,Beach Park,Chuns Reef Beach Support Park (undevel),3,84388.84267,1458.080246
+401,Beach ROW,Ewa Beach Road B,0.03,1495.148872,544.8901583
+402,District Park,Waipahu District Park,13.82999992,599672.4762,3251.570094
+403,Beach ROW,Kokee Place,0.46000001,35264.66528,883.5441972
+404,Neighborhood Park,Heeia Neighborhood Park,3.97000003,171613.1535,1632.083959
+405,District Park,Kaneohe District Park,31.37000084,1375547.638,6780.602022
+406,Miscellaneous,Kawai Nui Model Airplane Field,10.60000038,461974.8778,3033.915764
+407,Miscellaneous,Kawai Nui Gateway Park (undeveloped),4.23000002,184575.654,2340.411753
+408,Nature Park/Reserve,Aina Haina Nature Preserve,94.72000122,4126335.62,13735.64926
+409,Beach Park,Hauula Beach Park,9.07999992,334007.7329,6071.770202
+410,Botanical Garden,Hoomaluhia Botanical Garden,370.7799988,16184765.97,26483.10988
+411,Beach Park,Keehi Lagoon Park,71.98000336,3147091.824,7810.663656
+412,UrbanPark,Pawaa Park,1.67999995,73521.42962,1086.878146
+413,Neighborhood Park,Maukalani Neighborhood Park,4.4000001,195861.0705,1905.028485
+414,Beach ROW,Paoa Place,0.38,26310.19993,1640.784324
+415,District Park,McCully District Park,1.42999995,61968.34693,996.2673073
+416,Beach Park,Pupukea Beach Park,36.56999969,1759822.1,33981.50361
+417,Beach ROW,Ke Iki Road B,0.16,8231.759277,759.8011832
+418,Mini Park,Kamole Mini Park,2.1500001,92959.57717,1222.453332
+419,Community Park,Ahuimanu Community Park,4,175005.3939,1707.248751
+420,Beach Park,Leftovers Beach Access Park (undevel),1.12,48902.73303,1274.150513
+421,Neighborhood Park,Kuahelani Neighborhood Park,4,175128.4908,1682.717079
+422,Beach Park,Punaluu Beach Park,2.83999991,121548.0061,3275.618721
+423,UrbanPark,Pacific Palisades Entrance Park,3.91000009,171373.3326,2185.239615
+424,Beach ROW,North Kalaheo Ave at Pueohala Place,0.18000001,6956.130585,1053.61421
+425,Mini Park,Kalo Place Mini Park,1,44272.02184,912.2881454
+426,Beach ROW,Waialua Beach Road,0.08,3490.867935,603.6889952
+427,Beach Park,Waimanalo Bay Beach Park,74.76000214,3513121.002,9747.3689
+428,Golf Course,Ewa Villages Golf Course,235,10261272.76,38121.75705
+429,Beach ROW,Paiko Drive,0.005,616.6709747,210.7207646
+430,Beach ROW,Kaneohe Bay Drive B,0.13,4175.294571,767.342082
+431,Beach Park,Oneula Beach Park,30,1232657.575,5306.361308
+432,District Park,Manoa Valley District Park,29.45999908,1287312.652,5329.058449

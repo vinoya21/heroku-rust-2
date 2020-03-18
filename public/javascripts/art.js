@@ -101,11 +101,12 @@ function displayInfo(title) { // display art info
     });
 }
 
+//search art function
 function search_art() {
     let input = document.getElementById('searchbar_input_art').value
     input = input.toLowerCase();
     let x = document.getElementsByClassName('artclass');
-
+    
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display = "none";

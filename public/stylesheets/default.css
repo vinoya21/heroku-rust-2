@@ -99,4 +99,15 @@ body {
       text-align: left;
     }
   }
-  
+
+  .saved-btn {
+    background-color:yellow;
+    color: black; 
+    border: none; 
+}
+
+.unsaved-btn {
+    background-color: #f6f7df;
+    color: black;
+    border: none; 
+}

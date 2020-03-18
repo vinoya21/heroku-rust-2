@@ -67,24 +67,15 @@ function openAccTab(event, tab) {
 }
 
 function initUser() {
-	if(localStorage.getItem('username') != null){
-		$.post("/initacct", function (user) {
+	username = localStorage.getItem('username');
+	if(username != null){
+		$.post("/initacct?username=" + username, function (user) {
 			document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
 			document.getElementById('bio').innerHTML = user[0].BIO;
 		});
 		document.getElementById("default").click();
+		getFavorites(); 
 	} //retrieve info needed
-	/*
-	var queryString = decodeURIComponent(window.location.search);
-	queryString = queryString.substring(1);
-	var queries = queryString.split("=");
-	var username = queries[1];
-	$.post("/initacct?username=" + username,
-		function (user) {
-			document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
-			document.getElementById('bio').innerHTML = user[0].BIO;
-		});
-	document.getElementById("default").click();*/
 }
 
 function init(){
@@ -115,26 +106,14 @@ function changePassword() {
 		});
 }
 
-/*
-function isLoggedIn(menu_type) {
-	var queryString = decodeURIComponent(window.location.search);
-	queryString = queryString.substring(1);
-	var queries = queryString.split("=");
-	var username = queries[1];
-	if (menu_type == "eventpage") {
-		window.location.href = "eventpage.html?username=" + username;
-	}
-	else if(menu_type == 'artpage'){
-		window.location.href = "artpage.html?username=" + username;
-	}
-	else if(menu_type == 'servicepage'){
-		window.location.href = "servicepage.html?username=" + username;
-	}
-	else if(menu_type == 'recreationpage'){
-		window.location.href = "recreationpage.html?username=" + username;
-	}
+function getFavorites(){
+	var username = localStorage.getItem('username');
+	$.post('/retrieveFavorite?user=' + username, function(result){
+		if(result[0].FAVORITES != null){
+			document.getElementById('favorites').innerHTML = result[0].FAVORITES; 
+		}
+	});
 }
-*/
 
 /*
 	version: 23 FEB 2020

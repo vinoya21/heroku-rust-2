@@ -1,22 +1,41 @@
 function init() {
     $.post('/retrieveart', function (art) { // POST for art info
         // loop through all art objects 
+
+        var titleList = new Array();
+
         for (var i = 1; i < art.length; i++) {
             if (art[i].TITLE != '') { // don't want art with no title
                 // object title
                 var title = art[i].TITLE;
-                // create row
-                var x = document.createElement("TR");
-                x.setAttribute("id", "'entry" + i + "'");
 
-                // add to table
-                document.getElementById("arttable").appendChild(x);
 
-                // create column w/ info
-                var y = document.createElement("TD");
-                var t = document.createTextNode(title);
-                y.appendChild(t);
-                document.getElementById("'entry" + i + "'").appendChild(y);
+                if (!titleList.includes(title)) {
+
+                    titleList.push(title);
+
+                    // create row
+                    var x = document.createElement("TR");
+                    x.setAttribute("id", "'entry" + i + "'");
+
+                    // add to table
+                    document.getElementById("arttable").appendChild(x);
+
+
+                    // create column w/ info
+                    var y = document.createElement("TD");
+                    var t = document.createTextNode(title);
+                    y.appendChild(t);
+                    document.getElementById("'entry" + i + "'").appendChild(y);
+
+                    // put newly created element in the art class
+                    y.className = "artclass";
+
+                    var t = document.createTextNode(title);
+                    y.appendChild(t);
+                    document.getElementById("'entry" + i + "'").appendChild(y);
+                }
+
             }
         }
         // add eventlistener to all art rows
@@ -65,6 +84,8 @@ function displayInfo(title) { // display art info
     */
     $.post("/retrieveArtInfo?title=" + newtitle, function (info) {
         document.getElementById('textinfo').innerHTML = '';
+
+
         if (info[0] != null) {
             // FAVORITES BUTTON FUNCTIONALITY TO BE ADDED LATER
             var user = localStorage.getItem('username');
@@ -95,7 +116,7 @@ function displayInfo(title) { // display art info
     });
 }
 
-function checkFavorites(user, title) { 
+function checkFavorites(user, title) {
     $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
         var foundTitle = false;
         if (result[0].FAVORITES != null) {
@@ -111,6 +132,7 @@ function checkFavorites(user, title) {
             document.getElementById("fav").addEventListener('click', removeItem, false);
             document.getElementById("fav").username = user;
             document.getElementById("fav").title = title;
+
         }
         else {
             document.getElementById('textinfo').innerHTML += "<button id='fav' class='unsaved-btn'> FAVORITE </button><br><br>";
@@ -129,7 +151,7 @@ function addItem(evt) {
     var title = evt.currentTarget.title;
     $.post("/changeFavorites?type=add&user=" + user + "&title=" + title, function (result) {
     });
-    displayInfo(title); 
+    displayInfo(title);
 }
 
 function removeItem(evt) {
@@ -137,7 +159,7 @@ function removeItem(evt) {
     var title = evt.currentTarget.title;
     $.post("/changeFavorites?type=remove&user=" + user + "&title=" + title, function (result) {
     });
-    displayInfo(title); 
+    displayInfo(title);
 }
 
 function search_art() {

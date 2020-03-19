@@ -25,5 +25,16 @@ router.post('/', function (req, res, next) {
             res.json(info);
         });
     }
+    else if(type == 'service'){
+        db.dbquery("SELECT * FROM SERVICE", function(err,result){
+            if(err){
+                console.log(err);
+                return;
+            }
+            console.log(result);
+            info = result;
+            res.json(info);
+        });
+    }
 });
 module.exports = router;

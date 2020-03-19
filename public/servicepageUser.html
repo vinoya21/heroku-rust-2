@@ -9,11 +9,13 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/table.css" />
   <script src="javascripts/logout.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="javascripts/service.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="init()">
 
   <!-- top buttons: "write a review", log in, and sign up -->
   <div class="left">
@@ -22,7 +24,8 @@
   </div>
 
   <div class="right">
-    <button onclick="window.location.href = 'accountpage.html';" class="top-btn" type="button" id="account">Account</button><br><br><br>
+    <button onclick="window.location.href = 'accountpage.html';" class="top-btn" type="button"
+      id="account">Account</button><br><br><br>
     <button onclick="logout()" class="top-btn" type="button" id="logout">Log out</button>
   </div> <!-- set log out to go back to index.html -->
 
@@ -59,8 +62,8 @@
 
   <center>
     <!-- logo -->
-    <input onclick="window.location.href='indexUser.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png" alt="Makaleha Logo" width="300"
-      height="140" />
+    <input onclick="window.location.href='indexUser.html'" type="image" id="makalehalogo"
+      src="images/makaleha_logo__v2.png" alt="Makaleha Logo" width="300" height="140" />
   </center>
   <!-- navigation bar i.e. page menu -->
   <div class="navbar">
@@ -69,7 +72,33 @@
     <a href="recreationpageUser.html">Outdoor Activities</a>
     <a href="servicepageUser.html">Community Service</a>
   </div>
-  
+  <div>
+    <center>
+      <h3> E malama ʻoe i ka ʻāina, e malama ka ʻāina ia ʻoe </h3>
+      <p> Take care of the land and the land will take care of you. </p>
+    </center>
+  </div>
+  <!-- search bar community service -->
+  <br>
+  <div id="cover_serv">
+    <form method="get" action="">
+      <div class="tb">
+        <div class="td"><input id="searchbar_input_serv" type="text" placeholder="Search" required></div>
+        <div class="td" id="s-cover">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- table that displays menu for art -->
+  <div style="height: 500px; display: flex" id="servicedisplay">
+    <div style="height: 500px; width:25%; overflow-y: scroll; display:flex">
+      <table class="displaytable" id="servicetable" rules="rows" frame="void">
+      </table>
+    </div>
+
+    <div id="displaytext">
+    </div>
+  </div>
 </body>
 
 </html>

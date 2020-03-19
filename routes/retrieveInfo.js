@@ -24,5 +24,15 @@ router.post('/', function (req, res, next) {
             res.json(result);
         });
     }
+    else if(type == 'service'){
+        db.dbquery("SELECT * FROM SERVICE WHERE NAME = '" + title + "'", function (err, result) { // looks at users
+            if (err) { // error handling
+                console.log(err);
+                return;
+            }
+            console.log(result);
+            res.json(result);
+        });
+    }
 });
 module.exports = router;

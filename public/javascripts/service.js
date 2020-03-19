@@ -1,16 +1,13 @@
 function init() {
-    $.post('/retrieve?type=art', function (art) { // POST for art info
+    $.post('/retrieve?type=service', function (service) { // POST for art info
         // loop through all art objects 
         var titleList = new Array();
-
-        for (var i = 1; i < art.length; i++) {
-            if (art[i].TITLE != '') { // don't want art with no title
+        for (var i = 0; i < service.length; i++) {
+            if (service[i].NAME != '') { // don't want art with no title
                 // object title
-                var title = art[i].TITLE;
-
+                var title = service[i].NAME;
 
                 if (!titleList.includes(title)) {
-
                     titleList.push(title);
 
                     // create row
@@ -18,14 +15,14 @@ function init() {
                     x.setAttribute("id", "'entry" + i + "'");
 
                     // add to table
-                    document.getElementById("arttable").appendChild(x);
+                    document.getElementById("servicetable").appendChild(x);
 
 
                     // create column w/ info
                     var y = document.createElement("TD");
 
                     // put newly created element in the art class
-                    y.className = "artclass";
+                    y.className = "serviceclass";
 
                     var t = document.createTextNode(title);
                     y.appendChild(t);
@@ -78,45 +75,29 @@ function displayInfo(title) { // display art info
     CITATION: https://stackoverflow.com/questions/16622504/escaping-ampersand-in-url
     Needed to understand why & was not passing through URL parameter. 
     */
-    $.post("/retrieveInfo?type=art&title=" + newtitle, function (info) {
+    $.post("/retrieveInfo?type=service&title=" + newtitle, function (info) {
         document.getElementById('textinfo').innerHTML = '';
 
 
-        if (info[0] != null) {
+        if (info[0] != null) { // NEED TO CHANGE THIS DEPENDING ON SERVICE TABLE
             // FAVORITES BUTTON FUNCTIONALITY TO BE ADDED LATER
             var user = localStorage.getItem('username');
             if (user != null) {
                 checkFavorites(user, newtitle);
             }
-            var description = "<p>" + info[0].DESCRIPTION + "</p>";
-            var date = info[0].DATE;
-            var creator = info[0].CREATOR;
-            var creatorInfo = ''
-            if (date == 0 & creator == '') {
-                // do nothing
-            }
-            else if (date == 0) {
-                creatorInfo = "<p>" + "Created by " + info[0].CREATOR + "</p>";
-            }
-            else if (creator == '') {
-                creatorInfo = "<p>" + "Created in " + date + "</p>";
-            }
-            else {
-                creatorInfo = "<p>" + "Created by " + info[0].CREATOR + " in " + date + "</p>";
-            }
-            var location = info[0].LOCATIONNAME;
-            var discipline = info[0].DISCIPLINE;
-            document.getElementById('textinfo').innerHTML = "<h2>" + title + "</h2>" + creatorInfo
-                + location + description;
+            var location = "<p> " + info[0].LOCATION + " " + info[0].PHONE + "</p>";
+            var website = "<a href='https://" + info[0].WEBSITE + "'> Visit page for more info. </a>";
+            var description = "<p>" + info[0].DESCRIPTION +  "</p>";
+            document.getElementById('textinfo').innerHTML = "<h2>" + title + "</h2>" + location + website + description;
         }
     });
 }
 
 //search art function
 function search_art() {
-    let input = document.getElementById('searchbar_input_art').value
+    let input = document.getElementById('searchbar_input_rec').value
     input = input.toLowerCase();
-    let x = document.getElementsByClassName('artclass');
+    let x = document.getElementsByClassName('serviceclass');
     
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {

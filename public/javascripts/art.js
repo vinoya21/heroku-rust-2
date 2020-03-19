@@ -24,9 +24,6 @@ function init() {
 
                     // create column w/ info
                     var y = document.createElement("TD");
-                    var t = document.createTextNode(title);
-                    y.appendChild(t);
-                    document.getElementById("'entry" + i + "'").appendChild(y);
 
                     // put newly created element in the art class
                     y.className = "artclass";
@@ -116,6 +113,24 @@ function displayInfo(title) { // display art info
     });
 }
 
+//search art function
+function search_art() {
+    let input = document.getElementById('searchbar_input_art').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('artclass');
+    
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        }
+        else {
+            x[i].style.display = "table-cell";
+        }
+    }
+
+
+}
+
 function checkFavorites(user, title) {
     $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
         var foundTitle = false;
@@ -162,22 +177,6 @@ function removeItem(evt) {
     displayInfo(title);
 }
 
-function search_art() {
-    let input = document.getElementById('searchbar_input_art').value
-    input = input.toLowerCase();
-    let x = document.getElementsByClassName('artclass');
-
-    for (i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
-        }
-        else {
-            x[i].style.display = "table-cell";
-        }
-    }
-
-
-}
 
 
 

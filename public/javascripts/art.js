@@ -1,7 +1,6 @@
 function init() {
-    $.post('/retrieveart', function (art) { // POST for art info
+    $.post('/retrieve?type=art', function (art) { // POST for art info
         // loop through all art objects 
-
         var titleList = new Array();
 
         for (var i = 1; i < art.length; i++) {
@@ -79,7 +78,7 @@ function displayInfo(title) { // display art info
     CITATION: https://stackoverflow.com/questions/16622504/escaping-ampersand-in-url
     Needed to understand why & was not passing through URL parameter. 
     */
-    $.post("/retrieveArtInfo?title=" + newtitle, function (info) {
+    $.post("/retrieveInfo?type=art&title=" + newtitle, function (info) {
         document.getElementById('textinfo').innerHTML = '';
 
 

@@ -1,151 +1,151 @@
-﻿island,district,yrcreated,length_mi,elev_range,st_access,start_pt,end_pt,standard,climate,tspt_type,features,amenities,hazards,comments,trailname
-Kauai,Hanalei,1920s,2.29999995,1232,2-Wheel Drive,0.5 mi on Ohiki Road,Kaukaopua Peak,Moderate,"Mild, Wet",Foot,"Culture, Hike, Hunt, Nature Study","Shelters, Tables","Hunters, Landslides, Cliffs",Hanalei Natl. Wildlife Refuge. Closed.,Okolehao Trail
-Kauai,"Hanalei, Waimea",1954,3.79999995,284,2-Wheel Drive,"End of Hwy 550, Puu O Kila Lookout",Kawaikoi Stream at Kawaikoi Camp,Moderate,"Cold, Wet",Foot,"Bio. Sens., Hike, Hunt, Nature Study, Stream","Camping, Parking, Shelters, Tables","Cliffs, flooding, hunters, footing",Camp by permit. Deep mud at Pihea peak.,Pihea Trail
-Kauai,Waimea,1973,1.79999995,40,4-Wheel Drive,3.9 mi on Mohihi-Camp 10 Road,Same as start,Easy,"Cold, Wet",Foot,"Fish, Hike, Nature Study, Stream","Bench, Camping, Shelters, Tables, Toilets",Flooding,Amenities and camping at trailhead.,Kawaikoi Stream Trail
-Kauai,Kawaihau,1930s,2,960,2-Wheel Drive,Haleilio Road near end,Sleeping Giant (Nounou Mountain),Moderate,Mild,Foot,"Nature Study, Hike","Tables, Shelters",Cliffs, ,Nounou Trail (East)
-Kauai,Waimea,Ancient,3.5,329,4-Wheel Drive,3.2 mi on Mohihi-Camp 10 Road,Kilohana on Wainiha Pali,Difficult,"Cold, Wet",Foot,"Bio. Sens., Hike, Hunt, Nature study, Stream","Parking, Shelter, Tables, Toilets","Hunters, Flooding, cliffs",Deep mud and fog along trail.,Alakai Swamp Trail
-Kauai,Waimea,1970s,1.29999995,200,2-Wheel Drive,3.0 mi on Makaha Ridge Road,3.5 mi on Makaha Ridge Road,N/A,Mild,"Foot, 4WD","Hike, Hunt, Nature Study","Shelters, Tables, Toilets",Hunters, ,Pine Forest Drive
-Kauai,Waimea,1960s,0.30000001,80,4-Wheel Drive,4.5 mi on Mohihi-Camp 10 Road,Poomau Canyon Vista Point,Easy,"Mild, Wet",Foot,"Hike, Hunt, Nature Study, Scenic Viewpoint",None,Hunters, ,Poomau Canyon Vista Trail
-Kauai,Waimea,1960s,1,226,4-Wheel Drive,0.04 mi on Pine Forest Drive,Makaha Forestry Arboretum,N/A,"Mild, Dry","Foot, 4WD","Hike, Hunt, Nature Study","Shelters, Tables, Toilets","Hunters, Cliffs", ,Makaha Arboretum Trail
-Kauai,Kawaihau,1940s,2.5,680,2-Wheel Drive,End of Olohena Road,0.4 mi beyond Kuilau Trail end,Moderate,Mild,"Foot, Bicycle, Horse","Hiking, Nature Study, Hunting",None,Hunters,No cars past 1.5 miles.,Moalepe Trail
-Kauai,Waimea,1965,0.30000001,40,2-Wheel Drive,"8.7 mi on Hwy 550, Waimea Can. SP",Same as start,Easy,Mild,Foot,"Hike, Hunt, Nature Study","Parking, Shelters, Tables","Cliffs, footing",Excellent nature trail.,Iliau Nature Loop
-Kauai,Kawaihau,1970s,2.0999999,640,2-Wheel Drive,Keahua Arboretum on Hwy 580,Moalepe Trail,Moderate,Mild,"Foot, Bicycle, Horse","Hike, Hunt, Nature Study, Scenic View, Stream","Bridges, Parking, Shelters, Tables, Toilets",Hunters, ,Kuilau Trail
-Kauai,Waimea,Ancient,3,720,Foot,1/2 mile up Waimea River,Lonomea Camp,Moderate,Mild,"Foot, Horse","Archaeology, Fish, Hike, Hunt, Stream","Camping, Shelters, Tables, Toilets","Landslides, Hunters, Flooding, Cliffs",Camping permit required.  Mosquitoes!,Koaie Canyon Trail
-Kauai,Kawaihau,1930s,1.5,800,2-Wheel Drive,Hwy 581,Sleeping Giant (Nounou Mountain),Difficult,Mild,Foot,"Nature Study, Hike","Tables, Shelters",Cliffs, ,Nounou Trail (West)
-Hawaii,South Hilo,1978,0.5,15,2-Wheel Drive,Rain shelter in Botanical Garden,Onomea Bay Shoreline near stream,Easy,Mild,Foot,"Hike, Nature Study, Ocean, Stream","Toilet, Table, Bridge, Shelter, Wheelchair",None,Fee.  Access by H.T.B.G. vehicle only.,Onomea Old Government Road
-Kauai,Waimea,1920s,2.5,2240,2-Wheel Drive,8.7 mi on Hwy 550 at Iliau Loop,"Wiliwili Camp, Waimea River",Difficult,Mild,Foot,"Fish, Hike, Hunt, Nature Study, Stream","Camping, Shelters, Tables, Toilets","Hunters, Landslides, Flooding, Cliffs",Trailhead sign-in.  Camping permit.,Kukui Trail
-Kauai,Kawaihau,1930s,2,320,2-Wheel Drive,2.3 mi on Hwy 580,Nounou-West Trail,Easy,Mild,"Foot, Bicycle, Horse","Nature Study, Hike","Tables, Bridges, Shelters, Parking",None, ,Kuamoo-Nounou Trail
-Kauai,Waimea,Ancient,7,780,2-Wheel Drive,End of Menehune Road or Kukui Trail,Koaie Stream junction,Moderate,Mild,"Foot, Bicycle, Horse","Hunt, Nature Study, Stream","Camping, Shelters, Tables, Toilets","Landslides, Hunters, Footing, Flooding, Cliffs",Game Management Entry Permit required.,Waimea Canyon Trail
-Kauai,Waimea,Unknown,11,3260,Foot,End of Menehune Road,Waialae Cabin,Difficult,Mild,"Foot, Horse","Fish, Hike, Hunt, Nature Study, Stream","Camping, Firepit, Shelters, Tables, Toilets","Cliff, Flood, Hunter, Landslide, Narow Trl, Rocks",Game Management Area Entry Permit Req.,Puu Ki-Waialae Trail
-Kauai,"Kawaihau, Hanalei",1906,11.19999981,1568,2-Wheel Drive,Kapaka St from Princeville Stables,Keahua Forestry Arboretum,Difficult,"Mild, Wet","Foot, Bicycle, Horse, Motorcycle","Hike, Hunt, Nature Study, Scenic View",None,Hunters,"Steep, eroded, slippery at saddle.",Powerline Trail
-Oahu,Koolauloa,1898,2.5,800,2-Wheel Drive,End of Maakua Road,Same as start,Moderate,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt, Archery, Wildlife","Bench, Camp, Tables, Shelter","Hunters, Footing",Camping permit - DOFAW,Maakua Ridge Trail
-Kauai,Waimea,1930s,2.5,167,4-Wheel Drive,5.4 mi on Mohihi-Camp 10 Road,3353-foot elev. on Kohua Ridge,Moderate,Mild,Foot,"Fish, Hunt, Nature Study, Stream",None,"Floods, Cliffs, Hunters",Steep grades first 0.5 mi; rest easy.,Kohua Ridge Trail
-Kauai,Waimea,1930s,4,880,4-Wheel Drive,End of Mohihi-Camp 10 Road,Waialae Cabin,Difficult,"Cold, Wet",Foot,"Bio. Sens., Fish, Hike, Hunt, Stream","Camping, Shelters, Tables, Toilets","Hunters, Flooding",Map and compass skills recommended.,Mohihi-Waialae Trail
-Oahu,"Waialua, Wahiawa",1930's,3.5,800,4-Wheel Drive,End of Jeep Road,Koolau Ridge,Moderate,Mild,"Foot, 4WD, Bicycle","Hike, Nature Study, Hunt",Camping,"Hunters, Footing, Blind Corner, Narrow Trail","Permit-DOFAW, Waialua Sugar, Dole, Army",Poamoho Trail
-Oahu,Honolulu,Unknown,0.80000001,800,2-Wheel Drive,End of Manoa Road,Manoa Falls,Easy,"Mild, Wet","Foot, Bicycle","Hike, Nature Study, Stream, Waterfall","Parking, Bench, Bridge, Toilets, Trash Cans","Cliff, Footing, Rocks, Floods, hunters, Landslides","Makiki-Tantalus cplx, Maint by Operation",Manoa Falls Trail
-Oahu,Waialua,Unknown,6,500,2-Wheel Drive,Kaena Pt. Tracking Station Rd.,"Past Peacock Flats, Mokuleia Trail",N/A,Mild,"4WD, Foot, Bicycle","Hike, Nature Study, Hunt",None,"Footing, Hunters","permit-DOFAW, Rd. starts at Manini Gulch",Mokuleia-Kuaokala Firebreak Access Road
-Molokai,Molokai,Unknown,3.29999995,500,4-Wheel Drive,Main F.R. Rd-before Waikolu lookout,Kahanui Flats,N/A,"Mild, Wet",4WD,Hunt,None,"Hunters, Footing, Floods",Waikolu Gulch east of road. 2 branch rds,Kahanui Road Complex
-Oahu,Waialua,Unknown,2.5,1600,2-Wheel Drive,Behind Dillingham AFB-West Gate,Kealia Rd to F.R. Mauka Rd,Moderate,"Hot, Dry","Foot, bike, 4WD above switchback","Hike, Nature Study, Hunt, Jeep","Parking, Tables, Shelter","Footing, Hunters, Blind corner, Cliff, Rocks, Fire","Windy, access to Peacock Flat via Kealia",Kealia Trail
-Oahu,Honolulu,Unknown,0.75,200,2-Wheel Drive,Nuuanu Pali Dr. Reservoir Spillway,Same as start,Easy,Mild,Foot,"Hike, Nature Study, Stream, Hunt",Parking,"Floods, Footing, Hunters, Slippery Rocks",Maint. by Operations.  Rubbish problems.,Judd Memorial Loop Trail
-Oahu,Honolulu,1978,1.29999995,1200,Foot,Manoa Falls Trail,Pauoa Flats-reservoir overlook,Easy,"Mild, Wet","Foot, Bicycle","Hike, Nature Study",Parking,"Cliff, Footing, Rock, Hunter, Landslide, Narow trl","Makiki-Tantalus cplx, Maint by Operation",Aihualama Trail
-Oahu,Honolulu,Unknown,0.69999999,500,2-Wheel Drive,"DOFAW Baseyard, Makiki Forest Area",Makiki Valley Trail,Easy,Mild,Foot,"Hike, Nature Study, Stream","Parking, Bridge, Toilet, Water, Bench","Footing, Rocks, Hunters, Landslides",Makiki-Tantalus complex,Kanealole Trail
-Oahu,"Waianae, Waialua",Unknown,2,500,2-Wheel Drive,Forest Reserve Road,Mokuleia firebreak (Mauka) Rd.,Moderate,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt","Parking, camp, Table, Shelter","Blind corner, cliff, footing, fire, hunters",Permit-DOFAW,Kuaokala Trail
-Oahu,Waialua,Unknown,2.5,1600,2-Wheel Drive,Behind Dillingham AFB-West Gate,Kealia Rd to F.R. Mauka Rd,Moderate,"Hot, Dry","Foot, bike, 4WD above switchback","Hike, Nature Study, Hunt Jeep, Sensitive, Scenic","Parking, Tables, Shelter","Blind corner, cliff, footing, rocks, fire","Windy, access to Peacock Flat via Kealia",Kealia Access Road
-Oahu,Waialua,Unknown,3.5,1200,2-Wheel Drive,End Mokuleia Access-FAA Road,Mokuleia firebreak (mauka) Rd.,Moderate,Mild,"Foot, 4WD","Hike, Nature Study, Hunt, Bio. Sens.",Camping,"Footing, Hunters",Trail goes through Pahole NAR,Mokuleia Trail
-Oahu,Waialua,Unknown,4.19999981,1400,2-Wheel Drive,Farrington Highway-Mokuleia Ranch,Mokuleia FR Mauka Rd past Nike site,Easy,Mild,"Foot, Bicycle",None,None,None,"Acc. Mokuleia,Makua Rim,Peacock Flat Tr",Mokuleia Forest Reserve Access Road
-Oahu,Koolauloa,1878,2.5,700,2-Wheel Drive,End of Maakua Road,Same as start,Easy,"Mild, Wet","Foot, Bicycle","Hike, Nature Study, Hunt, Archery, Stream","Bench, Camp, Parking, Shelter","Footing, Flash Flood, Hunters, Narrow Trail",Camping permit - DOFAW,Hauula Loop Trail
-Oahu,Ewa,Unknown,1,300,2-Wheel Drive,"Waimano Home Gate, left of fence","Waimano upper, .5 mile from start",Easy,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt, Stream, Swim","Parking, Camping","Footing, Floods, Hunters",Camping permit-DOFAW,Lower Waimano Trail
-Oahu,Honolulu,1981,1.5,100,Foot,Judd Memorial Loop,Pauoa Flats Trail,Easy,Mild,Foot,Hike,None,Cliffs,Honolulu Mauka Complex,Nuuanu Trail
-Oahu,Honolulu,pre1900,0.75,500,Foot,Manoa Cliffs Trail,Puu Konahuanui Trail,Easy,"Mild, Wet",Foot,Hike,None,Footing,None,Pauoa Flats Trail
-Oahu,Honolulu,Unknown,0.75,500,2-Wheel Drive,Tantalus Drive,"Pauoa Flats, Nuuanu Lookout",Easy,Wet,Foot,Hike,None,"Cliff, Footing","Makiki-Tantalus cplx, Mtn bike problems",Puu Ohia Trail
-Oahu,Honolulu,Unknown,0.25,100,2-Wheel Drive,Tantalus Drive,Same as start,Easy,Wet,Foot,Hike,None,None,None,Tantalus Arboretum Trail
-Oahu,Honolulu,Unknown,0.69999999,500,2-Wheel Drive,"DOFAW Baseyard, Makiki Forest Area","Ualakaa, Moleka, Makiki Valley Trls",Easy,Mild,Foot,"Hike, Nature Study, Stream, Cultural","Bench, Bridge, Parking, toilet, water, table","Cliff, Footing, Rocks, Uneven Surface",Makiki-Tantalus complex,Maunalaha Trail
-Maui,Makawao,1960's,0.60000002,200,4-Wheel Drive,Polipoli State Park,Haleakala Ridge Trail,Moderate,Cold,Foot,"Hike, Hunt","Toilet, Potable Water, Tables, Cabins, Camping",Hunters, ,Polipoli Trail
-Oahu,Honolulu,Unknown,1.10000002,200,2-Wheel Drive,Tantalus Drive,East side of Round Top Drive,Easy,Mild,Foot,"Hike, Nature Study, Stream","Bench, Bridge, Parking","Footing, Rocks, Hunters, Landslides, Narrow Trail","Makiki-Tantalus cplx, Maint by Operation",Makiki Valley Trail
-Oahu,Honolulu,1980,0.52999997,400,2-Wheel Drive,.1 mile past Ualakaa State Park,Makiki Valley Trail,Easy,Mild,Foot,Hike,"Bench, Water, Parking Toilets, Trash Cans","Footing, Hunters, Narrow Trails, Uneven Surface","Makiki-Tantalus cplx, Maint by Operation",Ualakaa Trail
-Oahu,Koolaupoko,Unknown,1,400,2-Wheel Drive,Kumuhau Rd.,Aniani Nui Ridge,Moderate,Mild,"Foot, Bicycle, Horse","Hike, Nature Study",None,Footing,Maunawili section under construction,Maunawili-Waimanalo Access Road
-Oahu,"Waialua, Wahiawa",Unknown,6,800,2-Wheel Drive,Kamehameha Hwy-Dole Pineapple Stand,End of Jeep Road,N/A,Mild,4WD,None,None,None,"Permit-DOFAW, Dole, Waialua Sugar, Army",Poamoho Hele Loa Road
-Oahu,Honolulu,1979,0.75,300,2-Wheel Drive,Round Top Drive,Makiki Valley Trail,Easy,Mild,Foot,Hike,None,"Cliff, Footing","Makiki-Tantalus cplx, Maint by Operation",Moleka Trail
-Molokai,Molokai,Unknown,9.80000019,3250,2-Wheel Drive,Hwy 46 3.5 mi NW of Kaunakakai,Past Waikolu Lookout-Makakupaia Rd.,N/A,"Mild, Wet","Foot, 4WD, Horse","Hike, Nature Study, Hunt, Culture","Toilets, Camping, Picnic, Parking","Hunters, Cliffs, Floods, Footing","Camp permit-DOFAW, amenities at lookout",Maunahui-Makakupaia Access Road
-Molokai,Molokai,Unknown,2.0999999,500,4-Wheel Drive,"Main FR Rd., Waikolu lookout",End of ridge- 3000 ft elev.,N/A,"Mild, Wet",4WD,Hunt,None,"Hunters, Footing, Floods", ,Kaulahuki Road
-Molokai,Molokai,Unknown,3.29999995,500,4-Wheel Drive,Main F.R. Rd-before Waikolu lookout,Kahanui Flats,N/A,"Mild, Wet",4WD,Hunt,None,"Hunters, Footing, Floods",Waikolu Gulch east of road. 2 branch rds,Kahanui Road Complex
-Maui,Hana,1960's,0.80000001,200,2-Wheel Drive,3.5 mi past Kailua Village to Hana,Grassy clearing on hill,Moderate,Mild,Foot,Hike,"Table, Shelter, Fire Pit",Footing,None,Waikamoi Ridge Trail
-Maui,Hana,1971,0.60000002,40,2-Wheel Drive,"Hana Hwy, Keanae Arboretum",Taro patch auwai intake,Easy,Mild,Foot,"Hike, Nature Study, Stream, Archaeology, Culture",None,"Cliff, Footing, Flash Flood, Waves",None,Keanae Arboretum Walk
-Maui,Hana,Ancient,3,200,2-Wheel Drive,Hana Dump Road at Kainalimu Bay,Just before Hana Airport,Moderate,Mild,Foot,"Hike, Hunt, Beach, Archaeology, Dive, Fish","Camping, Cabins, Tables, Toilets",Footing,Also called Hana-Honokalani Trail,Ke Alaloa O Maui (Piilani Trail)
-Maui,Makawao,1970's,4.4000001,1220,Foot,Ranger cabin,Cattle guard on Polipoli Road,Moderate,Cold,Foot,"Hike, Hunt",Shelter,Hunters, ,Boundary Trail
-Hawaii,South Hilo,Unknown,2,550,2-Wheel Drive,19.8 mi point on Saddle Road,17.4 mi point on Saddle Road,Easy,Cool,Foot,"Scenery, Nature Study",Parking at turn out 17.4 mi point,Weather, ,Kaumana Trail
-Hawaii,"S Hilo, N Hilo",Ancient,3.70000005,398,2-Wheel Drive,Saddle Road 22.4 mi W of Hilo,Kulani to M. Loa Observatory Road,Moderate,Cold,"Foot, Horse","Hike, Bio. Sens., Nature Study, Culture",Parking,"Hunters, Uneven Surface",Cold climate with rain and fog,Puu Oo Horse Trail
-Maui,Makawao,1970's,1.39999998,800,4-Wheel Drive,Kula Forest Access Road,Joins Boundary Trail,Moderate,Cold,Foot,"Hike, Hunt",Shelter,Hunters, ,Lower Waiohuli Trail
-Maui,Makawao,1960's,0.5,250,Foot,0.8 mi point of Redwood Trail,Plum Trail,Moderate,Cold,Foot,"Hike, Hunt",Shelter,Hunters, ,Tie Trail
-Maui,Makawao,1930's,1.70000005,600,4-Wheel Drive,Ranger cabin Polipoli State Park,Haleakala Ridge Trail,Moderate,Cold,Foot,"Hike, Hunt",Shelter,Hunters, ,Plum Trail
-Maui,Makawao,1960's,1.70000005,900,4-Wheel Drive,Polipoli State Park entrance,Ranger's Cabin,Moderate,Cold,"Foot, Bike","Hike, Hunt","Table, Toilets, Cabin, Camping","Hunters, Uneven Surface", ,Redwood Trail
-Maui,Makawao,1960's,6.80000019,2600,2-Wheel Drive,Near end of Science City Road,Haleakala Ridge Trail,Moderate,Cold,"Foot, Bike, 4WD","Hike, Hunt, 4WD",None,"Hunters, High Elevation",DOFAW management access road,Skyline Road
-Maui,Makawao,1960's,1.60000002,850,4-Wheel Drive,Skyline switchback,Forest Reserve boundary shelter,Moderate,Cold,Foot,"Hike, Hunt, Nature Study",Shelter,Hunters, ,Haleakala Ridge Trail
-Maui,Makawao,1970's,3,400,4-Wheel Drive,Waiakoa Gate at Kula For.Res. Bound,Waiakoa Gate at Kula ForRes Boundar,Moderate,Cold,"Foot, Bicycle","Hike, Hunt",None,Hunters,Trail only partially maintained.,Waiakoa Loop Trail
-Hawaii,North Hilo & Hamakua, ,17.5,4440,2-Wheel Drive,27.5 mile point on Saddle Rd.,M.Loa Solar Observatory 11150'elev.,Easy,"Dry, Cold","Foot, Bicycle, 2WD","Hike, Nature Study, Bio. Sens.",Parking,"Blind Corner, High Elevation, Sun Vehicle Traffic",See Memo,Mauna Loa Observatory Access Road
-Hawaii,Hamakua,1960,4.19999981,1760,2-Wheel Drive,Saddle Rd. Kilohana Hunter Check St,Puu Laau Cabin,Easy,Cool/Cold,"Foot, Horse, Bicycle, 4WD","Hunt, Scenery, Nature Study, Archery, Hike","Parking, Toilets","Hunters, Blind Corner, High Elevation, Footing", ,Puu Laau Road
-Hawaii,"Hamakua, N Hilo",1960,32,2750,2-Wheel Drive,"Hale Pohaku V Ctr, Mauna Kea S P",Puu Laau Cabin Forest Rsv boundary,Moderate,Cool/Cold,"Foot, Horse, Bicycle, 4WD","Hike, Hunt, Nature Study, Bio. Sens., 4WD","Visitors Center, Toilets, Water","Blind Corner, High Elevation, Hunters, Sun", ,Mauna Kea Access Road
-Maui,Makawao, ,1.10000002,0,2-Wheel Drive,0.25 mi on Olinda Road,Ridge top over Central Valley, , ,Foot,"Hike, Nature Study",None,Footing,No Data Sheet submitted,Waihou Spring Trail
-Hawaii,North Hilo,Ancient,5.5,3240,2-Wheel Drive,Hilo Frst Rsv 0.16 mi E Kaula Gulch,Keanakolu Humuula Ahpa,Difficult,"Mild, Cold","Foot, Horse","Hike, Bio.Sens., Nature Study, Hunt",Cabins,"Hunters, Footing",Require permit from Hamakua Sugar,Humuula Trail
-Hawaii,North Kohala,Ancient,0.25,30,2-Wheel Drive,Coast Grd. Loran Station,Fenceline at S property boundary,Easy,Dry,Foot,"Hike, Beach, Fish, Nature Study","Toilet, Parking, Camping, Cabiins, Potable Water","Cliffs, Footing, Flash Floods, Stream, Sun",Very windy. Trail on cliffs.,Ala Kahakai Trail (Puakea Bay Sector)
-Hawaii,"Puna, S Hilo",Ancient,2.5,20,2-Wheel Drive,N end Beach Rd Haw Paradise Prk Sub,Kekuanaoa Ave.,Moderate,"Hot, Wet",Foot,"Hike, Nature Study, Archaeology, Fish, Beach","Parking, Interpretive Signs","Shorebreak, High Surf, Currents, Rocks", ,Puna Trail (North End Section)
-Maui,Makawao,2008,0,0, , , , , , , , , , ,Kahakapao Loop Trail
-Hawaii,South Kohala,Ancient,3.9000001,15,2-Wheel Drive,Puako Boat Ramp,"Makaiwa Bay, Mauna Lani Resort",Moderate,Hot,Foot,"Hike, Beach, Fish, Nature Study","Toilet, Parking, Camping, Cabins, Potable water","Cliff, Footing, Flash Floods, Stream, Sun",See Memo,Ala Kahakai Trail (Puako-Makaiwa Sector)
-Maui,Makawao, ,0,0, , , , , , , , , , ,Paahao Road
-Maui,Makawao, ,0,0, , , , , , , , , , ,Kahakapao Ravine Trail
-Maui,Makawao, ,0,0, , , , , , , , , , ,Renegade Trail
-Oahu,Honolulu,1979,0.75,600,2-Wheel Drive,Tantalus Drive,Makiki Valley Trail,Easy,Mild,Foot,Hike,None,"Footing, Cliffs",Makiki-Tantalus complex,Nahuina Trail
-Kauai,Waimea,1967,6.30000019,240,4-Wheel Drive,Papaalai-Mana Ridge Road,Kauhao Ridge Road,N/A,Mild,"Foot, Bicycle, Horse, 4WD","Hike, Hunt, Nature Study","Shelters, Tables, Toilets",Hunters,Excellent mild biking.,Contour Road
-Hawaii,North Hilo,Unknown,0.2,120,4-Wheel Drive,Keanakolu Rd. 17 mi N MK Rd jct,Kaluakauka Laupahoehoe Frst Risv,Moderate,"Wet, Cold",Foot,"Hike, Culture, Nature Study",None,"Footing, Hunters",Leading to death site of David Douglass,Drs Pit (Kaluakauka Trail)
-Oahu,Honolulu,Unknown,1.5,300,2-Wheel Drive,End of Kalaau Road,Trail ends .4 past FR boundary,Easy,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt, Stream",Parking,"Footing, Floods, Hunters, Uneven Surface",Rough trail follows stream to falls,Kuliouou Valley Trail
-Kauai,Waimea,1960s,3.5,320,4-Wheel Drive,1.25 mi on Contour Road,Lapa Ridge,N/A,Mild,"Foot, Bicycle, Horse, 4WD","Hike, Hunt, Nature Study, 4WD","Shelters, Tables, Toilets",Hunters,Slippery when wet.,Lapa Ridge Road
-Kauai,Waimea,Unknown,8,2410,2-Wheel Drive,"11.1 mi on Hwy 550, Waimea C. SP",1050-foot elev. on Mana Ridge,N/A,Mild,"Foot, Bicycle, Horse, 4WD","Hunt, 4WD",None,Hunters,Hunting license required for entry.,Papaalai-Mana Ridge Road
-Kauai,Waimea,1940s,6.5,2180,2-Wheel Drive,"12.0 mi on Hwy 550, Waimea C. SP",End of Haeleele Ridge over Na Pali,N/A,"Mild, Dry","Foot, Bicycle, Horse, 4WD","Hike, Hunt, Nature Study",None,"Hunters, Cliffs",Length for both forks.  Slippery.,Haeleele Ridge Road
-Kauai,Waimea,1930s,5.30000019,1960,2-Wheel Drive,"12.0 mi on Hwy 550, Waimea C. SP",Polihale Ridge,N/A,Mild,"Foot, Bicycle, Horse, 4WD","Hike, Hunt",None,Hunters,Suitable for hardy biking.,Polihale Ridge Road
-Kauai,Waimea,1930s,4.30000019,1917,2-Wheel Drive,13.1 mi on Hwy 550,1400-foot elev. on Kaaweiki Ridge,N/A,"Mild, Dry","Foot, Bicycle, Horse, 4WD","Hike, Hunt, Nature Study",None,"Hunters, Cliffs",Hunter access road.  Slippery.,Kaaweiki Road
-Kauai,Waimea,1930s,5,1917,2-Wheel Drive,"13.1 mi on Hwy 550, Waimea C. SP",1400-foot elev. on Kauhao Ridge,N/A,"Mild, Dry","Foot, Bicycle, Horse, 4WD","Hike, Hunt, Nature Study,  Archery",None,"Hunters, Cliffs, Landslides",Length from Contour Road.,Kauhao Ridge Road
-Kauai,Waimea, ,2.5,1340,2-Wheel Drive,Makaha Ridge Road,Makaha Arboretum, , ,"Foot, Bicycle, Horse","Hike, Hunt",None,Hunters,No Data Sheet submitted,Makaha Road
-Kauai,Waimea,1930s,3.79999995,540,2-Wheel Drive,0.25 mi on Makaha Ridge Road,Milolii Ridge at picnic shelter,N/A,"Mild, Dry",4WD,"Hike, Hunt, Nature Study","Shelters, Tables","Hunters, Cliffs, Bees", ,Milolii Ridge Road
-Kauai,Waimea,1960s,3.5,1340,4-Wheel Drive,End of Milolii Ridge Road,1720-foot elev. of Milolii Ridge,Difficult,"Mild, Dry","Foot, Bicycle, Horse","Hike, Hunt, Nature Study",Shelters,"Hunters, Cliffs, Bees",Hazardous cliffs at end.,Milolii Ridge Trail
-Kauai,Waimea,1920s,6.0999999,280,4-Wheel Drive,"15.5 mi on Hwy 550, Kokee SP",Camp 10,N/A,"Cold, Wet",4WD,"Fish, Hike, Hunt, Nature Study, Stream, 4WD","Bridges, Camping, Shelters, Tables, Toilets","Landslides, Hunters, Flooding, Cliffs",Road slick with the slightest rain.,Mohihi-Camp 10 Road
-Hawaii,Hamakua,1972,6.19999981,2805,4-Wheel Drive,Kamakoa Gulch Mauna Kea Hunter Rd,Above 10200' elevation Muna Kea,Moderate,Cold,"Foot, Horse, 4WD","Hike, Hunt, Culture, Bio Sens, Nature Study",None,"Blind Corner, High Elevation, Hunters, Sun", ,Skyline Road
-Maui,Makawao, ,0,0, , , , , , , , , , ,Akamai Track (perimeter)
-Kauai,Lihue,Unknown,3,120,2-Wheel Drive,Keahua Arboretum,Waikoko gate,N/A,"Mild, Wet","4WD, Bicycle, Motorcycle","Hike, Hunt",None,"Hunters, Stream Crossing", ,Wailua Forest Management Road
-Oahu,Koolauloa,Unknown,2.5,600,2-Wheel Drive,"End Pupukea Rd-gate, Boy Scout Camp",Pupukea F.R. road,Moderate,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt, Bio. Sens., Stream","Bridge, Parking Shelter","Hunters, Footing, Narrow trail, Stream, Uneven","Open weekends, state-Nat'l holidays",Kaunala Trail (West)
-Oahu,Waialua,Unknown,7.30000019,600,2-Wheel Drive,Firebreak Mauka Rd. Near KPSTS Rd.,Firebreak Rd-Mokuleia Ranch Land,N/A,Mild,"4WD, Foot","Hike, Nature Study, Hunt",None,"Footing, Hunters",Permit-DOFAW. Road meanders in gulches,Mokuleia-Makai Road
-Hawaii,South Kohala,Ancient,3.79999995,30,2-Wheel Drive,Spencer Beach Park (County),Puako Boat Ramp (State),Moderate,Hot,Foot,"Hike, Beach, Fish, Nature Study","Toilet, Parking, Camping, Cabins, Potable water","Cliff, Footing, Flash Floods, Stream, Sun",See Memo,Ala Kahakai Trail (Hapuna-Puako Sector)
-Maui,Wailuku, ,1.20000005,200,2-Wheel Drive,Between mile 40 and 41 on Hwy 30,Same as start, , ,"Foot, Wheelchair",Hike,Interpretive Signs,Cliffs, ,Ohai Loop Trail and Overlook
-Maui,"Wailuku, Lahaina",Ancient,5.5,1600,2-Wheel Drive,Manawaipueo Gulch/w. side of Lahai,Edge of fields near jct. of Hwy 30,Difficult,"Hot, Dry",Foot,"Archaeology, Hike",None,Footing,Na Ala Hele Demonstration Trail,Lahaina Pali Trail
-Maui,Wailuku, ,0,0,2-Wheel Drive, ,Same as start, , ,Motocycle,Motocross Track,Toilet, , ,Maui Motocross Track (perimeter)
-Lanai,Lahaina,Unknown,1.75,140,2-Wheel Drive,West end of Hulopoe Beach,Steep gulch at Huawai Bay,Difficult,"Hot, Dry",Foot,"Hike, Fish, Archaeology, Nataure Study, Camp","Showers, Parking, Toilets, Camping, Tables","Cliffs, Waves",Acc to ocean down steep cliff using rope,"Hulopei-Huawai Fisherman's Trail
-"
-Maui,"Makawao, Hana",Ancient,12.5,200,2-Wheel Drive,La Perouse Bay (4WD & Trail split),Kanaio Beach,Difficult,Hot,"Foot, Horse","Hike, Hunt, Ocean, Archaeology, Fish",None,"Footing, Sun",La Perouse Bay to Kanaio is accessible,Hoapili Trail
-Hawaii,South Kohala,Ancient,3.79999995,30,2-Wheel Drive,Spencer Beach Park (County),Puako Boat Ramp (State),Moderate,Hot,Foot,"Hike, Beach, Fish, Nature Study","Toilet, Parking, Camping, Cabins, Potable water","Cliff, Footing, Flash Floods, Stream, Sun",See Memo,Ala Kahakai Trail (Kawaihae-Waiulaula Sector)
-Hawaii,South Hilo, ,0,0, , , , , , , , , , ,Upper Waiakea ATV/Dirt Bike Park (perimeter)
-Maui,Makawao, ,0,0, , , , , , , , , , ,Pineapple Express Downhill Flow Trail
-Hawaii,South Hilo,Unknown,0.60000002,140,2-Wheel Drive,Old Mamalahoa Highway,Onomea Bay Shoreline,Easy,Mild,Foot,"Nature Study, Hike, Ocean, Stream","Parking, Bridge",Current,"Natural Beauty, Marine Life Cons. Dist.",Onomea Donkey Trail
-Maui,Makawao,1970's,7,1200,4-Wheel Drive,Kula Forest Reserve Access Road,Upper Waiakoa Trail,Difficult,Cold,Foot,"Hike, Hunt",None,"Hunters, Weather",Trail only partially maintained,Upper Waiohuli Trail
-Maui,Makawao,1970's,7,1200,4-Wheel Drive,Kula Forest Reserve Access Road,Waiakao Loop Trail,Difficult,Cold,Foot,"Hike, Hunt",None,"Hunters, Weather",Trail only partially maintained,Upper Waiakoa Trail
-Maui,Makawao, ,1.79999995,520,Foot,0.7 mi on Waiakoa Trail,Skyline Road, , ,"Foot, Bike","Hike, Hunt",None,"Footing, Hunters",No Data Sheet submitted,Mamane Trail
-Oahu,Honolulu,Unknown,2.5,2000,2-Wheel Drive,Kuliouou Valley Trail,Koolau Ridge Summit,Difficult,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt","Campsites, Shelter","Cliffs, footing, Rocks, Hunters, Sun",Trail under construction,Kuliouou Ridge Trail (Koko Head)
-Oahu,Honolulu,Unknown,3.5,1700,2-Wheel Drive,Ikena Circle-water tank,Koolau summit ridge,Difficult,"Mild, Wet",Foot,"Hike, Nature Study, Hunt, Camp, Bio Sens","Parking, Bench","Cliff, Footing, Hunters, Landslide, Narrow Trail",Easement-explain purpose at guard gate,Hawailoa Ridge Trail
-Maui,Makawao, ,0,0, , , , , , , , , , ,Pauma Track (perimeter)
-Hawaii,Kau,Ancient,14,8350,4-Wheel Drive,Forest Rsv boundary end access road,Mauna Loa Cabin at summit,Difficult,Cold,Foot,Lava Flows,None,"Weather, Footing, Hunters", ,Ainapo Trail
-Oahu,Honolulu,Unknown,3,2000,2-Wheel Drive,End Laukahi Street-gate blocks acc.,Koolau summit Ridge,Moderate,Mild,Foot,"Hike, Nature Study",None,"Cliffs, footing",First part of trail old road,Wiliwilinui Access Road and Trail
-Oahu,Honolulu,Unknown,3,1600,2-Wheel Drive,End Laukahi Street-gate blocks acc.,Koolau summit Ridge,Moderate,Mild,"Foot, Bicycle","Hike, Nature Study, Camp",Visitors Center,"Cliffs, footing",First part of trail old road,Wiliwilinui Access Road and Trail
-Oahu,Honolulu,Unknown,2.4000001,500,2-Wheel Drive,Waahila State Park,Kolowalu Trail,Moderate,Mild,Foot,"Hike, Nature Study","Parking, Toilets, Shelters","Cliffs, footing, Hunters, Narrow Trail","Open 7-6:45, 7-7:45 summer",Waahila Ridge Trail
-Oahu,Honolulu,Unknown,1,1000,2-Wheel Drive,"End Alani Ln., Kolowalu Picnic Area",Waahila Ridge Trail,Moderate,Mild,Foot,"Hike, Nature Study, Stream","Parking, Camp, Tables, Shelters","Footing, Hunters, Narrow Trail, Uneven Surface","Steep Trail, Maint by Operations",Kolowalu Trail
-Oahu,Honolulu,Unknown,1.20000005,400,2-Wheel Drive,Kolowalu Picnic Area,Manoa Falls Trail,Moderate,Wet,Foot,Hike,Shelters,"Footing, Rocks",Proposed trail-need easments,Puu Pia Trail
-Oahu,"Waialua, Wahiawa",1930's,3.5,800,4-Wheel Drive,End of Jeep Road,Koolau Ridge,Moderate,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt","Bench, Camping","Hunters, Footing, Blind Corner, Narrow Trail","Permit-DOFAW, Waialua Sugar, Dole, Army",Poamoho Trail
-Oahu,Koolaupoko,1993,2.75,200,2-Wheel Drive,Mahiku Place,Maunawili-Waimanalo Rd.,Easy,Mild,"Foot, Bicycle, Horse","Hike, Nature Study",Parking,"Footing, Uneven Surface",Maint by Hawaii Equestr. Trail Assn.,Maunawili Ditch Trail
-Oahu,Koolaupoko,1991,10,500,2-Wheel Drive,Nuuanu Pali Lookout,Waimanalo,Moderate,"Mild, Wet","Foot, Bicycle, Horse","Hike, Nature Study",None,"Cliffs, Footing", ,Maunawili Trail
-Oahu,Honolulu,Unknown,4,600,2-Wheel Drive,End of Ala Aolani Road-park,Rd. turns trail at 2.5-ends at 4.0,Easy,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt, Stream, Archeo, Culture","Camp, Parking, Toilets, Water, Tables, Trash","Blind Corner, Footing, Flash Floods, Hunters",Permit - Moanalua Garden Foundation,Kamananui Valley Road
-Oahu,Honolulu,Unknown,2.75,1400,2-Wheel Drive,2 miles up Kamananui Valley Road,Koolau Summit,Moderate,Mild,Foot,"Hike, Nature Study, Stream, Hunt, Cultural",Parking,"Footing, Cliffs, Hunters, Flash Floods, Rocks",Permit - Moanalua Garden Foundation,Kulanaahane Trail
-Oahu,Ewa,Unknown,7.19999981,1600,2-Wheel Drive,"Waimano Home Gate, left of fence",Koolau Ridge,Difficult,"Mild, Wet","Foot, Bicycle","Hike, Nature Study, Stream, Hunt, Archery","Camping, Parking, Shelter","Hunters, Footing, Floods, Cliff",Camping permit from DOFAW,Upper Waimano Trail
-Oahu,Ewa,Unknown,0,0,2-Wheel Drive,End of Komo Mai Drive, , , , , , , , ,Manana Trail Access
-Oahu,Ewa,Unknown,6,1700,2-Wheel Drive,End of Komo Mai Drive,Koolau Ridge,Difficult,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt, Archery, Bio. Sens.","Camping, Parking Shelters","Hunters, Footing, Cliffs, Fire, Narrow Trail, Sun",Camping permit-DOFAW,Manana Trail
-Oahu,Wahiawa,Unknown,4,700,2-Wheel Drive,End Schofield-Waikane Access,Koolau Ridge,Difficult,"Mild, Wet",Foot,"Hike, Nature Study",None,"Cliffs, Footing",Permit - Army Support Command,Schofield-Waikane Trail
-Oahu,Honolulu,Unknown,1.5,200,2-Wheel Drive,Round Top Drive,Tantalus Drive,Easy,"Mild, Wet",Foot,"Hike, Nature Study, Hunt, Bio. Sens.","Parking, Bench, Bridge","Cliff, Footing, Hunters, Landslide, Narrow Trail",Makiki Tantalus complex,Kalawahine Trail
-Oahu,Honolulu,Unknown,2.29999995,500,2-Wheel Drive,Round Top Drive,Tantalus Drive,Easy,"Mild, Wet",Foot,"Hike, Nature Study, Bio. Sens.","Parking, Bridge, Bench, Interpretive Signs","Cliff, Footing, Hunters, Landslides, Narrow Trail",Makiki Tantalus complex,Manoa Cliff Trail
-Oahu,Wahiawa,Unknown,4,700,2-Wheel Drive,End Schofield-Waikane Access,Koolau Ridge,Difficult,"Mild, Wet",Foot,"Hike, Nature Study",None,"Cliffs, Footing",Permit - Army Support Command,Schofield-Waikane Trail
-Hawaii,North Kohala,Unknown,0.5,420,2-Wheel Drive,Pololu Lookout,Awini tr. at base of Kupehau Ridge,Moderate,Mild,"Foot, Horse","Hike, Beach, Nature Study, Stream",None,"Cliffs, Shorebreak, Rocks, Flash Floods, Currents", ,Pololu Trail
-Hawaii,North Hilo,Unknown,1,200,2-Wheel Drive,Puu Huluhulu parking area,Same as start,Easy,Cold,Foot,"Hike, Hunt, Nature Study, Culture, Bio. Sens.","Parking, Toilets","Hunters, Cliff, Rocks, High Elevation, Sun", ,Puu Huluhulu Trail
-Hawaii,Kau,1985,2.0999999,400,2-Wheel Drive,Manuka State Park,Manuka State Park,Easy,Mild,Foot,"Hike, Nature Study, Camp, Bio. Sens.","Toilets, Tables, Parking, Camp, Firepit, Trash",Footing,Interpretive Center,Manuka Loop Trail
-Hawaii,South Hilo, ,0,0, , , , , , , , , , ,Kaulana Manu Native Bird and Plant Sanctuary
-Oahu,Koolauloa, ,0.63,0,2-Wheel Drive,0.5 mi past Sunset Beach,Park, , ,"Motorized OHV, bicycle",Entry Fee,"Parking, Tables, Trash Cans, Toilets","Blind Corner, Fire, Narrow Trail", ,Kahuku Motocross Park (perimeter)
-Maui,Makawao, ,0,0, , , , , , , , , , ,Secret Trail
-Maui,Makawao, ,0,0, , , , , , , , , , ,Tweener Trail
-Maui,Makawao,1961,1.60000002,900,4-Wheel Drive,Makawao Forest Reserve boundary,Piiholo Reservoir,Moderate,Mild,"4WD, Foot, Horse","Hunting, Hike",None,Hunters,Tree planting road,Fong Ridge Road/Trail
-Maui,Makawao, ,0,0, , , , , , , , , , ,Akahi Akahi Track (perimeter)
-Hawaii,Kau,Unknown,5.5,2200,2-Wheel Drive,Hawaii Belt Hwy (Hwy11),Forest Reserve Boundary, ,"Dry, Hot",4WD,None,None, ,Required to contact Kapapala Ranch,Ainapo Trail Access Road
-Hawaii,Hamakua,Ancient,9,1200,4-Wheel Drive,West side Waipio Valley,Waimanu Valley,Difficult,"Wet, Mild",Foot,"Hike, Stream, Ocean, Culture, Hunt","Camping, Toilets","Cliff, Footing, Shorebreak, Rocks, Flash Flood", ,Muliwai Trail
-Oahu,Ewa,Unknown,7.19999981,1600,2-Wheel Drive,"Waimano Home Gate, left of fence",Koolau Ridge,Difficult,"Mild, Wet","Foot, Bicycle","Hike, Nature Study, Stream, Hunt, Archery","Camping, Parking, Shelter","Hunters, Footing, Floods, Cliff",Camping permit from DOFAW,Upper Waimano Trail
-Oahu,Ewa,Unknown,6,1700,2-Wheel Drive,End of Komo Mai Drive,Koolau Ridge,Difficult,Mild,"Foot, Bicycle","Hike, Nature Study, Hunt, Archery, Bio. Sens.","Camping, Parking Shelters","Hunters, Footing, Cliffs, Fire, Narrow Trail, Sun",Camping permit-DOFAW,Manana Trail
-Maui,Makawao,1970's,3,400,4-Wheel Drive,Waiakoa Gate at Kula For.Res. Bound,Waiakoa Gate at Kula ForRes Boundar,Moderate,Cold,"Foot, Bicycle","Hike, Hunt",None,Hunters,Trail only partially maintained.,Waiakoa Loop Trail Access Road
-Kauai,Waimea,1930s,3.79999995,1566,2-Wheel Drive,"15.3 mi on Hwy 550, Kokee SP"," USGS marker ""Lolo No. 2""",Difficult,Mild,Foot,"Hike, Hunt, Nature Study",None,"Hunters, Cliffs, Landslides",Equestrian use by hunters only.,Nualolo Trail
-Kauai,Waimea,1930s,3.79999995,1566,2-Wheel Drive,"15.3 mi on Hwy 550, Kokee SP"," USGS marker ""Lolo No. 2""",Difficult,Mild,Foot,"Hike, Hunt, Nature Study",None,"Hunters, Cliffs, Landslides",Equestrian use by hunters only.,Nualolo Trail
-Kauai,Waimea, ,2.0999999,780,Foot,2.75 mi on Awaawapuhi Trail,Lolo No.2 Bench Mark,Moderate,"Mild, Dry",Foot,"Hike, Hunt, Nature Study","Shelters, Tables","Cliffs, footing, landslides, hunters",Dangerous section at Nualolo Trail.,Nualolo Cliff Trail
-Kauai,Waimea, ,2.0999999,780,Foot,2.75 mi on Awaawapuhi Trail,Lolo No.2 Bench Mark,Moderate,"Mild, Dry",Foot,"Hike, Hunt, Nature Study","Shelters, Tables","Cliffs, footing, landslides, hunters",Dangerous section at Nualolo Trail.,Nualolo Cliff Trail
-Kauai,"Hanalei, Waimea",1930s,3.0999999,1180,2-Wheel Drive,"17.0 mi on Hwy 550, Kokee SP",2200-foot elev. on Awaawapuhi Ridge,Difficult,Mild,Foot,"Bio. Sens., Hike, Hunt, Nature Study, Scenic View",None,"Hunters, Cliffs, Landslides, Bees",Hazardous cliffs at end.,Awaawapuhi Trail
-Maui,Hana, ,0,40,2-Wheel Drive,"Hana Hwy, Keanae Arboretum",Taro patch auwai intake,Easy,Mild,Foot,"Hike, Nature Study, Stream, Archaeology, Culture",None,"Cliff, Footing, Flash Flood, Waves",None,Keanae Arboretum Walk
-Maui,Wailuku,1960's,2.5,1500,2-Wheel Drive,Hwy 34/up Cmp Maluhia Rd/by trl sgn,Lanilili Peak,Moderate,Mild,"Foot, Horse","Hike, Nature Study, Hunt",Table,Hunters, ,Waihee Ridge Trail
+﻿trailname,island,district,length_mi,elev_range,start_pt,end_pt,standard,climate,amenities
+Okolehao Trail,Kauai,Hanalei,2.29999995,1232,0.5 mi on Ohiki Road,Kaukaopua Peak,Moderate,"Mild, Wet","Shelters, Tables"
+Pihea Trail,Kauai,"Hanalei, Waimea",3.79999995,284,"End of Hwy 550, Puu O Kila Lookout",Kawaikoi Stream at Kawaikoi Camp,Moderate,"Cold, Wet","Camping, Parking, Shelters, Tables"
+Kawaikoi Stream Trail,Kauai,Waimea,1.79999995,40,3.9 mi on Mohihi-Camp 10 Road,Same as start,Easy,"Cold, Wet","Bench, Camping, Shelters, Tables, Toilets"
+Nounou Trail (East),Kauai,Kawaihau,2,960,Haleilio Road near end,Sleeping Giant (Nounou Mountain),Moderate,Mild,"Tables, Shelters"
+Alakai Swamp Trail,Kauai,Waimea,3.5,329,3.2 mi on Mohihi-Camp 10 Road,Kilohana on Wainiha Pali,Difficult,"Cold, Wet","Parking, Shelter, Tables, Toilets"
+Pine Forest Drive,Kauai,Waimea,1.29999995,200,3.0 mi on Makaha Ridge Road,3.5 mi on Makaha Ridge Road,N/A,Mild,"Shelters, Tables, Toilets"
+Poomau Canyon Vista Trail,Kauai,Waimea,0.30000001,80,4.5 mi on Mohihi-Camp 10 Road,Poomau Canyon Vista Point,Easy,"Mild, Wet",None
+Makaha Arboretum Trail,Kauai,Waimea,1,226,0.04 mi on Pine Forest Drive,Makaha Forestry Arboretum,N/A,"Mild, Dry","Shelters, Tables, Toilets"
+Moalepe Trail,Kauai,Kawaihau,2.5,680,End of Olohena Road,0.4 mi beyond Kuilau Trail end,Moderate,Mild,None
+Iliau Nature Loop,Kauai,Waimea,0.30000001,40,"8.7 mi on Hwy 550, Waimea Can. SP",Same as start,Easy,Mild,"Parking, Shelters, Tables"
+Kuilau Trail,Kauai,Kawaihau,2.0999999,640,Keahua Arboretum on Hwy 580,Moalepe Trail,Moderate,Mild,"Bridges, Parking, Shelters, Tables, Toilets"
+Koaie Canyon Trail,Kauai,Waimea,3,720,1/2 mile up Waimea River,Lonomea Camp,Moderate,Mild,"Camping, Shelters, Tables, Toilets"
+Nounou Trail (West),Kauai,Kawaihau,1.5,800,Hwy 581,Sleeping Giant (Nounou Mountain),Difficult,Mild,"Tables, Shelters"
+Onomea Old Government Road,Hawaii,South Hilo,0.5,15,Rain shelter in Botanical Garden,Onomea Bay Shoreline near stream,Easy,Mild,"Toilet, Table, Bridge, Shelter, Wheelchair"
+Kukui Trail,Kauai,Waimea,2.5,2240,8.7 mi on Hwy 550 at Iliau Loop,"Wiliwili Camp, Waimea River",Difficult,Mild,"Camping, Shelters, Tables, Toilets"
+Kuamoo-Nounou Trail,Kauai,Kawaihau,2,320,2.3 mi on Hwy 580,Nounou-West Trail,Easy,Mild,"Tables, Bridges, Shelters, Parking"
+Waimea Canyon Trail,Kauai,Waimea,7,780,End of Menehune Road or Kukui Trail,Koaie Stream junction,Moderate,Mild,"Camping, Shelters, Tables, Toilets"
+Puu Ki-Waialae Trail,Kauai,Waimea,11,3260,End of Menehune Road,Waialae Cabin,Difficult,Mild,"Camping, Firepit, Shelters, Tables, Toilets"
+Powerline Trail,Kauai,"Kawaihau, Hanalei",11.19999981,1568,Kapaka St from Princeville Stables,Keahua Forestry Arboretum,Difficult,"Mild, Wet",None
+Maakua Ridge Trail,Oahu,Koolauloa,2.5,800,End of Maakua Road,Same as start,Moderate,Mild,"Bench, Camp, Tables, Shelter"
+Kohua Ridge Trail,Kauai,Waimea,2.5,167,5.4 mi on Mohihi-Camp 10 Road,3353-foot elev. on Kohua Ridge,Moderate,Mild,None
+Mohihi-Waialae Trail,Kauai,Waimea,4,880,End of Mohihi-Camp 10 Road,Waialae Cabin,Difficult,"Cold, Wet","Camping, Shelters, Tables, Toilets"
+Poamoho Trail,Oahu,"Waialua, Wahiawa",3.5,800,End of Jeep Road,Koolau Ridge,Moderate,Mild,Camping
+Manoa Falls Trail,Oahu,Honolulu,0.80000001,800,End of Manoa Road,Manoa Falls,Easy,"Mild, Wet","Parking, Bench, Bridge, Toilets, Trash Cans"
+Mokuleia-Kuaokala Firebreak Access Road,Oahu,Waialua,6,500,Kaena Pt. Tracking Station Rd.,"Past Peacock Flats, Mokuleia Trail",N/A,Mild,None
+Kahanui Road Complex,Molokai,Molokai,3.29999995,500,Main F.R. Rd-before Waikolu lookout,Kahanui Flats,N/A,"Mild, Wet",None
+Kealia Trail,Oahu,Waialua,2.5,1600,Behind Dillingham AFB-West Gate,Kealia Rd to F.R. Mauka Rd,Moderate,"Hot, Dry","Parking, Tables, Shelter"
+Judd Memorial Loop Trail,Oahu,Honolulu,0.75,200,Nuuanu Pali Dr. Reservoir Spillway,Same as start,Easy,Mild,Parking
+Aihualama Trail,Oahu,Honolulu,1.29999995,1200,Manoa Falls Trail,Pauoa Flats-reservoir overlook,Easy,"Mild, Wet",Parking
+Kanealole Trail,Oahu,Honolulu,0.69999999,500,"DOFAW Baseyard, Makiki Forest Area",Makiki Valley Trail,Easy,Mild,"Parking, Bridge, Toilet, Water, Bench"
+Kuaokala Trail,Oahu,"Waianae, Waialua",2,500,Forest Reserve Road,Mokuleia firebreak (Mauka) Rd.,Moderate,Mild,"Parking, camp, Table, Shelter"
+Kealia Access Road,Oahu,Waialua,2.5,1600,Behind Dillingham AFB-West Gate,Kealia Rd to F.R. Mauka Rd,Moderate,"Hot, Dry","Parking, Tables, Shelter"
+Mokuleia Trail,Oahu,Waialua,3.5,1200,End Mokuleia Access-FAA Road,Mokuleia firebreak (mauka) Rd.,Moderate,Mild,Camping
+Mokuleia Forest Reserve Access Road,Oahu,Waialua,4.19999981,1400,Farrington Highway-Mokuleia Ranch,Mokuleia FR Mauka Rd past Nike site,Easy,Mild,None
+Hauula Loop Trail,Oahu,Koolauloa,2.5,700,End of Maakua Road,Same as start,Easy,"Mild, Wet","Bench, Camp, Parking, Shelter"
+Lower Waimano Trail,Oahu,Ewa,1,300,"Waimano Home Gate, left of fence","Waimano upper, .5 mile from start",Easy,Mild,"Parking, Camping"
+Nuuanu Trail,Oahu,Honolulu,1.5,100,Judd Memorial Loop,Pauoa Flats Trail,Easy,Mild,None
+Pauoa Flats Trail,Oahu,Honolulu,0.75,500,Manoa Cliffs Trail,Puu Konahuanui Trail,Easy,"Mild, Wet",None
+Puu Ohia Trail,Oahu,Honolulu,0.75,500,Tantalus Drive,"Pauoa Flats, Nuuanu Lookout",Easy,Wet,None
+Tantalus Arboretum Trail,Oahu,Honolulu,0.25,100,Tantalus Drive,Same as start,Easy,Wet,None
+Maunalaha Trail,Oahu,Honolulu,0.69999999,500,"DOFAW Baseyard, Makiki Forest Area","Ualakaa, Moleka, Makiki Valley Trls",Easy,Mild,"Bench, Bridge, Parking, toilet, water, table"
+Polipoli Trail,Maui,Makawao,0.60000002,200,Polipoli State Park,Haleakala Ridge Trail,Moderate,Cold,"Toilet, Potable Water, Tables, Cabins, Camping"
+Makiki Valley Trail,Oahu,Honolulu,1.10000002,200,Tantalus Drive,East side of Round Top Drive,Easy,Mild,"Bench, Bridge, Parking"
+Ualakaa Trail,Oahu,Honolulu,0.52999997,400,.1 mile past Ualakaa State Park,Makiki Valley Trail,Easy,Mild,"Bench, Water, Parking Toilets, Trash Cans"
+Maunawili-Waimanalo Access Road,Oahu,Koolaupoko,1,400,Kumuhau Rd.,Aniani Nui Ridge,Moderate,Mild,None
+Poamoho Hele Loa Road,Oahu,"Waialua, Wahiawa",6,800,Kamehameha Hwy-Dole Pineapple Stand,End of Jeep Road,N/A,Mild,None
+Moleka Trail,Oahu,Honolulu,0.75,300,Round Top Drive,Makiki Valley Trail,Easy,Mild,None
+Maunahui-Makakupaia Access Road,Molokai,Molokai,9.80000019,3250,Hwy 46 3.5 mi NW of Kaunakakai,Past Waikolu Lookout-Makakupaia Rd.,N/A,"Mild, Wet","Toilets, Camping, Picnic, Parking"
+Kaulahuki Road,Molokai,Molokai,2.0999999,500,"Main FR Rd., Waikolu lookout",End of ridge- 3000 ft elev.,N/A,"Mild, Wet",None
+Kahanui Road Complex,Molokai,Molokai,3.29999995,500,Main F.R. Rd-before Waikolu lookout,Kahanui Flats,N/A,"Mild, Wet",None
+Waikamoi Ridge Trail,Maui,Hana,0.80000001,200,3.5 mi past Kailua Village to Hana,Grassy clearing on hill,Moderate,Mild,"Table, Shelter, Fire Pit"
+Keanae Arboretum Walk,Maui,Hana,0.60000002,40,"Hana Hwy, Keanae Arboretum",Taro patch auwai intake,Easy,Mild,None
+Ke Alaloa O Maui (Piilani Trail),Maui,Hana,3,200,Hana Dump Road at Kainalimu Bay,Just before Hana Airport,Moderate,Mild,"Camping, Cabins, Tables, Toilets"
+Boundary Trail,Maui,Makawao,4.4000001,1220,Ranger cabin,Cattle guard on Polipoli Road,Moderate,Cold,Shelter
+Kaumana Trail,Hawaii,South Hilo,2,550,19.8 mi point on Saddle Road,17.4 mi point on Saddle Road,Easy,Cool,Parking at turn out 17.4 mi point
+Puu Oo Horse Trail,Hawaii,"S Hilo, N Hilo",3.70000005,398,Saddle Road 22.4 mi W of Hilo,Kulani to M. Loa Observatory Road,Moderate,Cold,Parking
+Lower Waiohuli Trail,Maui,Makawao,1.39999998,800,Kula Forest Access Road,Joins Boundary Trail,Moderate,Cold,Shelter
+Tie Trail,Maui,Makawao,0.5,250,0.8 mi point of Redwood Trail,Plum Trail,Moderate,Cold,Shelter
+Plum Trail,Maui,Makawao,1.70000005,600,Ranger cabin Polipoli State Park,Haleakala Ridge Trail,Moderate,Cold,Shelter
+Redwood Trail,Maui,Makawao,1.70000005,900,Polipoli State Park entrance,Ranger's Cabin,Moderate,Cold,"Table, Toilets, Cabin, Camping"
+Skyline Road,Maui,Makawao,6.80000019,2600,Near end of Science City Road,Haleakala Ridge Trail,Moderate,Cold,None
+Haleakala Ridge Trail,Maui,Makawao,1.60000002,850,Skyline switchback,Forest Reserve boundary shelter,Moderate,Cold,Shelter
+Waiakoa Loop Trail,Maui,Makawao,3,400,Waiakoa Gate at Kula For.Res. Bound,Waiakoa Gate at Kula ForRes Boundar,Moderate,Cold,None
+Mauna Loa Observatory Access Road,Hawaii,North Hilo & Hamakua,17.5,4440,27.5 mile point on Saddle Rd.,M.Loa Solar Observatory 11150'elev.,Easy,"Dry, Cold",Parking
+Puu Laau Road,Hawaii,Hamakua,4.19999981,1760,Saddle Rd. Kilohana Hunter Check St,Puu Laau Cabin,Easy,Cool/Cold,"Parking, Toilets"
+Mauna Kea Access Road,Hawaii,"Hamakua, N Hilo",32,2750,"Hale Pohaku V Ctr, Mauna Kea S P",Puu Laau Cabin Forest Rsv boundary,Moderate,Cool/Cold,"Visitors Center, Toilets, Water"
+Waihou Spring Trail,Maui,Makawao,1.10000002,0,0.25 mi on Olinda Road,Ridge top over Central Valley, , ,None
+Humuula Trail,Hawaii,North Hilo,5.5,3240,Hilo Frst Rsv 0.16 mi E Kaula Gulch,Keanakolu Humuula Ahpa,Difficult,"Mild, Cold",Cabins
+Ala Kahakai Trail (Puakea Bay Sector),Hawaii,North Kohala,0.25,30,Coast Grd. Loran Station,Fenceline at S property boundary,Easy,Dry,"Toilet, Parking, Camping, Cabiins, Potable Water"
+Puna Trail (North End Section),Hawaii,"Puna, S Hilo",2.5,20,N end Beach Rd Haw Paradise Prk Sub,Kekuanaoa Ave.,Moderate,"Hot, Wet","Parking, Interpretive Signs"
+Kahakapao Loop Trail,Maui,Makawao,0,0, , , , , 
+Ala Kahakai Trail (Puako-Makaiwa Sector),Hawaii,South Kohala,3.9000001,15,Puako Boat Ramp,"Makaiwa Bay, Mauna Lani Resort",Moderate,Hot,"Toilet, Parking, Camping, Cabins, Potable water"
+Paahao Road,Maui,Makawao,0,0, , , , , 
+Kahakapao Ravine Trail,Maui,Makawao,0,0, , , , , 
+Renegade Trail,Maui,Makawao,0,0, , , , , 
+Nahuina Trail,Oahu,Honolulu,0.75,600,Tantalus Drive,Makiki Valley Trail,Easy,Mild,None
+Contour Road,Kauai,Waimea,6.30000019,240,Papaalai-Mana Ridge Road,Kauhao Ridge Road,N/A,Mild,"Shelters, Tables, Toilets"
+Drs Pit (Kaluakauka Trail),Hawaii,North Hilo,0.2,120,Keanakolu Rd. 17 mi N MK Rd jct,Kaluakauka Laupahoehoe Frst Risv,Moderate,"Wet, Cold",None
+Kuliouou Valley Trail,Oahu,Honolulu,1.5,300,End of Kalaau Road,Trail ends .4 past FR boundary,Easy,Mild,Parking
+Lapa Ridge Road,Kauai,Waimea,3.5,320,1.25 mi on Contour Road,Lapa Ridge,N/A,Mild,"Shelters, Tables, Toilets"
+Papaalai-Mana Ridge Road,Kauai,Waimea,8,2410,"11.1 mi on Hwy 550, Waimea C. SP",1050-foot elev. on Mana Ridge,N/A,Mild,None
+Haeleele Ridge Road,Kauai,Waimea,6.5,2180,"12.0 mi on Hwy 550, Waimea C. SP",End of Haeleele Ridge over Na Pali,N/A,"Mild, Dry",None
+Polihale Ridge Road,Kauai,Waimea,5.30000019,1960,"12.0 mi on Hwy 550, Waimea C. SP",Polihale Ridge,N/A,Mild,None
+Kaaweiki Road,Kauai,Waimea,4.30000019,1917,13.1 mi on Hwy 550,1400-foot elev. on Kaaweiki Ridge,N/A,"Mild, Dry",None
+Kauhao Ridge Road,Kauai,Waimea,5,1917,"13.1 mi on Hwy 550, Waimea C. SP",1400-foot elev. on Kauhao Ridge,N/A,"Mild, Dry",None
+Makaha Road,Kauai,Waimea,2.5,1340,Makaha Ridge Road,Makaha Arboretum, , ,None
+Milolii Ridge Road,Kauai,Waimea,3.79999995,540,0.25 mi on Makaha Ridge Road,Milolii Ridge at picnic shelter,N/A,"Mild, Dry","Shelters, Tables"
+Milolii Ridge Trail,Kauai,Waimea,3.5,1340,End of Milolii Ridge Road,1720-foot elev. of Milolii Ridge,Difficult,"Mild, Dry",Shelters
+Mohihi-Camp 10 Road,Kauai,Waimea,6.0999999,280,"15.5 mi on Hwy 550, Kokee SP",Camp 10,N/A,"Cold, Wet","Bridges, Camping, Shelters, Tables, Toilets"
+Skyline Road,Hawaii,Hamakua,6.19999981,2805,Kamakoa Gulch Mauna Kea Hunter Rd,Above 10200' elevation Muna Kea,Moderate,Cold,None
+Akamai Track (perimeter),Maui,Makawao,0,0, , , , , 
+Wailua Forest Management Road,Kauai,Lihue,3,120,Keahua Arboretum,Waikoko gate,N/A,"Mild, Wet",None
+Kaunala Trail (West),Oahu,Koolauloa,2.5,600,"End Pupukea Rd-gate, Boy Scout Camp",Pupukea F.R. road,Moderate,Mild,"Bridge, Parking Shelter"
+Mokuleia-Makai Road,Oahu,Waialua,7.30000019,600,Firebreak Mauka Rd. Near KPSTS Rd.,Firebreak Rd-Mokuleia Ranch Land,N/A,Mild,None
+Ala Kahakai Trail (Hapuna-Puako Sector),Hawaii,South Kohala,3.79999995,30,Spencer Beach Park (County),Puako Boat Ramp (State),Moderate,Hot,"Toilet, Parking, Camping, Cabins, Potable water"
+Ohai Loop Trail and Overlook,Maui,Wailuku,1.20000005,200,Between mile 40 and 41 on Hwy 30,Same as start, , ,Interpretive Signs
+Lahaina Pali Trail,Maui,"Wailuku, Lahaina",5.5,1600,Manawaipueo Gulch/w. side of Lahai,Edge of fields near jct. of Hwy 30,Difficult,"Hot, Dry",None
+Maui Motocross Track (perimeter),Maui,Wailuku,0,0, ,Same as start, , ,Toilet
+"Hulopei-Huawai Fisherman's Trail
+",Lanai,Lahaina,1.75,140,West end of Hulopoe Beach,Steep gulch at Huawai Bay,Difficult,"Hot, Dry","Showers, Parking, Toilets, Camping, Tables"
+Hoapili Trail,Maui,"Makawao, Hana",12.5,200,La Perouse Bay (4WD & Trail split),Kanaio Beach,Difficult,Hot,None
+Ala Kahakai Trail (Kawaihae-Waiulaula Sector),Hawaii,South Kohala,3.79999995,30,Spencer Beach Park (County),Puako Boat Ramp (State),Moderate,Hot,"Toilet, Parking, Camping, Cabins, Potable water"
+Upper Waiakea ATV/Dirt Bike Park (perimeter),Hawaii,South Hilo,0,0, , , , , 
+Pineapple Express Downhill Flow Trail,Maui,Makawao,0,0, , , , , 
+Onomea Donkey Trail,Hawaii,South Hilo,0.60000002,140,Old Mamalahoa Highway,Onomea Bay Shoreline,Easy,Mild,"Parking, Bridge"
+Upper Waiohuli Trail,Maui,Makawao,7,1200,Kula Forest Reserve Access Road,Upper Waiakoa Trail,Difficult,Cold,None
+Upper Waiakoa Trail,Maui,Makawao,7,1200,Kula Forest Reserve Access Road,Waiakao Loop Trail,Difficult,Cold,None
+Mamane Trail,Maui,Makawao,1.79999995,520,0.7 mi on Waiakoa Trail,Skyline Road, , ,None
+Kuliouou Ridge Trail (Koko Head),Oahu,Honolulu,2.5,2000,Kuliouou Valley Trail,Koolau Ridge Summit,Difficult,Mild,"Campsites, Shelter"
+Hawailoa Ridge Trail,Oahu,Honolulu,3.5,1700,Ikena Circle-water tank,Koolau summit ridge,Difficult,"Mild, Wet","Parking, Bench"
+Pauma Track (perimeter),Maui,Makawao,0,0, , , , , 
+Ainapo Trail,Hawaii,Kau,14,8350,Forest Rsv boundary end access road,Mauna Loa Cabin at summit,Difficult,Cold,None
+Wiliwilinui Access Road and Trail,Oahu,Honolulu,3,2000,End Laukahi Street-gate blocks acc.,Koolau summit Ridge,Moderate,Mild,None
+Wiliwilinui Access Road and Trail,Oahu,Honolulu,3,1600,End Laukahi Street-gate blocks acc.,Koolau summit Ridge,Moderate,Mild,Visitors Center
+Waahila Ridge Trail,Oahu,Honolulu,2.4000001,500,Waahila State Park,Kolowalu Trail,Moderate,Mild,"Parking, Toilets, Shelters"
+Kolowalu Trail,Oahu,Honolulu,1,1000,"End Alani Ln., Kolowalu Picnic Area",Waahila Ridge Trail,Moderate,Mild,"Parking, Camp, Tables, Shelters"
+Puu Pia Trail,Oahu,Honolulu,1.20000005,400,Kolowalu Picnic Area,Manoa Falls Trail,Moderate,Wet,Shelters
+Poamoho Trail,Oahu,"Waialua, Wahiawa",3.5,800,End of Jeep Road,Koolau Ridge,Moderate,Mild,"Bench, Camping"
+Maunawili Ditch Trail,Oahu,Koolaupoko,2.75,200,Mahiku Place,Maunawili-Waimanalo Rd.,Easy,Mild,Parking
+Maunawili Trail,Oahu,Koolaupoko,10,500,Nuuanu Pali Lookout,Waimanalo,Moderate,"Mild, Wet",None
+Kamananui Valley Road,Oahu,Honolulu,4,600,End of Ala Aolani Road-park,Rd. turns trail at 2.5-ends at 4.0,Easy,Mild,"Camp, Parking, Toilets, Water, Tables, Trash"
+Kulanaahane Trail,Oahu,Honolulu,2.75,1400,2 miles up Kamananui Valley Road,Koolau Summit,Moderate,Mild,Parking
+Upper Waimano Trail,Oahu,Ewa,7.19999981,1600,"Waimano Home Gate, left of fence",Koolau Ridge,Difficult,"Mild, Wet","Camping, Parking, Shelter"
+Manana Trail Access,Oahu,Ewa,0,0,End of Komo Mai Drive, , , , 
+Manana Trail,Oahu,Ewa,6,1700,End of Komo Mai Drive,Koolau Ridge,Difficult,Mild,"Camping, Parking Shelters"
+Schofield-Waikane Trail,Oahu,Wahiawa,4,700,End Schofield-Waikane Access,Koolau Ridge,Difficult,"Mild, Wet",None
+Kalawahine Trail,Oahu,Honolulu,1.5,200,Round Top Drive,Tantalus Drive,Easy,"Mild, Wet","Parking, Bench, Bridge"
+Manoa Cliff Trail,Oahu,Honolulu,2.29999995,500,Round Top Drive,Tantalus Drive,Easy,"Mild, Wet","Parking, Bridge, Bench, Interpretive Signs"
+Schofield-Waikane Trail,Oahu,Wahiawa,4,700,End Schofield-Waikane Access,Koolau Ridge,Difficult,"Mild, Wet",None
+Pololu Trail,Hawaii,North Kohala,0.5,420,Pololu Lookout,Awini tr. at base of Kupehau Ridge,Moderate,Mild,None
+Puu Huluhulu Trail,Hawaii,North Hilo,1,200,Puu Huluhulu parking area,Same as start,Easy,Cold,"Parking, Toilets"
+Manuka Loop Trail,Hawaii,Kau,2.0999999,400,Manuka State Park,Manuka State Park,Easy,Mild,"Toilets, Tables, Parking, Camp, Firepit, Trash"
+Kaulana Manu Native Bird and Plant Sanctuary,Hawaii,South Hilo,0,0, , , , , 
+Kahuku Motocross Park (perimeter),Oahu,Koolauloa,0.63,0,0.5 mi past Sunset Beach,Park, , ,"Parking, Tables, Trash Cans, Toilets"
+Secret Trail,Maui,Makawao,0,0, , , , , 
+Tweener Trail,Maui,Makawao,0,0, , , , , 
+Fong Ridge Road/Trail,Maui,Makawao,1.60000002,900,Makawao Forest Reserve boundary,Piiholo Reservoir,Moderate,Mild,None
+Akahi Akahi Track (perimeter),Maui,Makawao,0,0, , , , , 
+Ainapo Trail Access Road,Hawaii,Kau,5.5,2200,Hawaii Belt Hwy (Hwy11),Forest Reserve Boundary, ,"Dry, Hot",None
+Muliwai Trail,Hawaii,Hamakua,9,1200,West side Waipio Valley,Waimanu Valley,Difficult,"Wet, Mild","Camping, Toilets"
+Upper Waimano Trail,Oahu,Ewa,7.19999981,1600,"Waimano Home Gate, left of fence",Koolau Ridge,Difficult,"Mild, Wet","Camping, Parking, Shelter"
+Manana Trail,Oahu,Ewa,6,1700,End of Komo Mai Drive,Koolau Ridge,Difficult,Mild,"Camping, Parking Shelters"
+Waiakoa Loop Trail Access Road,Maui,Makawao,3,400,Waiakoa Gate at Kula For.Res. Bound,Waiakoa Gate at Kula ForRes Boundar,Moderate,Cold,None
+Nualolo Trail,Kauai,Waimea,3.79999995,1566,"15.3 mi on Hwy 550, Kokee SP"," USGS marker ""Lolo No. 2""",Difficult,Mild,None
+Nualolo Trail,Kauai,Waimea,3.79999995,1566,"15.3 mi on Hwy 550, Kokee SP"," USGS marker ""Lolo No. 2""",Difficult,Mild,None
+Nualolo Cliff Trail,Kauai,Waimea,2.0999999,780,2.75 mi on Awaawapuhi Trail,Lolo No.2 Bench Mark,Moderate,"Mild, Dry","Shelters, Tables"
+Nualolo Cliff Trail,Kauai,Waimea,2.0999999,780,2.75 mi on Awaawapuhi Trail,Lolo No.2 Bench Mark,Moderate,"Mild, Dry","Shelters, Tables"
+Awaawapuhi Trail,Kauai,"Hanalei, Waimea",3.0999999,1180,"17.0 mi on Hwy 550, Kokee SP",2200-foot elev. on Awaawapuhi Ridge,Difficult,Mild,None
+Keanae Arboretum Walk,Maui,Hana,0,40,"Hana Hwy, Keanae Arboretum",Taro patch auwai intake,Easy,Mild,None
+Waihee Ridge Trail,Maui,Wailuku,2.5,1500,Hwy 34/up Cmp Maluhia Rd/by trl sgn,Lanilili Peak,Moderate,Mild,Table

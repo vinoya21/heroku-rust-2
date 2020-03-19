@@ -9,12 +9,14 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/table.css" />
   <script src="javascripts/searchbar_rec.js"></script>
   <script src="javascripts/logout.js"></script>
+  <script src="javascripts/outdoor.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 </head>
 
-<body>
+<body onload='init()'>
 
     <!-- top buttons: "write a review", log in, and sign up -->
     <div class="left">
@@ -91,14 +93,15 @@
         </form>
     </div>
 
-    <!-- test list -->
-    <br><br><br><br><br><br><br>
-    <ul>
-        <li id="test1">default</li>
-        <li id="test2">default</li>
-        <li id="test3">default</li>
-    </ul>
+    <div style="height: 500px; display: flex" id="recdisplay">
+        <div style="height: 500px; width:25%; overflow-y: scroll; display:flex">
+            <table class="displaytable" id="rectable" rules="rows" frame="void">
+            </table>
+        </div>
 
+        <div id="displaytext">
+        </div>
+    </div>
 </body>
 
 </html>

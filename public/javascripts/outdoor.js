@@ -1,13 +1,17 @@
 function init() {
-    $.post('/retrieve?type=service', function (service) { // POST for art info
+    $.post('/retrieve?type=outdoor', function (outdoor) { // POST for art info
         // loop through all art objects 
+
         var titleList = new Array();
-        for (var i = 0; i < service.length; i++) {
-            if (service[i].NAME != '') { // don't want art with no title
+
+        for (var i = 1; i < outdoor.length; i++) {
+            if (outdoor[i].NAME != '') { // don't want art with no title
                 // object title
-                var title = service[i].NAME;
+                var title = outdoor[i].NAME;
+
 
                 if (!titleList.includes(title)) {
+
                     titleList.push(title);
 
                     // create row
@@ -15,14 +19,14 @@ function init() {
                     x.setAttribute("id", "'entry" + i + "'");
 
                     // add to table
-                    document.getElementById("servicetable").appendChild(x);
+                    document.getElementById("rectable").appendChild(x);
 
 
                     // create column w/ info
                     var y = document.createElement("TD");
 
                     // put newly created element in the art class
-                    y.className = "serviceclass";
+                    y.className = "outdoorclass";
 
                     var t = document.createTextNode(title);
                     y.appendChild(t);
@@ -75,20 +79,19 @@ function displayInfo(title) { // display art info
     CITATION: https://stackoverflow.com/questions/16622504/escaping-ampersand-in-url
     Needed to understand why & was not passing through URL parameter. 
     */
-    $.post("/retrieveInfo?type=service&title=" + newtitle, function (info) {
+    $.post("/retrieveInfo?type=outdoor&title=" + newtitle, function (info) {
         document.getElementById('textinfo').innerHTML = '';
 
 
-        if (info[0] != null) { // NEED TO CHANGE THIS DEPENDING ON SERVICE TABLE
+        if (info[0] != null) { // NEED TO CHANGE THIS DEPENDING ON OUTDOOR TABLE
             // FAVORITES BUTTON FUNCTIONALITY TO BE ADDED LATER
             var user = localStorage.getItem('username');
             if (user != null) {
                 checkFavorites(user, newtitle);
             }
-            var location = "<p> " + info[0].LOCATION + " " + info[0].PHONE + "</p>";
-            var website = "<a href='https://" + info[0].WEBSITE + "'> Visit page for more info. </a>";
-            var description = "<p>" + info[0].DESCRIPTION +  "</p>";
-            document.getElementById('textinfo').innerHTML = "<h2>" + title + "</h2>" + location + website + description;
+            var island = "<p> Located on the island of " + info[0].ISLAND + " in " + info[0].DISTRICT + ". </p>";
+            var len = "<p> ELEVATION: " + info[0].ELEVATION + " ft DISTANCE: " + info[0].LENGTH + " mi </p>";
+            document.getElementById('textinfo').innerHTML = "<h2>" + title + "</h2>" + island + len;
         }
     });
 }
@@ -97,7 +100,8 @@ function displayInfo(title) { // display art info
 function search_art() {
     let input = document.getElementById('searchbar_input_rec').value
     input = input.toLowerCase();
-    let x = document.getElementsByClassName('serviceclass');
+    let x = document.getElementsByClassName('outdoorclass');
+    
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display = "none";
@@ -106,6 +110,8 @@ function search_art() {
             x[i].style.display = "table-cell";
         }
     }
+
+
 }
 
 function checkFavorites(user, title) {

@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/searchbar.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/table.css" />
   <script src="javascripts/account.js"> </script>
   <script src="javascripts/login.js"></script>
   <script src="javascripts/service.js"></script>
@@ -110,7 +111,10 @@
     <a href="recreationpage.html">Outdoor Activities</a>
     <a href="servicepage.html">Community Service</a>
   </div>
-
+  <div>
+    <center><h3> E malama ʻoe i ka ʻāina, e malama ka ʻāina ia ʻoe </h3>
+    <p> Take care of the land and the land will take care of you. </p></center>
+  </div>
 <!-- search bar community service -->
     <div id="cover_serv">
         <form method="get" action="">
@@ -121,8 +125,16 @@
             </div>
         </form>
     </div>
+<!-- table that displays menu for art -->
+<div style="height: 500px; display: flex" id="servicedisplay">
+  <div style="height: 500px; width:25%; overflow-y: scroll; display:flex">
+      <table class="displaytable" id="servicetable" rules="rows" frame="void">
+      </table>
+  </div>
 
-
+  <div id="displaytext">
+  </div>
+</div>
 </body>
 
 </html>

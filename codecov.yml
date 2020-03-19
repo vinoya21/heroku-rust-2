@@ -1,4 +1,2 @@
 codecov:
   token: 87a32202-0f87-48b3-b08e-d6f96cb90e19
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION

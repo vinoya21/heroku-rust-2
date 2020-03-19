@@ -10,8 +10,8 @@ var registerRouter = require('./routes/register');
 var acc_updateRouter = require('./routes/updateaccount');
 var initacctRouter = require('./routes/initacct');
 var passwordRouter = require('./routes/changePassword');
-var artRouter = require('./routes/retrieveart');
-var artInfoRouter = require('./routes/retrieveArtInfo');
+var dataRouter = require('./routes/retrieve');
+var InfoRouter = require('./routes/retrieveInfo');
 var favoriteRouter = require('./routes/retrieveFavorite');
 var changeFavRouter = require('./routes/changeFavorites');
 
@@ -33,8 +33,8 @@ app.use('/register', registerRouter);
 app.use('/updateaccount', acc_updateRouter);
 app.use('/initacct', initacctRouter);
 app.use('/changePassword', passwordRouter);
-app.use('/retrieveart', artRouter);
-app.use('/retrieveArtInfo', artInfoRouter);
+app.use('/retrieve', dataRouter);
+app.use('/retrieveInfo', InfoRouter);
 app.use('/retrieveFavorite', favoriteRouter);
 app.use('/changeFavorites', changeFavRouter);
 

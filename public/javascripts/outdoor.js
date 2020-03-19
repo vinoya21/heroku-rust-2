@@ -89,17 +89,18 @@ function displayInfo(title) { // display art info
             if (user != null) {
                 checkFavorites(user, newtitle);
             }
-            var island = "<p> " + info[0].ISLAND + "</p>";
-            document.getElementById('textinfo').innerHTML = "<h2>" + title + "</h2>" + island;
+            var island = "<p> Located on the island of " + info[0].ISLAND + " in " + info[0].DISTRICT + ". </p>";
+            var len = "<p> ELEVATION: " + info[0].ELEVATION + " ft DISTANCE: " + info[0].LENGTH + " mi </p>";
+            document.getElementById('textinfo').innerHTML = "<h2>" + title + "</h2>" + island + len;
         }
     });
 }
 
 //search art function
 function search_art() {
-    let input = document.getElementById('searchbar_input_art').value
+    let input = document.getElementById('searchbar_input_rec').value
     input = input.toLowerCase();
-    let x = document.getElementsByClassName('artclass');
+    let x = document.getElementsByClassName('outdoorclass');
     
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {

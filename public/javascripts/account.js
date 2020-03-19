@@ -29,7 +29,9 @@ function editMode() {
 	}
 	else { // button - transition to editing profile
 		var name = document.getElementById('name').innerHTML;
-		var matches = name.match(/([A-Z][a-z]+) ([A-Z][a-z]+)/);
+		alert(name);
+		var matches = name.match(/([A-Z][a-z]*) ([A-Z][a-z]*)/);
+		alert(matches);
 		if (matches) { // creating textarea for first and last name
 			var first = document.createElement("textarea");
 			first.innerHTML = matches[1];
@@ -40,7 +42,6 @@ function editMode() {
 			nameDiv.appendChild(first);
 			nameDiv.appendChild(last);
 		}
-
 		// creating textarea for bio
 		var bio = document.getElementById('bio');
 		var bioTextArea = document.createElement("textarea");

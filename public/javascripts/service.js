@@ -98,7 +98,6 @@ function search_art() {
     let input = document.getElementById('searchbar_input_rec').value
     input = input.toLowerCase();
     let x = document.getElementsByClassName('serviceclass');
-    
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display = "none";
@@ -107,8 +106,6 @@ function search_art() {
             x[i].style.display = "table-cell";
         }
     }
-
-
 }
 
 function checkFavorites(user, title) {

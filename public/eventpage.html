@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
   <script src="javascripts/account.js"></script>
   <script src="javascripts/login.js"></script>
+  <script src="javascripts/event.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <style>
     #map {
@@ -123,16 +124,6 @@
     <a href="recreationpage.html">Outdoor Activities</a>
     <a href="servicepage.html">Community Service</a>
   </div>
-  <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 21.4389, lng: -158.0001},
-          zoom: 10.5
-        });
-      }
-    </script>
 
   <!-- search bar event page -->
   <br>
@@ -146,5 +137,19 @@
         </form>
     </div>
 </body>
+
+
+  <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 21.4389, lng: -158.0001},
+          zoom: 10.5
+        });
+      }
+    </script>
+
+  
 
 </html>

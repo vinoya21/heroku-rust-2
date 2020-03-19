@@ -9,31 +9,30 @@
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 <script src="javascripts/account.js"> </script>
+<script src="javascripts/logout.js"> </script>
 
-<body onload="init()"> <!-- retrieve user info in USERS database on load -->
+<body onload="initUser()"> <!-- retrieve user info in USERS database on load -->
 
   <div class="leftt">
     <button class="top-btn" type="button" id="review" onclick="window.location.href = 'reviewpage.html';">Make a review</button>
   </div>
 
   <div class="rightt">
-    <button class="top-btn" type="button" id="account">Account</button><br><br><br>
-    <button onclick="window.location.href = 'index.html';" class="top-btn" type="button" id="logout">Log out</button>
+    <button onclick="logout()" class="top-btn" type="button" id="logout">Log out</button>
   </div> <!-- set log out to go back to index.html -->
 
   <center>
 
     <!-- TODO: Resize image in CSS to fit the page more -->
-    <input onclick="window.location.href='index.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png"
+    <input onclick="window.location.href='indexUser.html'" type="image" id="makalehalogo" src="images/makaleha_logo__v2.png"
       alt="Makaleha Logo" width="300" height="140" />
   </center>
   <div class="navbar">
-    <a onclick="isLoggedIn('eventpage')"> Events</a>
-    <a onclick="isLoggedIn('artpage')">Artwork</a>
-    <a onclick="isLoggedIn('recreationpage')">Outdoor Activities</a>
-    <a onclick="isLoggedIn('servicepage')">Community Service</a>
+    <a href="eventpageUser.html">Events</a>
+    <a href="artpageUser.html">Artwork</a>
+    <a href="recreationpageUser.html">Outdoor Activities</a>
+    <a href="servicepageUser.html">Community Service</a>
 </div>
 
   <div class="tab">
@@ -71,6 +70,11 @@
       <textarea id="new-pw"></textarea>
     </div>
     <button id="pw-btn" onclick="changePassword()" type="button"> Submit </button>
+  </div>
+
+  <div id="Favorites" class="tabcontent">
+    <h2 class="header-title"> Favorites </h2>
+    <p id="favorites" onload="getFavorites()"></p>
   </div>
 
 </body>

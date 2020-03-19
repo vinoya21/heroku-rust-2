@@ -7,10 +7,7 @@ function editMode() {
 		var fTextArea = document.getElementById('first-text');
 		var lTextArea = document.getElementById('last-text');
 		var bTextArea = document.getElementById('bio-text');
-		var queryString = decodeURIComponent(window.location.search);
-		queryString = queryString.substring(1);
-		var queries = queryString.split("=");
-		var username = queries[1];
+		var username = localStorage.getItem('username');
 		var first = fTextArea.value;
 		var last = lTextArea.value;
 		var bio = bTextArea.value;
@@ -69,57 +66,55 @@ function openAccTab(event, tab) {
 	evt.currentTarget.className += " active";
 }
 
-function init() {
-	var queryString = decodeURIComponent(window.location.search);
-	queryString = queryString.substring(1);
-	var queries = queryString.split("=");
-	var username = queries[1];
-	$.post("/initacct?username=" + username,
-		function (user) {
+function initUser() {
+	username = localStorage.getItem('username');
+	if(username != null){
+		$.post("/initacct?username=" + username, function (user) {
 			document.getElementById('name').innerHTML = user[0].FIRSTNAME + " " + user[0].LASTNAME;
 			document.getElementById('bio').innerHTML = user[0].BIO;
 		});
-	document.getElementById("default").click();
+		document.getElementById("default").click();
+		getFavorites(); 
+	} //retrieve info needed
+}
+
+function init(){
+	if(localStorage.getItem('username') != null){
+		var currentPage = window.location.href;
+		console.log(currentPage);
+		if(currentPage == "http://localhost:3000/"){
+			window.location = currentPage +"indexUser.html";
+		}else{
+			window.location = currentPage.replace(".html", "User.html");
+		}
+	} //redirect to logged in page if logged in
 }
 
 function changePassword() {
 	var oldpw = document.getElementById('old-pw').value;
 	var newpw = document.getElementById('new-pw').value;
-	var queryString = decodeURIComponent(window.location.search);
-	queryString = queryString.substring(1);
-	var queries = queryString.split("=");
-	var username = queries[1];
-	$.post("/changePassword?username=" + username + "&old=" + oldpw + "&new=" + newpw,
+	$.post("/changePassword?username=" + localStorage.getItem('username') + "&old=" + oldpw + "&new=" + newpw,
 		function (user) {
-			if (user[0] != null) {
+			if (user == null) {
+				alert("Incorrect password. Hana hou!");
+			}
+			else {
 				alert("Maika'i! You've successfully changed password.");
 				document.getElementById('old-pw').value = '';
 				document.getElementById('new-pw').value = '';
 			}
-			else {
-				alert("Incorrect password. Hana hou!");
-			}
 		});
 }
 
-function isLoggedIn(menu_type) {
-	var queryString = decodeURIComponent(window.location.search);
-	queryString = queryString.substring(1);
-	var queries = queryString.split("=");
-	var username = queries[1];
-	if (menu_type == "eventpage") {
-		window.location.href = "eventpage.html?username=" + username;
-	}
-	else if(menu_type == 'artpage'){
-		window.location.href = "artpage.html?username=" + username;
-	}
-	else if(menu_type == 'servicepage'){
-		window.location.href = "servicepage.html?username=" + username;
-	}
-	else if(menu_type == 'recreationpage'){
-		window.location.href = "recreationpage.html?username=" + username;
-	}
+function getFavorites(){
+	var username = localStorage.getItem('username');
+	$.post('/retrieveFavorite?user=' + username, function(result){
+		if(result[0].FAVORITES != null){
+			document.getElementById('favorites').innerHTML = result[0].FAVORITES; 
+		}
+	});
 }
+
 /*
 	version: 23 FEB 2020
 	TODO:

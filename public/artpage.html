@@ -20,16 +20,16 @@
 
 
     <style>
-      #map {
-        height: 200px;
-      }
-      
-      html, h3 {
-        height: 100%;
-        margin: 0;
-        padding: 10;
-      } 
-    </style>
+        #map {
+          height: 200px;
+        }
+        
+        html, h3 {
+          height: 100%;
+          margin: 0;
+          padding: 10;
+        } 
+      </style>
 </head>
 
 <script src="javascripts/art.js"> </script>
@@ -154,24 +154,21 @@
         <div id="displaytext">
         </div>
     </div>
-
-    
-
 </body>
 <h3>
-  <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 21.4389, lng: -158.0001},
-          zoom: 10.5
-        });
-      }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXXXXXXX" 
-    async defer></script>
-</h3>
+    <div id="map"></div>
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 21.4389, lng: -158.0001},
+            zoom: 10.5
+          });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIhUvaxHgXK-X8iRqfSYzaRy-I0-QNsoY&callback=initMap" 
+      async defer></script>
+  </h3>
 
 </html>
 

@@ -84,12 +84,12 @@ function search_art() {
 var activeInfoWindow;
 
 function favoriteButton(user, title) {
-    var foundTitle = false;
-    $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        var foundTitle = false;
         if (result[0].FAVORITES != null) {
-            favoriteList = (result[0].FAVORITES).split(",");
+            var favoriteList = (result[0].FAVORITES).split(",");
             for (var i = 0; i < favoriteList.length; i++) {
-                if (favoriteList[i] == title) {
+                if (favoriteList[i].substring(1) == title) {
                     foundTitle = true;
                 }
             }
@@ -112,12 +112,12 @@ function favoriteButton(user, title) {
 }
 
 function initFavorite(user, title){
-    var foundTitle = false;
-    $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        var foundTitle = false;
         if (result[0].FAVORITES != null) {
-            favoriteList = (result[0].FAVORITES).split(",");
+            var favoriteList = (result[0].FAVORITES).split(",");
             for (var i = 0; i < favoriteList.length; i++) {
-                if (favoriteList[i] == title) {
+                if (favoriteList[i].substring(1) == title) {
                     foundTitle = true;
                 }
             }
@@ -148,9 +148,11 @@ function addItem(user, title) {
 }
 
 function removeItem(user, title) {
-    $.post("/changeFavorites?type=remove&user=" + user + "&title=" + title, function (result) {
+    $.post("/changeFavorites?type=remove&user=" + user + "&title=0" + title, function (result) {
     });
 }
+
+var markers = [];
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -174,10 +176,18 @@ function initMap() {
                 createMarker(location, title, description, access, creator, credit, date);
             }
         }
+        var user = localStorage.getItem('username');
+        if (user != null) { //if their is a user we initialize their favorites
+            loadFavorites();
+        }
     });
 }
+
 function createMarker(pos, name, description, access, creator, credit, date){
-    var marker = new google.maps.Marker({title: name, position: pos, map: map});
+    var marker = new google.maps.Marker({title: name, position: pos, map: map, icon: {
+        url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+      }});
+    markers.push(marker);
     var creatorCreditDate = "";
     if(creator != ""){
         if(credit !=""){
@@ -260,6 +270,59 @@ function createMarker(pos, name, description, access, creator, credit, date){
         }
     }); 
 }
+
+function loadFavorites(){
+    var showFavorites = localStorage.getItem('showFavorites');
+    if(showFavorites == "false"){
+        document.getElementById("toggleFavoritesButton").innerHTML = '&star;';
+        for (var i = 0; i < markers.length; i++) {
+            markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+        }
+        return;
+    }
+    if(showFavorites == null){
+        localStorage.setItem("showFavorites", "true");
+    }
+    document.getElementById("toggleFavoritesButton").innerHTML = '&starf;';
+    var user = localStorage.getItem('username');
+    var artFavorites = [];
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        if (result[0].FAVORITES != null) {
+            var favoriteList = (result[0].FAVORITES).split(",");
+            for (var i = 0; i < favoriteList.length; i++) {
+                if (favoriteList[i][0] == '0') {
+                    var titleName = favoriteList[i].substring(1);
+                    artFavorites.push(titleName);
+                }
+            }
+            var artFavoritesLength = artFavorites.length;
+            for(var i = 0; i < markers.length; i++){
+                for(var j = 0; j < artFavorites.length; j++){
+                    if(markers[i].getTitle() == artFavorites[j]){
+                        markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png');
+                        artFavoritesLength--;
+                        if(artFavorites == 0){
+                            return;
+                        }
+                    }
+                }
+            }
+        } else{
+        } // do nothing no favorites
+    });
+}
+
+function toggleFavoritesButton(){
+    var showFavorites = localStorage.getItem('showFavorites');
+    if(showFavorites == "true"){
+        localStorage.setItem("showFavorites","false");
+        loadFavorites();
+    } else if(showFavorites == "false"){
+        localStorage.setItem("showFavorites","true");
+        loadFavorites();
+    }
+}
+
 /*
     version: 23 FEB 2020
     TODO: have list scrollable, while info display is fixed on page

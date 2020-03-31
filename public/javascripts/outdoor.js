@@ -1,11 +1,11 @@
 function init() {
-    $.post('/retrieve?type=outdoor', function (outdoor) { // POST for art info
-        // loop through all art objects 
+    $.post('/retrieve?type=outdoor', function (outdoor) { // POST for outdoor info
+        // loop through all outdoor objects 
 
         var titleList = new Array();
 
         for (var i = 1; i < outdoor.length; i++) {
-            if (outdoor[i].NAME != '') { // don't want art with no title
+            if (outdoor[i].NAME != '') { // don't want outdoor with no title
                 // object title
                 var title = outdoor[i].NAME;
 
@@ -25,7 +25,7 @@ function init() {
                     // create column w/ info
                     var y = document.createElement("TD");
 
-                    // put newly created element in the art class
+                    // put newly created element in the outdoor class
                     y.className = "outdoorclass";
 
                     var t = document.createTextNode(title);
@@ -35,18 +35,18 @@ function init() {
 
             }
         }
-        // add eventlistener to all art rows
+        // add eventlistener to all outdoor rows
         var allRowsOnPage = document.querySelectorAll('TD');
         allRowsOnPage.forEach(function (row, index) {
             row.addEventListener('click', function () {
-                displayInfo(row.innerHTML); // when clicked display art info
+                displayInfo(row.innerHTML); // when clicked display outdoor info
             });
         });
         /*
-        Purpose: To add event listener to all art, not just last one
+        Purpose: To add event listener to all outdoor, not just last one
         https://www.nickang.com/add-event-listener-for-loop-problem-in-javascript/
         */
-        // add table to display art info
+        // add table to display outdoor info
         var infoTable = document.createElement("TABLE");
         infoTable.setAttribute("width", "700");
         infoTable.setAttribute("id", "infotable");
@@ -62,7 +62,7 @@ function init() {
     });
 }
 
-function displayInfo(title) { // display art info
+function displayInfo(title) { // display outdoor info
     /* BEGINNING: ADD THIS PORTION TO OTHER RETRIEVAL PAGES FOR ESCAPE CHAR ISSUE */
     var newtitle = '';
     for (var i = 0; i < title.length; i++) { // needed this because & is a reserved character

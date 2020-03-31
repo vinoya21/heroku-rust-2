@@ -29,9 +29,7 @@ function editMode() {
 	}
 	else { // button - transition to editing profile
 		var name = document.getElementById('name').innerHTML;
-		alert(name);
 		var matches = name.match(/([A-Z][a-z]*) ([A-Z][a-z]*)/);
-		alert(matches);
 		if (matches) { // creating textarea for first and last name
 			var first = document.createElement("textarea");
 			first.innerHTML = matches[1];
@@ -116,7 +114,6 @@ function getFavorites(){
 			var cat = "-1"; 
 			for(var i = 0; i < list.length; i++){
 				var entry = splitList(list[i], /([0-3]+)/);
-				alert(list[i]); 
 				if(entry[1] == "0"){
 					cat = "Artwork";
 				}
@@ -129,7 +126,8 @@ function getFavorites(){
 				else{
 					cat = "Events";
 				}
-				table.innerHTML += "<tr> <td>" + cat + "</td> <td>" + entry[2] + "</td> </tr>";
+				table.innerHTML += "<tr> <td>" + cat + "</td> <td>" + 
+				entry[2] + "</td></tr>";
 			}
 		}
 	});

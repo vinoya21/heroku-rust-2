@@ -100,13 +100,25 @@ function favoriteButton(user, title) {
             content = content.slice(0, -21);
             content = content +';</span></div></div>';
             activeInfoWindow.setContent(content);
-        }
-        else {
+            waitForChange(result[0].FAVORITES);
+        } else{
             addItem(user, title);
             var content = activeInfoWindow.getContent();
             content = content.slice(0, -20);
             content = content +'f;</span></div></div>';
             activeInfoWindow.setContent(content);
+            waitForChange(result[0].FAVORITES);
+        }
+    });
+}
+
+function waitForChange(prevResult){
+    var user = localStorage.getItem("username");
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        if(result[0].FAVORITES == prevResult){
+            waitForChange(prevResult);
+        } else{
+            loadFavorites();
         }
     });
 }
@@ -130,8 +142,7 @@ function initFavorite(user, title){
         if (foundTitle) {
             content = content +'f;</span></div></div>';
             activeInfoWindow.setContent(content);
-        }
-        else {
+        } else{
             content = content +';</span></div></div>';
             activeInfoWindow.setContent(content);
         }
@@ -145,11 +156,13 @@ https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlist
 function addItem(user, title) {
     $.post("/changeFavorites?type=add&cat=art&user=" + user + "&title=" + title, function (result) {
     });
+    
 }
 
 function removeItem(user, title) {
     $.post("/changeFavorites?type=remove&user=" + user + "&title=0" + title, function (result) {
     });
+    
 }
 
 var markers = [];
@@ -296,15 +309,18 @@ function loadFavorites(){
                 }
             }
             var artFavoritesLength = artFavorites.length;
+            var match;
             for(var i = 0; i < markers.length; i++){
+                match = false;
                 for(var j = 0; j < artFavorites.length; j++){
                     if(markers[i].getTitle() == artFavorites[j]){
-                        markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png');
-                        artFavoritesLength--;
-                        if(artFavorites == 0){
-                            return;
-                        }
+                        match = true;
                     }
+                }
+                if(match){
+                    markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png');
+                } else{
+                    markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
                 }
             }
         } else{

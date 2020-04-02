@@ -34,5 +34,15 @@ router.post('/', function (req, res, next) {
             res.json(result);
         });
     }
+    else if(type == 'events'){
+        db.dbquery("SELECT * FROM EVENTS WHERE TITLE ='" + title + "'", function(err, result){
+            if(err){
+                console.log(err);
+                return;
+            }
+            console.log(result);
+            res.json(result);
+        });
+    }
 });
 module.exports = router;

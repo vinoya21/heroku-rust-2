@@ -39,19 +39,6 @@ function init() {
 
             }
         }
-        // add table to display art info
-        var infoTable = document.createElement("TABLE");
-        infoTable.setAttribute("width", "700");
-        infoTable.setAttribute("id", "infotable");
-        document.getElementById('displaytext').appendChild(infoTable);
-        var x = document.createElement("TR");
-        x.setAttribute("id", "row");
-        document.getElementById("infotable").appendChild(x);
-        var y = document.createElement("TD");
-        y.setAttribute("id", "textinfo");
-        var t = document.createTextNode("");
-        y.appendChild(t);
-        document.getElementById("row").appendChild(y);
     });
 }
 
@@ -84,12 +71,12 @@ function search_art() {
 var activeInfoWindow;
 
 function favoriteButton(user, title) {
-    var foundTitle = false;
-    $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        var foundTitle = false;
         if (result[0].FAVORITES != null) {
-            favoriteList = (result[0].FAVORITES).split(",");
+            var favoriteList = (result[0].FAVORITES).split(",");
             for (var i = 0; i < favoriteList.length; i++) {
-                if (favoriteList[i] == title) {
+                if (favoriteList[i].substring(1) == title) {
                     foundTitle = true;
                 }
             }
@@ -100,24 +87,36 @@ function favoriteButton(user, title) {
             content = content.slice(0, -21);
             content = content +';</span></div></div>';
             activeInfoWindow.setContent(content);
-        }
-        else {
+            waitForChange(result[0].FAVORITES);
+        } else{
             addItem(user, title);
             var content = activeInfoWindow.getContent();
             content = content.slice(0, -20);
             content = content +'f;</span></div></div>';
             activeInfoWindow.setContent(content);
+            waitForChange(result[0].FAVORITES);
+        }
+    });
+}
+
+function waitForChange(prevResult){
+    var user = localStorage.getItem("username");
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        if(result[0].FAVORITES == prevResult){
+            waitForChange(prevResult);
+        } else{
+            loadFavorites();
         }
     });
 }
 
 function initFavorite(user, title){
-    var foundTitle = false;
-    $.post("/retrieveFavorite?user=" + user + "&title=" + title, function (result) {
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        var foundTitle = false;
         if (result[0].FAVORITES != null) {
-            favoriteList = (result[0].FAVORITES).split(",");
+            var favoriteList = (result[0].FAVORITES).split(",");
             for (var i = 0; i < favoriteList.length; i++) {
-                if (favoriteList[i] == title) {
+                if (favoriteList[i].substring(1) == title) {
                     foundTitle = true;
                 }
             }
@@ -130,8 +129,7 @@ function initFavorite(user, title){
         if (foundTitle) {
             content = content +'f;</span></div></div>';
             activeInfoWindow.setContent(content);
-        }
-        else {
+        } else{
             content = content +';</span></div></div>';
             activeInfoWindow.setContent(content);
         }
@@ -145,12 +143,16 @@ https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlist
 function addItem(user, title) {
     $.post("/changeFavorites?type=add&cat=art&user=" + user + "&title=" + title, function (result) {
     });
+    
 }
 
 function removeItem(user, title) {
-    $.post("/changeFavorites?type=remove&user=" + user + "&title=" + title, function (result) {
+    $.post("/changeFavorites?type=remove&user=" + user + "&title=0" + title, function (result) {
     });
+    
 }
+
+var markers = [];
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -174,10 +176,18 @@ function initMap() {
                 createMarker(location, title, description, access, creator, credit, date);
             }
         }
+        var user = localStorage.getItem('username');
+        if (user != null) { //if their is a user we initialize their favorites
+            loadFavorites();
+        }
     });
 }
+
 function createMarker(pos, name, description, access, creator, credit, date){
-    var marker = new google.maps.Marker({title: name, position: pos, map: map});
+    var marker = new google.maps.Marker({title: name, position: pos, map: map, icon: {
+        url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+      }});
+    markers.push(marker);
     var creatorCreditDate = "";
     if(creator != ""){
         if(credit !=""){
@@ -260,6 +270,62 @@ function createMarker(pos, name, description, access, creator, credit, date){
         }
     }); 
 }
+
+function loadFavorites(){
+    var showFavorites = localStorage.getItem('showFavorites');
+    if(showFavorites == "false"){
+        document.getElementById("toggleFavoritesButton").innerHTML = '&star;';
+        for (var i = 0; i < markers.length; i++) {
+            markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+        }
+        return;
+    }
+    if(showFavorites == null){
+        localStorage.setItem("showFavorites", "true");
+    }
+    document.getElementById("toggleFavoritesButton").innerHTML = '&starf;';
+    var user = localStorage.getItem('username');
+    var artFavorites = [];
+    $.post("/retrieveFavorite?user=" + user, function (result) {
+        if (result[0].FAVORITES != null) {
+            var favoriteList = (result[0].FAVORITES).split(",");
+            for (var i = 0; i < favoriteList.length; i++) {
+                if (favoriteList[i][0] == '0') {
+                    var titleName = favoriteList[i].substring(1);
+                    artFavorites.push(titleName);
+                }
+            }
+            var artFavoritesLength = artFavorites.length;
+            var match;
+            for(var i = 0; i < markers.length; i++){
+                match = false;
+                for(var j = 0; j < artFavorites.length; j++){
+                    if(markers[i].getTitle() == artFavorites[j]){
+                        match = true;
+                    }
+                }
+                if(match){
+                    markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png');
+                } else{
+                    markers[i].setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+                }
+            }
+        } else{
+        } // do nothing no favorites
+    });
+}
+
+function toggleFavoritesButton(){
+    var showFavorites = localStorage.getItem('showFavorites');
+    if(showFavorites == "true"){
+        localStorage.setItem("showFavorites","false");
+        loadFavorites();
+    } else if(showFavorites == "false"){
+        localStorage.setItem("showFavorites","true");
+        loadFavorites();
+    }
+}
+
 /*
     version: 23 FEB 2020
     TODO: have list scrollable, while info display is fixed on page

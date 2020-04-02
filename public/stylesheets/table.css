@@ -5,11 +5,22 @@
     overflow-y: scroll;
 }
 
+#rectable {
+    border: 1px solid black;
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
 #displaytext {
     border: 1px solid black;
     width: 75%;
 }
 
 .artclass {
+    display: table-cell;
+}
+
+.outdoorclass {
     display: table-cell;
 }

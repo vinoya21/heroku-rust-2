@@ -143,15 +143,13 @@ FIXED ISSUE WITH NOT GOING IN ADDITEM AND REMOVEITEM FUNCTION
 https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlistener-listener-function.
 */
 function addItem(user, title) {
-    $.post("/changeFavorites?type=add&user=" + user + "&title=" + title, function (result) {
+    $.post("/changeFavorites?type=add&cat=art&user=" + user + "&title=" + title, function (result) {
     });
-    //displayInfo(title);
 }
 
 function removeItem(user, title) {
     $.post("/changeFavorites?type=remove&user=" + user + "&title=" + title, function (result) {
     });
-    //displayInfo(title);
 }
 
 function initMap() {

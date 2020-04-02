@@ -1,3 +1,4 @@
+var map;
 function init() {
     $.post('/retrieve?type=service', function (service) { // POST for service info
         // loop through all service objects 
@@ -154,7 +155,114 @@ function removeItem(evt) {
     displayInfo(title);
 }
 
-
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 21.4689, lng: -158.0001},
+        zoom: 10.25
+    });
+    $.post('/retrieve?type=art', function (art) { // POST for art info
+        // loop through all art objects 
+        for (var i = 1; i < art.length; i++) {
+            if (art[i].TITLE != '') { // don't want art with no title
+                // object title
+                var title = art[i].TITLE;
+                var latitude = art[i].LATITUDE;
+                var longitude = art[i].LONGITUDE;
+                var location = {lat: latitude, lng: longitude};
+                var description = art[i].DESCRIPTION;
+                var access = art[i].ACCESS;
+                var creator = art[i].CREATOR;
+                var credit = art[i].CREDIT;
+                var date = art[i].DATE;
+                createMarker(location, title, description, access, creator, credit, date);
+            }
+        }
+    });
+}
+function createMarker(pos, name, description, access, creator, credit, date){
+    var marker = new google.maps.Marker({title: name, position: pos, map: map});
+    var creatorCreditDate = "";
+    if(creator != ""){
+        if(credit !=""){
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                creator+ ', '+ credit+ ', '+ date+
+                '</p>';
+            } else{
+                creatorCreditDate = '<p>'+
+                creator+ ', '+ credit+
+                '</p>';
+            }
+        } else{
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                creator+ ', '+ date+
+                '</p>';
+            } else{
+                creatorCreditDate = '<p>'+
+                creator+
+                '</p>';
+            }
+        }
+    } else{
+        if(credit !=""){
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                credit+ ', '+ date+
+                '</p>';
+            } else{
+                creatorCreditDate = '<p>'+
+                credit+
+                '</p>';
+            }
+        } else{
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                date+
+                '</p>';
+            }
+        }
+    }
+    var favoriteButton = "";
+    var user = localStorage.getItem('username');
+    if (user != null) {
+        favoriteButton = '<span class="favoriteButton" onclick="favoriteButton(\''+user+'\', \''+name+'\')">&star;</span>';
+    }
+    var content = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h1 id="firstHeading" class="firstHeading">'+
+    name+
+    '</h1>'+
+    '<div id="bodyContent">'+
+    '<p>'+
+    description+
+    '</p>'+
+    creatorCreditDate+
+    '<p>'+
+    " Access: "+
+    access+
+    '</p>'+
+    favoriteButton+
+    '</div>'+
+    '</div>'
+    var infowindow = new google.maps.InfoWindow({
+        content: content
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        if(map.getZoom() < 15)
+            map.setZoom(15);
+        map.panTo(marker.getPosition());
+        if (activeInfoWindow){
+            activeInfoWindow.close();
+        }
+        infowindow.open(map, marker);
+        activeInfoWindow = infowindow;
+        if (user != null) {
+            initFavorite(user, name);
+        }
+    }); 
+}
 
 
 /*

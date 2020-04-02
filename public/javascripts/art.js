@@ -39,19 +39,6 @@ function init() {
 
             }
         }
-        // add table to display art info
-        var infoTable = document.createElement("TABLE");
-        infoTable.setAttribute("width", "700");
-        infoTable.setAttribute("id", "infotable");
-        document.getElementById('displaytext').appendChild(infoTable);
-        var x = document.createElement("TR");
-        x.setAttribute("id", "row");
-        document.getElementById("infotable").appendChild(x);
-        var y = document.createElement("TD");
-        y.setAttribute("id", "textinfo");
-        var t = document.createTextNode("");
-        y.appendChild(t);
-        document.getElementById("row").appendChild(y);
     });
 }
 

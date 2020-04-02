@@ -130,12 +130,23 @@
     <div id="cover_event">
         <form method="get" action="">
             <div class="tb">
-                <div class="td"><input id="searchbar_input_event" type="text" placeholder="Search" required></div>
+                <div class="td"><input id="searchbar_input_event" type="text" onkeyup="search_event()" placeholder="Search" required></div>
                 <div class="td" id="s-cover">
                 </div>
             </div>
         </form>
     </div>
+
+    <!-- table that displays menu for event -->
+    <div style="height: 500px; display: flex" id="eventdisplay">
+        <div style="height: 500px; width:25%; overflow-y: scroll; display:flex">
+            <table class="displaytable" id="eventtable" rules="rows" frame="void">
+            </table>
+        </div>
+
+        <div id="map" style="height: 100%; width:100%"></div>
+    </div>
+
 </body>
 
 

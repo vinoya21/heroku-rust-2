@@ -5,11 +5,25 @@ router.post('/', function (req, res, next) {
     var user = req.query.user;
     var title = req.query.title;
     var type = req.query.type;
+    var cat = req.query.cat;
+    var num = "-1";
+    if(cat == "art"){
+        num = "0"; 
+    }
+    else if(cat == "rec"){
+        num = "1";
+    }
+    else if(cat == "service"){
+        num = "2";
+    }
+    else if(cat == "events"){
+        num = "3"; 
+    }
     db.dbquery("SELECT * FROM USERS WHERE USERNAME = '" + user + "'", function (err, result) {
         if (type == "add") {
             if (result[0].FAVORITES != null) {
                 var favoriteList = (result[0].FAVORITES).split(",");
-                favoriteList.push(title);
+                favoriteList.push(num + title);
                 var newlist = '';
                 for (var i = 0; i < favoriteList.length; i++) {
                     if (i != favoriteList.length - 1) {

@@ -1,6 +1,6 @@
 var map;
 function init() {
-    $.post('/retrieve?type=outdoor', function (outdoor) { // POST for art info
+    $.post('/retrieve?type=outdoor', function (outdoor) { // POST for outdoor info
         // loop through all art objects 
 
         var titleList = new Array();
@@ -97,8 +97,8 @@ function displayInfo(title) { // display art info
     });
 }
 
-//search art function
-function search_art() {
+//search outdoor function
+function search_outdoor() {
     let input = document.getElementById('searchbar_input_rec').value
     input = input.toLowerCase();
     let x = document.getElementsByClassName('outdoorclass');

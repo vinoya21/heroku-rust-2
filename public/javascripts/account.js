@@ -29,9 +29,7 @@ function editMode() {
 	}
 	else { // button - transition to editing profile
 		var name = document.getElementById('name').innerHTML;
-		alert(name);
 		var matches = name.match(/([A-Z][a-z]*) ([A-Z][a-z]*)/);
-		alert(matches);
 		if (matches) { // creating textarea for first and last name
 			var first = document.createElement("textarea");
 			first.innerHTML = matches[1];
@@ -111,10 +109,89 @@ function getFavorites(){
 	var username = localStorage.getItem('username');
 	$.post('/retrieveFavorite?user=' + username, function(result){
 		if(result[0].FAVORITES != null){
-			document.getElementById('favorites').innerHTML = result[0].FAVORITES; 
+			var list = splitList(result[0].FAVORITES, ",");
+			var table = document.getElementById('myTable');
+			var cat = "-1"; 
+			for(var i = 0; i < list.length; i++){
+				var entry = splitList(list[i], /([0-3]+)/);
+				if(entry[1] == "0"){
+					cat = "Artwork";
+				}
+				else if(entry[1] == "1"){
+					cat = "Outdoor Activities";
+				}
+				else if(entry[1] == "2"){
+					cat = "Community Service";
+				}
+				else{
+					cat = "Events";
+				}
+				table.innerHTML += "<tr> <td>" + cat + "</td> <td>" + 
+				entry[2] + "</td></tr>";
+			}
 		}
 	});
 }
+
+function splitList(list, splitter){
+	var l = list.split(splitter);
+	return l; 
+}
+
+function sortTable(n) {
+	var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+	table = document.getElementById("myTable");
+	switching = true;
+	//Set the sorting direction to ascending:
+	dir = "asc"; 
+	/*Make a loop that will continue until
+	no switching has been done:*/
+	while (switching) {
+	  //start by saying: no switching is done:
+	  switching = false;
+	  rows = table.rows;
+	  /*Loop through all table rows (except the
+	  first, which contains table headers):*/
+	  for (i = 1; i < (rows.length - 1); i++) {
+		//start by saying there should be no switching:
+		shouldSwitch = false;
+		/*Get the two elements you want to compare,
+		one from current row and one from the next:*/
+		x = rows[i].getElementsByTagName("TD")[n];
+		y = rows[i + 1].getElementsByTagName("TD")[n];
+		/*check if the two rows should switch place,
+		based on the direction, asc or desc:*/
+		if (dir == "asc") {
+		  if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+			//if so, mark as a switch and break the loop:
+			shouldSwitch= true;
+			break;
+		  }
+		} else if (dir == "desc") {
+		  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+			//if so, mark as a switch and break the loop:
+			shouldSwitch = true;
+			break;
+		  }
+		}
+	  }
+	  if (shouldSwitch) {
+		/*If a switch has been marked, make the switch
+		and mark that a switch has been done:*/
+		rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+		switching = true;
+		//Each time a switch is done, increase this count by 1:
+		switchcount ++;      
+	  } else {
+		/*If no switching has been done AND the direction is "asc",
+		set the direction to "desc" and run the while loop again.*/
+		if (switchcount == 0 && dir == "asc") {
+		  dir = "desc";
+		  switching = true;
+		}
+	  }
+	}
+  }
 
 /*
 	version: 23 FEB 2020

@@ -1,10 +1,10 @@
 var map;
 function init() {
-    $.post('/retrieve?type=service', function (service) { // POST for art info
-        // loop through all art objects 
+    $.post('/retrieve?type=service', function (service) { // POST for service info
+        // loop through all service objects 
         var titleList = new Array();
         for (var i = 0; i < service.length; i++) {
-            if (service[i].NAME != '') { // don't want art with no title
+            if (service[i].NAME != '') { // don't want sercice with no title
                 // object title
                 var title = service[i].NAME;
 
@@ -22,7 +22,7 @@ function init() {
                     // create column w/ info
                     var y = document.createElement("TD");
 
-                    // put newly created element in the art class
+                    // put newly created element in the service class
                     y.className = "serviceclass";
 
                     var t = document.createTextNode(title);
@@ -32,18 +32,18 @@ function init() {
 
             }
         }
-        // add eventlistener to all art rows
+        // add eventlistener to all service rows
         var allRowsOnPage = document.querySelectorAll('TD');
         allRowsOnPage.forEach(function (row, index) {
             row.addEventListener('click', function () {
-                displayInfo(row.innerHTML); // when clicked display art info
+                displayInfo(row.innerHTML); // when clicked display service info
             });
         });
         /*
-        Purpose: To add event listener to all art, not just last one
+        Purpose: To add event listener to all service, not just last one
         https://www.nickang.com/add-event-listener-for-loop-problem-in-javascript/
         */
-        // add table to display art info
+        // add table to display service info
         var infoTable = document.createElement("TABLE");
         infoTable.setAttribute("width", "700");
         infoTable.setAttribute("id", "infotable");
@@ -59,7 +59,7 @@ function init() {
     });
 }
 
-function displayInfo(title) { // display art info
+function displayInfo(title) { // display service info
     /* BEGINNING: ADD THIS PORTION TO OTHER RETRIEVAL PAGES FOR ESCAPE CHAR ISSUE */
     var newtitle = '';
     for (var i = 0; i < title.length; i++) { // needed this because & is a reserved character
@@ -94,9 +94,9 @@ function displayInfo(title) { // display art info
     });
 }
 
-//search art function
-function search_art() {
-    let input = document.getElementById('searchbar_input_rec').value
+//search service function
+function search_service() {
+    let input = document.getElementById('searchbar_input_serv').value
     input = input.toLowerCase();
     let x = document.getElementsByClassName('serviceclass');
     for (i = 0; i < x.length; i++) {

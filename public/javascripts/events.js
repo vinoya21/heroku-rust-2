@@ -58,6 +58,116 @@ function init() {
     });
 }
 
+function addRowListener(row, location){
+    row.addEventListener('click', function () {
+        if(map.getZoom() < 20)
+            map.setZoom(20);
+        map.panTo(location);
+    });
+}
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 21.4689, lng: -158.0001},
+        zoom: 10.25
+    });
+    $.post('/retrieve?type=events', function (event) { // POST for art info
+        // loop through all art objects 
+        for (var i = 1; i < event.length; i++) {
+            if (event[i].TITLE != '') { // don't want art with no title
+                // object title
+                var location = event[i].LOCATION;
+                var description = info[0].DESCRIPTION;
+                createMarker(title, location, description);
+            }
+        }
+    });
+}
+
+function createMarker(title, location, description){
+    var marker = new google.maps.Marker({title: name, position: pos, map: map});
+    var creatorCreditDate = "";
+    if(creator != ""){
+        if(credit !=""){
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                creator+ ', '+ credit+ ', '+ date+
+                '</p>';
+            } else{
+                creatorCreditDate = '<p>'+
+                creator+ ', '+ credit+
+                '</p>';
+            }
+        } else{
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                creator+ ', '+ date+
+                '</p>';
+            } else{
+                creatorCreditDate = '<p>'+
+                creator+
+                '</p>';
+            }
+        }
+    } else{
+        if(credit !=""){
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                credit+ ', '+ date+
+                '</p>';
+            } else{
+                creatorCreditDate = '<p>'+
+                credit+
+                '</p>';
+            }
+        } else{
+            if(date != ""){
+                creatorCreditDate = '<p>'+
+                date+
+                '</p>';
+            }
+        }
+    }
+    var favoriteButton = "";
+    var user = localStorage.getItem('username');
+    if (user != null) {
+        favoriteButton = '<span class="favoriteButton" onclick="favoriteButton(\''+user+'\', \''+name+'\')">&star;</span>';
+    }
+    var content = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h1 id="firstHeading" class="firstHeading">'+
+    name+
+    '</h1>'+
+    '<div id="bodyContent">'+
+    '<p>'+
+    description+
+    '</p>'+
+    creatorCreditDate+
+    '<p>'+
+    " Access: "+
+    access+
+    '</p>'+
+    favoriteButton+
+    '</div>'+
+    '</div>'
+    var infowindow = new google.maps.InfoWindow({
+        content: content
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        if(map.getZoom() < 15)
+            map.setZoom(15);
+        map.panTo(marker.getPosition());
+        if (activeInfoWindow){
+            activeInfoWindow.close();
+        }
+        infowindow.open(map, marker);
+        activeInfoWindow = infowindow;
+        if (user != null) {
+            initFavorite(user, name);
+        }
+    }); 
+}
+
 function displayInfo(title) { // display art info
     /* BEGINNING: ADD THIS PORTION TO OTHER RETRIEVAL PAGES FOR ESCAPE CHAR ISSUE */
     var newtitle = '';
@@ -95,9 +205,9 @@ function displayInfo(title) { // display art info
 
 //search art function
 function search_art() {
-    let input = document.getElementById('searchbar_input_rec').value
+    let input = document.getElementById('searchbar_input_event').value
     input = input.toLowerCase();
-    let x = document.getElementsByClassName('serviceclass');
+    let x = document.getElementsByClassName('eventclass');
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display = "none";

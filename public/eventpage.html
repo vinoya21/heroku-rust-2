@@ -13,7 +13,22 @@
   <script src="javascripts/account.js"> </script>
   <script src="javascripts/login.js"></script>
   <script src="javascripts/events.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIhUvaxHgXK-X8iRqfSYzaRy-I0-QNsoY&callback=initMap"
+    async defer></script>
+
+  <style>
+    #map {
+      height: 200px;
+    }
+
+    html,
+    h3 {
+      height: 100%;
+      margin: 0;
+      padding: 10;
+    }
+  </style>
 </head>
 
 <body onload="init()">
@@ -111,26 +126,27 @@
     <a href="recreationpage.html">Outdoor Activities</a>
     <a href="servicepage.html">Community Service</a>
   </div>
-<!-- search bar community service -->
-    <div id="cover_serv">
-        <form method="get" action="">
-            <div class="tb">
-                <div class="td"><input id="searchbar_input_serv" type="text" placeholder="Search" required></div>
-                <div class="td" id="s-cover">
-                </div>
-            </div>
-        </form>
-    </div>
-<!-- table that displays menu for art -->
-<div style="height: 500px; display: flex" id="eventdisplay">
-  <div style="height: 500px; width:25%; overflow-y: scroll; display:flex">
+  <!-- search bar community service -->
+  <br>
+  <div id="cover_event">
+    <form method="get" action="">
+      <div class="tb">
+        <div class="td"><input id="searchbar_input_event" type="text" onkeyup="search_art()" placeholder="Search"
+            required></div>
+        <div class="td" id="s-cover">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- table that displays menu for art -->
+  <div style="height: 500px; display: flex" id="eventdisplay">
+    <div style="height: 500px; width:25%; overflow-y: scroll; display:flex">
       <table class="displaytable" id="eventtable" rules="rows" frame="void">
       </table>
-  </div>
+    </div>
 
-  <div id="displaytext">
+    <div id="map" style="height: 100%; width:100%"></div>
   </div>
-</div>
 </body>
 
 </html>
